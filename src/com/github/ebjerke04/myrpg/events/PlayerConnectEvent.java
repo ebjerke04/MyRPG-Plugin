@@ -1,0 +1,30 @@
+package com.github.ebjerke04.myrpg.events;
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+import com.github.ebjerke04.myrpg.Plugin;
+import com.github.ebjerke04.myrpg.quests.items.QuestBook;
+
+public class PlayerConnectEvent extends BaseEvent {
+	
+	public PlayerConnectEvent() {
+		super();
+	}
+	
+	@EventHandler
+	public void onPlayerConnect(PlayerJoinEvent event) {
+		Player player = event.getPlayer();
+		
+		Plugin.getPlayerManager().handlePlayerConnect(player);
+		// TEMP
+		QuestBook.addToPlayerInventory(player);
+
+		if (player.hasPlayedBefore()) {
+			
+		}
+		
+	}
+
+}

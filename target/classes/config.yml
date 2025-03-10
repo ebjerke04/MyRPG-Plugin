@@ -1,0 +1,11 @@
+level-data:
+  1:
+    expToNextLevel: 100
+  2:
+    expToNextLevel: 500
+  3:
+    expToNextLevel: 1000
+  4:
+    expToNextLevel: 2000
+  5:
+    expToNextLevel: 3000
