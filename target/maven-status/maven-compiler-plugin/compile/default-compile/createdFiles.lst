@@ -1,3 +1,4 @@
+com\github\ebjerke04\myrpg\classes\ClassDataHolder.class
 com\github\ebjerke04\myrpg\quests\Quest.class
 com\github\ebjerke04\myrpg\creation\RpgCreationManager.class
 com\github\ebjerke04\myrpg\quests\QuestNPC$1.class
@@ -10,6 +11,7 @@ com\github\ebjerke04\myrpg\commands\ClassCommand.class
 com\github\ebjerke04\myrpg\quests\QuestDataHolder.class
 com\github\ebjerke04\myrpg\commands\CommandManager.class
 com\github\ebjerke04\myrpg\events\PlayerMessageEvent$1.class
+com\github\ebjerke04\myrpg\classes\ClassSelectionMenu.class
 com\github\ebjerke04\myrpg\players\PlayerManager.class
 com\github\ebjerke04\myrpg\quests\QuestNPC.class
 com\github\ebjerke04\myrpg\commands\BaseCommand.class

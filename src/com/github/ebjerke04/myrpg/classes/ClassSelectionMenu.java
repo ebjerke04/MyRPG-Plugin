@@ -10,6 +10,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.github.ebjerke04.myrpg.data.PlayerDataManager;
+
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 
@@ -29,15 +31,23 @@ public class ClassSelectionMenu {
         createButton.setItemMeta(createMeta);
         inv.setItem(4, createButton);
 
-        // Placeholder for now
-        ItemStack classButton = new ItemStack(Material.BOOK);
-        ItemMeta classMeta = classButton.getItemMeta(); 
-        classMeta.displayName(Component.text("My Class").color(TextColor.color(0xFFD700)));
-        List<Component> classLore = new ArrayList<>();
-        classLore.add(Component.text("Level 1").color(TextColor.color(0x00FFFF)));
-        classMeta.lore(classLore);
-        classButton.setItemMeta(classMeta);
-        inv.setItem(9, classButton);
+        List<ClassDataHolder> classData = PlayerDataManager.get().loadPlayerClassData(player.getUniqueId());
+        for (int i = 0; i < classData.size(); i++) {
+            ClassDataHolder classDataHolder = classData.get(i);
+
+            ItemStack classButton = new ItemStack(Material.BOOK);
+            ItemMeta classMeta = classButton.getItemMeta();
+            classMeta.displayName(Component.text(classDataHolder.type.NAME).color(TextColor.color(0xFFD700)));
+            List<Component> classLore = new ArrayList<>();
+            classLore.add(Component.text("Level " + classDataHolder.level).color(TextColor.color(0x00FFFF)));
+            classLore.add(Component.text("Exp " + classDataHolder.exp).color(TextColor.color(0x00FFFF)));
+            classMeta.lore(classLore);
+            classButton.setItemMeta(classMeta);
+
+            inv.setItem(9 + i, classButton);
+
+            
+        }
 
         player.openInventory(inv);
     }

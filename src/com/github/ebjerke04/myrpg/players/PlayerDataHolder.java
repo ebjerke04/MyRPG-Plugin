@@ -4,7 +4,7 @@ import com.github.ebjerke04.myrpg.classes.Class;
 
 public class PlayerDataHolder {
 
-	private Class activeClass = null;
+	private Class activeClass;
 
 	public int level;
 	

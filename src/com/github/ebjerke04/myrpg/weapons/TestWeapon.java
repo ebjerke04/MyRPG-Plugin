@@ -31,7 +31,7 @@ public class TestWeapon extends BaseEvent {
 		if (item.getType() != Material.STICK) return;
 		
 		Vector direction = player.getEyeLocation().getDirection();
-		List<Entity> nearbyEntities = player.getNearbyEntities(10.0, 10.0, 10.0);
+		List<Entity> nearbyEntities = player.getNearbyEntities(100.0, 100.0, 100.0);
 		
 		for (Entity entity : nearbyEntities) {
 			if (entity instanceof LivingEntity && entity != player) {

@@ -1,9 +1,13 @@
 package com.github.ebjerke04.myrpg.data;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import org.bukkit.configuration.file.FileConfiguration;
-
+import com.github.ebjerke04.myrpg.classes.Class;
+import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.data.leveling.LevelingManager;
 import com.github.ebjerke04.myrpg.players.PlayerDataHolder;
 
@@ -42,12 +46,37 @@ public class PlayerDataManager {
 		return dataHolder;
 	}
 
+	public List<ClassDataHolder> loadPlayerClassData(UUID playerId) {
+		List<ClassDataHolder> classData = new ArrayList<>();
+		String path = "players." + playerId + ".classes";
+
+		Set<String> classes = getPlayerData().getConfigurationSection(path).getKeys(false);
+		for (String className : classes) {
+			ClassDataHolder classDataHolder = new ClassDataHolder();
+			classDataHolder.type = new Class();
+			classDataHolder.level = getPlayerData().getInt(path + "." + className + ".level");
+			classDataHolder.exp = getPlayerData().getInt(path + "." + className + ".exp");
+			classData.add(classDataHolder);
+		}
+		
+		return classData;
+	}
+
 	public void storePlayerData(UUID playerId, PlayerDataHolder playerData) {
 		if (playerData == null) return;
 		
 		getPlayerData().set("players." + playerId + ".level", playerData.level);
 		savePlayerData();
 	}
+
+	/*
+	public void registerPlayer(Player player) {
+		getPlayerData().set("players." + player.getUniqueId() + ".classes.archer1.level", 1);
+		getPlayerData().set("players." + player.getUniqueId() + ".classes.archer1.exp", 0);
+
+		savePlayerData();
+	}
+	*/
 	
 	private FileConfiguration getPlayerData() {
 		return ConfigManager.get().getConfig("player_data");

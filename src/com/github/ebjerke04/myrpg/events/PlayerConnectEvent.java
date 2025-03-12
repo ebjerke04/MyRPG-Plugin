@@ -16,12 +16,14 @@ public class PlayerConnectEvent extends BaseEvent {
 	@EventHandler
 	public void onPlayerConnect(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
-		
+
 		Plugin.getPlayerManager().handlePlayerConnect(player);
 		// TEMP
 		QuestBook.addToPlayerInventory(player);
 
 		if (player.hasPlayedBefore()) {
+			
+		} else {
 			
 		}
 		
