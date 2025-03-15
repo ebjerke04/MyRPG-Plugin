@@ -1,6 +1,8 @@
-D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\classes\Class.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\classes\ClassDataHolder.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\classes\ClassSelectionMenu.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\classes\ClassType.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\classes\RpgClass.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\commands\BaseCommand.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\commands\ClassCommand.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\commands\CommandManager.java

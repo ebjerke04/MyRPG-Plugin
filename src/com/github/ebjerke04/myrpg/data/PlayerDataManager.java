@@ -6,8 +6,8 @@ import java.util.Set;
 import java.util.UUID;
 
 import org.bukkit.configuration.file.FileConfiguration;
-import com.github.ebjerke04.myrpg.classes.Class;
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
+import com.github.ebjerke04.myrpg.classes.ClassType;
 import com.github.ebjerke04.myrpg.data.leveling.LevelingManager;
 import com.github.ebjerke04.myrpg.players.PlayerDataHolder;
 
@@ -53,7 +53,7 @@ public class PlayerDataManager {
 		Set<String> classes = getPlayerData().getConfigurationSection(path).getKeys(false);
 		for (String className : classes) {
 			ClassDataHolder classDataHolder = new ClassDataHolder();
-			classDataHolder.type = new Class();
+			classDataHolder.type = ClassType.ARCHER;
 			classDataHolder.level = getPlayerData().getInt(path + "." + className + ".level");
 			classDataHolder.exp = getPlayerData().getInt(path + "." + className + ".exp");
 			classData.add(classDataHolder);

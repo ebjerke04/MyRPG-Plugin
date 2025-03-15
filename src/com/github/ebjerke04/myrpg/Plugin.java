@@ -2,6 +2,8 @@ package com.github.ebjerke04.myrpg;
 
 import java.util.logging.Level;
 
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.github.ebjerke04.myrpg.commands.CommandManager;
@@ -38,6 +40,11 @@ public class Plugin extends JavaPlugin {
 		RpgCreationManager.init();
 		
 		this.getLogger().log(Level.INFO, "Initialized MyRPG @ Version: 1.0");
+
+		for (Player player : Bukkit.getOnlinePlayers()) {
+			playerManager.handlePlayerConnect(player);
+			this.getLogger().log(Level.INFO, player.displayName() + " was registered with MyRpg");
+		}
 	}
 	
 	@Override

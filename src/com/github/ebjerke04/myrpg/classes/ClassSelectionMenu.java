@@ -17,6 +17,8 @@ import net.kyori.adventure.text.format.TextColor;
 
 public class ClassSelectionMenu {
 
+    public static final int SLOT_START = 9;
+
     public static void openClassSelectionMenu(Player player) {
         Inventory inv = Bukkit.createInventory(null, 18, Component.text("Class Selection")
             .color(TextColor.color(0xFF00FF)));
@@ -37,16 +39,14 @@ public class ClassSelectionMenu {
 
             ItemStack classButton = new ItemStack(Material.BOOK);
             ItemMeta classMeta = classButton.getItemMeta();
-            classMeta.displayName(Component.text(classDataHolder.type.NAME).color(TextColor.color(0xFFD700)));
+            classMeta.displayName(Component.text("CHANGE LATER").color(TextColor.color(0xFFD700)));
             List<Component> classLore = new ArrayList<>();
             classLore.add(Component.text("Level " + classDataHolder.level).color(TextColor.color(0x00FFFF)));
             classLore.add(Component.text("Exp " + classDataHolder.exp).color(TextColor.color(0x00FFFF)));
             classMeta.lore(classLore);
             classButton.setItemMeta(classMeta);
 
-            inv.setItem(9 + i, classButton);
-
-            
+            inv.setItem(SLOT_START + i, classButton);
         }
 
         player.openInventory(inv);

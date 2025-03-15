@@ -1,10 +1,14 @@
 package com.github.ebjerke04.myrpg.players;
 
-import com.github.ebjerke04.myrpg.classes.Class;
+import java.util.logging.Level;
+
+import org.bukkit.Bukkit;
+
+import com.github.ebjerke04.myrpg.classes.RpgClass;
 
 public class PlayerDataHolder {
 
-	private Class activeClass;
+	private RpgClass activeClass;
 
 	public int level;
 	
@@ -12,11 +16,13 @@ public class PlayerDataHolder {
 		this.level = 999;
 	}
 
-	public void setActiveClass(Class activeClass) {
+	public void setActiveClass(RpgClass activeClass) {
 		this.activeClass = activeClass;
+
+		Bukkit.getLogger().log(Level.SEVERE, "TEST WORKS");
 	}
 
-	public Class getActiveClass() {
+	public RpgClass getActiveClass() {
 		return activeClass;
 	}
 	

@@ -1,5 +1,6 @@
 package com.github.ebjerke04.myrpg.events;
 
+import java.util.List;
 import java.util.logging.Level;
 
 import org.bukkit.Bukkit;
@@ -7,9 +8,13 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
-import org.bukkit.event.inventory.InventoryAction;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
+
+import com.github.ebjerke04.myrpg.Plugin;
+import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
+import com.github.ebjerke04.myrpg.classes.ClassSelectionMenu;
+import com.github.ebjerke04.myrpg.data.PlayerDataManager;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
@@ -27,14 +32,6 @@ public class PlayerClickItemEvent extends BaseEvent {
 		if (titleString.equals("Class Selection")) {
 			// Cancel ALL item movement in this inventory
 			event.setCancelled(true);
-			
-			// Prevent any item movement actions
-			if (event.getAction() == InventoryAction.MOVE_TO_OTHER_INVENTORY ||
-				event.getAction() == InventoryAction.COLLECT_TO_CURSOR ||
-				event.getAction() == InventoryAction.HOTBAR_SWAP) {
-				return;
-			}
-			
 			if (event.getCurrentItem() == null) return;
 			
 			ItemStack clickedItem = event.getCurrentItem();
@@ -49,7 +46,14 @@ public class PlayerClickItemEvent extends BaseEvent {
 				// Handle existing class selection
 				String className = clickedItem.getItemMeta().displayName().toString();
 				player.closeInventory();
-				// TODO: Set active class
+				
+				int clickedSlot = event.getSlot();
+				int classIndex = clickedSlot - ClassSelectionMenu.SLOT_START;
+
+				List<ClassDataHolder> classData = PlayerDataManager.get().loadPlayerClassData(player.getUniqueId());
+				ClassDataHolder clickedClassData = classData.get(classIndex);
+
+				Plugin.getPlayerManager().handleClassSelection(player, clickedClassData);
 			}
 		}
 	}
