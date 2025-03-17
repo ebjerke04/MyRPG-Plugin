@@ -15,6 +15,8 @@ import com.github.ebjerke04.myrpg.events.EventManager;
 import com.github.ebjerke04.myrpg.players.PlayerManager;
 import com.github.ebjerke04.myrpg.quests.QuestManager;
 
+import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
+
 public class Plugin extends JavaPlugin {
 	
 	private static Plugin instance;
@@ -41,9 +43,14 @@ public class Plugin extends JavaPlugin {
 		
 		this.getLogger().log(Level.INFO, "Initialized MyRPG @ Version: 1.0");
 
+		// TODO: More refined system of handling a server reload.
+		// Simply calling the handlePlayerConnect function is not the best looking way of handling this.
+		// Good temporary fix to aid in making testing of new features quick and simple.
 		for (Player player : Bukkit.getOnlinePlayers()) {
 			playerManager.handlePlayerConnect(player);
-			this.getLogger().log(Level.INFO, player.displayName() + " was registered with MyRpg");
+			
+			String playerName = PlainTextComponentSerializer.plainText().serialize(player.displayName());
+			this.getLogger().log(Level.INFO, playerName + " was registered with MyRpg");
 		}
 	}
 	

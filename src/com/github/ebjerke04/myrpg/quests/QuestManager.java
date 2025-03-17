@@ -13,12 +13,21 @@ public class QuestManager {
 	List<Quest> quests = new ArrayList<Quest>();
 	
 	public QuestManager() {
-		QuestNPC testNPC = new QuestNPC();
-		testNPC.spawn();
-		
-		npcs.add(testNPC);
-		
+		loadNPCsFromConfig();
 		loadQuestsFromConfig();
+
+		// TODO: Move this spawning of NPCs to somewhere else
+		// Also make sure to despawn NPCs when server shuts down
+		// ^ Important to not have NPCs overlap.
+		for (QuestNPC npc : npcs) {
+			npc.spawn();
+		}
+	}
+
+	private void loadNPCsFromConfig() {
+		for (String npcName : QuestDataManager.get().getQuestNPCNames()) {
+			npcs.add(QuestDataManager.get().createNPC(npcName));
+		}
 	}
 	
 	private void loadQuestsFromConfig() {

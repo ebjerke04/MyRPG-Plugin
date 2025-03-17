@@ -2,11 +2,16 @@ package com.github.ebjerke04.myrpg.data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 
+import com.github.ebjerke04.myrpg.quests.NPCDataHolder;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestDataHolder;
+import com.github.ebjerke04.myrpg.quests.QuestNPC;
 
 public class QuestDataManager {
 	
@@ -40,6 +45,14 @@ public class QuestDataManager {
 	public boolean questExists(String name) {
 		return getQuestData().contains("quests." + name);
 	}
+
+	public List<String> getQuestNPCNames() {
+		if (getQuestData().contains("npcs")) {
+			return new ArrayList<String>(getQuestData().getConfigurationSection("npcs").getKeys(false));
+		}
+
+		return null;
+	}
 	
 	public List<String> getQuestNames() {
 		if (getQuestData().contains("quests")) {
@@ -52,9 +65,30 @@ public class QuestDataManager {
 	public boolean questPublished(String name) {
 		return getQuestData().getBoolean("quests." + name + ".published");
 	}
+
+	public QuestNPC createNPC(String name) {
+		return new QuestNPC(getNPCData(name));
+	}
 	
 	public Quest createQuest(String name) {
 		return new Quest(getQuestData(name));
+	}
+
+	private NPCDataHolder getNPCData(String name) {
+		NPCDataHolder data = new NPCDataHolder();
+
+		data.name = name;
+
+		String path = "npcs." + name + ".spawn";
+		Location location = getQuestData().getLocation(path);
+
+		// TODO: Maybe not throw error, just set to null and dont spawn it later maybe?
+		if (location == null)
+			throw new NullPointerException("NPC location should not be null");
+
+		data.location = location;
+
+		return data;
 	}
 	
 	// ADD CHECK TO MAKE SURE 

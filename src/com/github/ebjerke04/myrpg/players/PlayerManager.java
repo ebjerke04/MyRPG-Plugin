@@ -1,6 +1,7 @@
 package com.github.ebjerke04.myrpg.players;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -8,6 +9,9 @@ import org.bukkit.entity.Player;
 
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
+
+import net.kyori.adventure.text.Component;
+
 import com.github.ebjerke04.myrpg.classes.RpgClass;
 import com.github.ebjerke04.myrpg.classes.types.ArcherClass;
 
@@ -47,8 +51,8 @@ public class PlayerManager {
 		default:
 			throw new IllegalArgumentException("Class type not recognized: " + classData.type.getDisplayName());
 		}
-
-		playerClass.loadUserData(classData);
+		
+		playerClass.setUserData(classData);
 
 		UUID playerId = player.getUniqueId();
 		players.get(playerId).setActiveClass(playerClass);

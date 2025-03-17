@@ -53,9 +53,16 @@ public class PlayerDataManager {
 		Set<String> classes = getPlayerData().getConfigurationSection(path).getKeys(false);
 		for (String className : classes) {
 			ClassDataHolder classDataHolder = new ClassDataHolder();
-			classDataHolder.type = ClassType.ARCHER;
+			
+			ClassType classType = ClassType.fromString(getPlayerData().getString(path + "." + className + ".type"));
+			classDataHolder.type = classType;
+
 			classDataHolder.level = getPlayerData().getInt(path + "." + className + ".level");
 			classDataHolder.exp = getPlayerData().getInt(path + "." + className + ".exp");
+
+			List<String> questsCompleted = getPlayerData().getStringList(path + "." + className + ".quests.completed");
+			classDataHolder.questsCompleted = questsCompleted;
+
 			classData.add(classDataHolder);
 		}
 		

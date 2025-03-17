@@ -23,4 +23,18 @@ public enum ClassType {
         return description;
     }
 
+    public static ClassType fromString(String classType) {
+        if (classType.equals("archer")) {
+            return ARCHER;
+        } else if (classType.equals("warrior")) {
+            return WARRIOR;
+        } else if (classType.equals("mage")) {
+            return MAGE;
+        } else if (classType.equals("assassin")) {
+            return ASSASSIN;
+        }
+
+        return null;
+    }
+
 }

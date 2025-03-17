@@ -1,9 +1,5 @@
 package com.github.ebjerke04.myrpg.players;
 
-import java.util.logging.Level;
-
-import org.bukkit.Bukkit;
-
 import com.github.ebjerke04.myrpg.classes.RpgClass;
 
 public class PlayerDataHolder {
@@ -19,7 +15,9 @@ public class PlayerDataHolder {
 	public void setActiveClass(RpgClass activeClass) {
 		this.activeClass = activeClass;
 
-		Bukkit.getLogger().log(Level.SEVERE, "TEST WORKS");
+		// TODO: Player active class set. Figure out what is next.
+		// Send player to last location they left off at.
+		// Load their saved inventory.
 	}
 
 	public RpgClass getActiveClass() {

@@ -41,7 +41,7 @@ public class PlayerClickItemEvent extends BaseEvent {
 				// Handle create new class button click
 				player.closeInventory();
 				// TODO: Open class creation menu
-				Bukkit.getLogger().log(Level.SEVERE, "Test worked");
+				Bukkit.getLogger().log(Level.SEVERE, "Class creation button clicked");
 			} else if (clickedItem.getType() == Material.BOOK) {
 				// Handle existing class selection
 				String className = clickedItem.getItemMeta().displayName().toString();
@@ -52,7 +52,7 @@ public class PlayerClickItemEvent extends BaseEvent {
 
 				List<ClassDataHolder> classData = PlayerDataManager.get().loadPlayerClassData(player.getUniqueId());
 				ClassDataHolder clickedClassData = classData.get(classIndex);
-
+				
 				Plugin.getPlayerManager().handleClassSelection(player, clickedClassData);
 			}
 		}

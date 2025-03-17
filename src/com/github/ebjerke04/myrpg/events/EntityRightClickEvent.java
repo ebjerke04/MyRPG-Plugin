@@ -21,7 +21,7 @@ public class EntityRightClickEvent extends BaseEvent {
 			Villager villager = (Villager) event.getRightClicked();
 			
 			// TODO: Detect NPCs by UUID
-			QuestNPC questNPC = Plugin.get().getQuestManager().getNPCbyId(villager.getUniqueId());
+			QuestNPC questNPC = Plugin.getQuestManager().getNPCbyId(villager.getUniqueId());
 			if (questNPC != null) {
 				questNPC.rightClicked(player);
 			}
