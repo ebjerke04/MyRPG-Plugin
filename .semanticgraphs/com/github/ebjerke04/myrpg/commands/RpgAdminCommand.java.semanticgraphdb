@@ -1,0 +1,551 @@
+
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaé
+3com.github.ebjerke04.myrpg.commands.RpgAdminCommandCLASSF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (".
+package#com.github.ebjerke04.myrpg.commands"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"†
+declarationStringä<mark class="modifier">public </mark><mark class="modifier">class </mark>RpgAdminCommand<mark class="modifier"> extends </mark>BaseCommand"
+accesspublic*RpgAdminCommand2ú
+Ecom.github.ebjerke04.myrpg.commands.RpgAdminCommand.RpgAdminCommand()DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (2˘
+°com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (2¨
+Ucom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java~ ~("2÷
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)DECLARATIONH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ Ñ(!2≠
+Tcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createBackItem(java.lang.String)DECLARATIONH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaì ì(!2Å
+/com.github.ebjerke04.myrpg.commands.BaseCommandEXTENDF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java% (0√
+Ecom.github.ebjerke04.myrpg.commands.RpgAdminCommand.RpgAdminCommand()CONSTRUCTORF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java ("g
+declarationStringR<mark class="modifier">public </mark><mark class="method">RpgAdminCommand</mark>()*RpgAdminCommand2ù
+Mcom.github.ebjerke04.myrpg.commands.BaseCommand.BaseCommand(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (2ä
+3com.github.ebjerke04.myrpg.commands.RpgAdminCommandRETURN_TYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (ø√
+°com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])METHODF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java ("
+isFinalfalse"¨
+declarationStringñ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">onCommand</mark>(CommandSender sender<mark class="modifier"><mark class="modifier">,</mark></mark> Command command<mark class="modifier"><mark class="modifier">,</mark></mark> String label<mark class="modifier"><mark class="modifier">,</mark></mark> String[] args)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*	onCommand2•
+Ucom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java' '(&2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java( ((%2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java) )(%2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java* *(%2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java1 1( 2±
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java2 2(.2å
+<com.github.ebjerke04.myrpg.creation.RpgCreationManager.get()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java2 2(2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java7 7( 2±
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java8 8(.2å
+<com.github.ebjerke04.myrpg.creation.RpgCreationManager.get()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java8 8(2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java< <( 2•
+Ucom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java> >((2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java? ?('2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java@ @('2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaA A('2§
+Tcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createBackItem(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaB B('2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaH H("2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaJ J()2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaL L()2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaP P('2•
+Ucom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaR R((2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaS S('2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaT T('2Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaU U('2§
+Tcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createBackItem(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaV V('2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java\ \("2±
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java]  ](02å
+<com.github.ebjerke04.myrpg.creation.RpgCreationManager.get()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java] ](2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java^ ^()2É
+3java.lang.String.equalsIgnoreCase(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java` `()2•
+Ucom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaa a()2ê
+@com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestNames()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javac8 c(E2Ü
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javac2 c(52e
+java.util.List.size()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javad, d(02e
+java.util.List.size()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaj& j(*2g
+java.util.List.get(int)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak& k()2°
+Qcom.github.ebjerke04.myrpg.data.QuestDataManager.questPublished(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javam3 m(A2Ü
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javam- m(02Õ
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javap p()2§
+Tcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createBackItem(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javas s((2˙
+©com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!commandCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (2˘
+®com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!senderCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java	 (2˘
+®com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!senderCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (
+2˘
+®com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!senderCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java ("2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java   (2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java! !(
+2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java& &(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java' '(
+2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java( ((
+2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java) )(
+2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java* *(
+2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java/ /(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java1 1(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java1/ 1(32Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java2/ 2(52˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java7 7(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java7. 7(22Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java8/ 8(52˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java< <(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java=	 =(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java> >(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java? ?(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java@ @(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaA A(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaB B(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaG	 G(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaH
+ H(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaJ J(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaL L(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaP P(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaQ	 Q(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaR R(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaS S(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaT T(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaU U(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaV V(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java[	 [(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java\
+ \(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java]1 ](72˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java^ ^(2˜
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!argsCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java` `(2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaa a(2â
+∏com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questNames@99.20:99.30CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javad d(2â
+∏com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questNames@99.20:99.30CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javad! d(+2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javae e(2Ç
+±com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?i@106.16:106.17CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaj j(2â
+∏com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questNames@99.20:99.30CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaj j(%2Ç
+±com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?i@106.16:106.17CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaj. j(/2â
+∏com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questNames@99.20:99.30CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak k(%2Ç
+±com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?i@106.16:106.17CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak* k(+2ä
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questName@107.15:107.24CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javamB m(K2ä
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?published@109.16:109.25CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javan n('2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javap p(2Ç
+±com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?i@106.16:106.17CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javap* p(+2ä
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questName@107.15:107.24CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javap1 p(:2å
+ªcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?description@110.15:110.26CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javap< p(G2Ö
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javas s(2Ú
+ùcom.github.ebjerke04.myrpg.commands.BaseCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])OVERRIDEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (2˛
+®com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!sender	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java( (.2ˇ
+©com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!command	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java8 (?2˝
+ßcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!label	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaH (M2¸
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!args	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaX (\2å
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java
+ (2ê
+∏com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questNames@99.20:99.30DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javac c(2â
+±com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?i@106.16:106.17DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaj j(2ë
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questName@107.15:107.24DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak k(2ë
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?published@109.16:109.25DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javam m(2ì
+ªcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?description@110.15:110.26DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javan n(2^
+booleanRETURN_TYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (è
+¥com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@30.10:30.16VARIABLEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java
+ ("
+typePlayer"
+isFinalfalse"t
+declarationString_<mark class="modifier"> </mark>Player <mark class="class-field">player</mark> = (Player) sender*player2h
+org.bukkit.entity.PlayerTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (	2˘
+®com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!senderCALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java ("¡
+∏com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questNames@99.20:99.30VARIABLEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javac c("
+typeList<String>"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>List<String> <mark class="class-field">questNames</mark> = QuestDataManager.get().getQuestNames()*
+questNames2^
+java.util.ListTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javac c(2i
+java.lang.StringTYPE_ARGUMENTF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javac c(2ê
+@com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestNames()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javac8 c(E2Ü
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javac2 c(5˚
+±com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?i@106.16:106.17VARIABLEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaj j("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2S
+intTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaj j(í	
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questName@107.15:107.24VARIABLEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak k("
+typeString"
+isFinalfalse"y
+declarationStringd<mark class="modifier"> </mark>String <mark class="class-field">questName</mark> = questNames.get(i)*	questName2`
+java.lang.StringTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak k(2g
+java.util.List.get(int)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak& k()2â
+∏com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questNames@99.20:99.30CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak k(%2Ç
+±com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?i@106.16:106.17CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javak* k(+ä	
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?published@109.16:109.25VARIABLEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javam m("
+typeboolean"
+isFinalfalse"∏
+declarationString¢<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">published</mark> = QuestDataManager.get().questPublished(questName)*	published2W
+booleanTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javam m(2°
+Qcom.github.ebjerke04.myrpg.data.QuestDataManager.questPublished(java.lang.String)CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javam3 m(A2Ü
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javam- m(02ä
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?questName@107.15:107.24CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javamB m(K«
+ªcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?description@110.15:110.26VARIABLEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javan n("
+typeString"
+isFinalfalse"ñ
+declarationStringÄ<mark class="modifier"> </mark>String <mark class="class-field">description</mark> = (published) ? "Published" : "Not published"*description2`
+java.lang.StringTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javan n(2ä
+πcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?published@109.16:109.25CALLF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javan n('Ã
+®com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!sender	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java( (."
+typeCommandSender"
+isFinalfalse")
+declarationStringCommandSender sender*sender2p
+ org.bukkit.command.CommandSenderTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java ('Ω
+©com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!command	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java8 (?"
+typeCommand"
+isFinalfalse"$
+declarationStringCommand command*command2j
+org.bukkit.command.CommandTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java0 (7´
+ßcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!label	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaH (M"
+typeString"
+isFinalfalse"!
+declarationStringString label*label2`
+java.lang.StringTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaA (GÆ
+¶com.github.ebjerke04.myrpg.commands.RpgAdminCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!args	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaX (\"
+typeString[]"
+isFinalfalse""
+declarationStringString[] args*args2b
+java.lang.String[]TYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaO (W√
+Ucom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)METHODF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java~ ~(""
+isFinalfalse"~
+declarationStringi<mark class="modifier">private </mark>Component <mark class="method">createTitleItem</mark>(String title)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+type	Component*createTitleItem2≠
+[com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)!titleCALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÄ' Ä(,2º
+jcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)?dashes@127.12:127.18CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÅ	 Å(2ø
+mcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)?titleText@128.12:128.21CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÅ Å( 2º
+jcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)?dashes@127.12:127.18CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÅ) Å(/2∞
+[com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)!title	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java~* ~(/2¡
+jcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)?dashes@127.12:127.18DECLARATIONF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (2∆
+mcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)?titleText@128.12:128.21DECLARATIONH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÄ Ä(2y
+"net.kyori.adventure.text.ComponentRETURN_TYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java~	 ~(Ü
+jcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)?dashes@127.12:127.18VARIABLEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java ("
+type	Component"
+isFinalfalse"§
+declarationStringé<mark class="modifier"> </mark>Component <mark class="class-field">dashes</mark> = Component.text("--------").color(TextColor.color(0x00FF00))*dashes2r
+"net.kyori.adventure.text.ComponentTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java (æ
+mcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)?titleText@128.12:128.21VARIABLEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÄ Ä("
+type	Component"
+isFinalfalse"¢
+declarationStringå<mark class="modifier"> </mark>Component <mark class="class-field">titleText</mark> = Component.text(title).color(TextColor.color(0xFF00FF))*	titleText2t
+"net.kyori.adventure.text.ComponentTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÄ Ä(2≠
+[com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)!titleCALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÄ' Ä(,ﬁ
+[com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createTitleItem(java.lang.String)!title	PARAMETERF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java~* ~(/"
+typeString"
+isFinalfalse"!
+declarationStringString title*title2`
+java.lang.StringTYPEF
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java~# ~()Ÿ/
+}com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)METHODH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ Ñ(!"
+isFinalfalse"à
+declarationStringÚ<mark class="modifier">private </mark>Component <mark class="method">createMenuItem</mark>(<mark class="modifier">int</mark> number<mark class="modifier"><mark class="modifier">,</mark></mark> String clickableText<mark class="modifier"><mark class="modifier">,</mark></mark> String description<mark class="modifier"><mark class="modifier">,</mark></mark> String command)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+type	Component*createMenuItem2q
+java.lang.Integer.toString(int)CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaâ& â(.2È
+ñcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?numberText@136.12:136.22CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaâ â(2◊
+Ñcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!numberCALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaâ/ â(52Á
+îcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?aquaText@133.12:133.20CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaâE â(M2Ó
+õcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?clickableOption@136.24:136.39CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaä ä(2ﬁ
+ãcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!clickableTextCALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaä# ä(02Á
+îcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?goldText@134.12:134.20CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaã ã(2ÿ
+Öcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!commandCALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaç& ç(-2Ó
+õcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?descriptionText@136.41:136.56CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaé é(2‹
+âcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!descriptionCALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaé+ é(62Á
+îcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?aquaText@133.12:133.20CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaé> é(F2È
+ñcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?numberText@136.12:136.22CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaê	 ê(2Ó
+õcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?clickableOption@136.24:136.39CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaê ê(*2Ó
+õcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?descriptionText@136.41:136.56CALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaê3 ê(B2‹
+Ñcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!number	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ& Ñ(,2„
+ãcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!clickableText	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ5 Ñ(B2·
+âcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!description	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑK Ñ(V2›
+Öcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!command	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ_ Ñ(f2Ó
+îcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?aquaText@133.12:133.20DECLARATIONH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÖ Ö(2Ó
+îcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?goldText@134.12:134.20DECLARATIONH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÜ Ü(2
+ñcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?numberText@136.12:136.22DECLARATIONH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà à(2ı
+õcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?clickableOption@136.24:136.39DECLARATIONH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà à('2ı
+õcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?descriptionText@136.41:136.56DECLARATIONH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà) à(82{
+"net.kyori.adventure.text.ComponentRETURN_TYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ	 Ñ(ù
+îcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?aquaText@133.12:133.20VARIABLEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÖ Ö("
+type	TextColor"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>TextColor <mark class="class-field">aquaText</mark> = TextColor.color(0x00FFFF)*aquaText2{
+)net.kyori.adventure.text.format.TextColorTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÖ Ö(ù
+îcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?goldText@134.12:134.20VARIABLEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÜ Ü("
+type	TextColor"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>TextColor <mark class="class-field">goldText</mark> = TextColor.color(0xFFD700)*goldText2{
+)net.kyori.adventure.text.format.TextColorTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÜ Ü(ˇ
+ñcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?numberText@136.12:136.22VARIABLEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà à("
+type	Component"
+isFinalfalse"i
+declarationStringT<mark class="modifier"> </mark>Component <mark class="class-field">numberText</mark>*
+numberText2t
+"net.kyori.adventure.text.ComponentTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà à(é
+õcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?clickableOption@136.24:136.39VARIABLEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà à('"
+type	Component"
+isFinalfalse"n
+declarationStringY<mark class="modifier"> </mark>Component <mark class="class-field">clickableOption</mark>*clickableOption2t
+"net.kyori.adventure.text.ComponentTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà à(é
+õcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)?descriptionText@136.41:136.56VARIABLEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà) à(8"
+type	Component"
+isFinalfalse"n
+declarationStringY<mark class="modifier"> </mark>Component <mark class="class-field">descriptionText</mark>*descriptionText2t
+"net.kyori.adventure.text.ComponentTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaà à(ô
+Ñcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!number	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ& Ñ(,"
+typeint"
+isFinalfalse"=
+declarationString(<mark class="modifier">int</mark> number*number2U
+intTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ" Ñ(%£
+ãcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!clickableText	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ5 Ñ(B"
+typeString"
+isFinalfalse")
+declarationStringString clickableText*clickableText2b
+java.lang.StringTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ. Ñ(4ù
+âcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!description	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑK Ñ(V"
+typeString"
+isFinalfalse"'
+declarationStringString description*description2b
+java.lang.StringTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑD Ñ(Jë
+Öcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createMenuItem(int, java.lang.String, java.lang.String, java.lang.String)!command	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑ_ Ñ(f"
+typeString"
+isFinalfalse"#
+declarationStringString command*command2b
+java.lang.StringTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaÑX Ñ(^˝
+Tcom.github.ebjerke04.myrpg.commands.RpgAdminCommand.createBackItem(java.lang.String)METHODH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaì ì(!"
+isFinalfalse"
+declarationStringj<mark class="modifier">private </mark>Component <mark class="method">createBackItem</mark>(String command)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+type	Component*createBackItem2Æ
+\com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createBackItem(java.lang.String)!commandCALLH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaó& ó(-2≥
+\com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createBackItem(java.lang.String)!command	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaì) ì(02{
+"net.kyori.adventure.text.ComponentRETURN_TYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaì	 ì(Á
+\com.github.ebjerke04.myrpg.commands.RpgAdminCommand.createBackItem(java.lang.String)!command	PARAMETERH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaì) ì(0"
+typeString"
+isFinalfalse"#
+declarationStringString command*command2b
+java.lang.StringTYPEH
+<src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.javaì" ì((

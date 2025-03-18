@@ -1,0 +1,33 @@
+
+8src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java¡
+/com.github.ebjerke04.myrpg.quests.NPCDataHolderCLASSB
+8src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java (",
+package!com.github.ebjerke04.myrpg.quests"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"k
+declarationStringV<mark class="modifier">public </mark><mark class="modifier">class </mark>NPCDataHolder"
+accesspublic*NPCDataHolder2‘
+>com.github.ebjerke04.myrpg.quests.NPCDataHolder?name@6.18:6.22DECLARATIONB
+8src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java (2•
+Bcom.github.ebjerke04.myrpg.quests.NPCDataHolder?location@7.20:7.28DECLARATIONB
+8src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java (¡
+>com.github.ebjerke04.myrpg.quests.NPCDataHolder?name@6.18:6.22VARIABLEB
+8src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java ("
+isFinalfalse"
+typeString"f
+declarationStringQ<mark class="modifier">public </mark>String <mark class="class-field">name</mark>"
+isStaticfalse"
+accesspublic*name2\
+java.lang.StringTYPEB
+8src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java (´
+Bcom.github.ebjerke04.myrpg.quests.NPCDataHolder?location@7.20:7.28VARIABLEB
+8src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java ("
+isFinalfalse"
+typeLocation"l
+declarationStringW<mark class="modifier">public </mark>Location <mark class="class-field">location</mark>"
+isStaticfalse"
+accesspublic*location2_
+org.bukkit.LocationTYPEB
+8src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java (

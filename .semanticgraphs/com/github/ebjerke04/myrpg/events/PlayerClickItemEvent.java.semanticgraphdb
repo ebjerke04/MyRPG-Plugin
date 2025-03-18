@@ -1,0 +1,205 @@
+
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java≈
+6com.github.ebjerke04.myrpg.events.PlayerClickItemEventCLASSI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (!",
+package!com.github.ebjerke04.myrpg.events"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"£
+declarationStringç<mark class="modifier">public </mark><mark class="modifier">class </mark>PlayerClickItemEvent<mark class="modifier"> extends </mark>BaseEvent"
+accesspublic*PlayerClickItemEvent2ß
+Mcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.PlayerClickItemEvent()DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2“
+xcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2Ä
++com.github.ebjerke04.myrpg.events.BaseEventEXTENDI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java* (3À
+Mcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.PlayerClickItemEvent()CONSTRUCTORI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java ("l
+declarationStringW<mark class="modifier">public </mark><mark class="method">PlayerClickItemEvent</mark>()*PlayerClickItemEvent2ä
+7com.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2ê
+6com.github.ebjerke04.myrpg.events.PlayerClickItemEventRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (“>
+xcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)METHODI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java ("
+isFinalfalse"˜
+declarationString·<mark class="annotation">@EventHandler(priority</mark> = EventPriority.HIGH) <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">onPlayerClickItem</mark>(InventoryClickEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*onPlayerClickItem2|
+)java.lang.String.equals(java.lang.Object)CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2ä
+7com.github.ebjerke04.myrpg.data.PlayerDataManager.get()CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java48 4(;2j
+java.util.List.get(int)CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java51 5(42Á
+ìcom.github.ebjerke04.myrpg.players.PlayerManager.handleClassSelection(org.bukkit.entity.Player, com.github.ebjerke04.myrpg.classes.ClassDataHolder)CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java7 7(22á
+4com.github.ebjerke04.myrpg.Plugin.getPlayerManager()CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java7 7(2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java ("2Á
+ìcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?inventoryTitle@29.12:29.26CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.javaJ (X2„
+ècom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?titleString@30.9:30.20CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java! !(2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java" "(2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java$ $( 2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java% %(!2‰
+êcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedItem@36.13:36.24CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java' '(2ﬂ
+ãcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?player@37.10:37.16CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java) )(
+2‰
+êcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedItem@36.13:36.24CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java, ,(2‰
+êcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedItem@36.13:36.24CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java. .("2ﬂ
+ãcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?player@37.10:37.16CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java/ /(
+2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java1 1(2„
+ècom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedSlot@49.8:49.19CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java2 2( 2ﬂ
+ãcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?player@37.10:37.16CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java4R 4(X2‚
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?classData@52.26:52.35CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java5' 5(02‚
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?classIndex@50.8:50.18CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java55 5(?2ﬂ
+ãcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?player@37.10:37.16CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java73 7(92È
+ïcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedClassData@53.20:53.36CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java7; 7(K2÷
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!event	PARAMETERI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java3 (82Ó
+ìcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?inventoryTitle@29.12:29.26DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2Í
+ècom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?titleString@30.9:30.20DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java	 (2Î
+êcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedItem@36.13:36.24DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java$ $(2Ê
+ãcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?player@37.10:37.16DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java%
+ %(2È
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?className@46.11:46.20DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java. .(2Í
+ècom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedSlot@49.8:49.19DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java1 1(2È
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?classIndex@50.8:50.18DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java2 2(2È
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?classData@52.26:52.35DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java4 4(#2
+ïcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedClassData@53.20:53.36DECLARATIONI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java5 5($2^
+voidRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (ı
+ìcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?inventoryTitle@29.12:29.26VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java ("
+type	Component"
+isFinalfalse"á
+declarationStringr<mark class="modifier"> </mark>Component <mark class="class-field">inventoryTitle</mark> = event.getView().title()*inventoryTitle2u
+"net.kyori.adventure.text.ComponentTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java ("ï
+ècom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?titleString@30.9:30.20VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java	 ("
+typeString"
+isFinalfalse"≠
+declarationStringó<mark class="modifier"> </mark>String <mark class="class-field">titleString</mark> = PlainTextComponentSerializer.plainText().serialize(inventoryTitle)*titleString2c
+java.lang.StringTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2Á
+ìcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?inventoryTitle@29.12:29.26CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.javaJ (XÁ
+êcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedItem@36.13:36.24VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java$ $("
+type	ItemStack"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>ItemStack <mark class="class-field">clickedItem</mark> = event.getCurrentItem()*clickedItem2q
+org.bukkit.inventory.ItemStackTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java$ $(2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java$ $( ‘
+ãcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?player@37.10:37.16VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java%
+ %("
+typePlayer"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark>Player <mark class="class-field">player</mark> = (Player) event.getWhoClicked()*player2k
+org.bukkit.entity.PlayerTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java% %(	2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java% %(!˝
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?className@46.11:46.20VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java. .("
+typeString"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark>String <mark class="class-field">className</mark> = clickedItem.getItemMeta().displayName().toString()*	className2c
+java.lang.StringTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java. .(
+2‰
+êcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedItem@36.13:36.24CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java. .("÷
+ècom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedSlot@49.8:49.19VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java1 1("
+typeint"
+isFinalfalse"î
+declarationString<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">clickedSlot</mark> = event.getSlot()*clickedSlot2V
+intTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java1 1(2—
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!eventCALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java1 1(Ç
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?classIndex@50.8:50.18VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java2 2("
+typeint"
+isFinalfalse"∞
+declarationStringö<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">classIndex</mark> = clickedSlot - ClassSelectionMenu.SLOT_START*
+classIndex2V
+intTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java2 2(2„
+ècom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedSlot@49.8:49.19CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java2 2( ¡
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?classData@52.26:52.35VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java4 4(#"
+typeList<ClassDataHolder>"
+isFinalfalse"π
+declarationString£<mark class="modifier"> </mark>List<ClassDataHolder> <mark class="class-field">classData</mark> = PlayerDataManager.get().loadPlayerClassData(player.getUniqueId())*	classData2a
+java.util.ListTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java4 4(2é
+2com.github.ebjerke04.myrpg.classes.ClassDataHolderTYPE_ARGUMENTI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java4	 4(2ä
+7com.github.ebjerke04.myrpg.data.PlayerDataManager.get()CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java48 4(;2ﬂ
+ãcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?player@37.10:37.16CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java4R 4(X¸
+ïcom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?clickedClassData@53.20:53.36VARIABLEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java5 5($"
+typeClassDataHolder"
+isFinalfalse"ë
+declarationString|<mark class="modifier"> </mark>ClassDataHolder <mark class="class-field">clickedClassData</mark> = classData.get(classIndex)*clickedClassData2Ö
+2com.github.ebjerke04.myrpg.classes.ClassDataHolderTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java5 5(2j
+java.util.List.get(int)CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java51 5(42‚
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?classData@52.26:52.35CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java5' 5(02‚
+écom.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)?classIndex@50.8:50.18CALLI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java55 5(?¿
+~com.github.ebjerke04.myrpg.events.PlayerClickItemEvent.onPlayerClickItem(org.bukkit.event.inventory.InventoryClickEvent)!event	PARAMETERI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java3 (8"
+typeInventoryClickEvent"
+isFinalfalse".
+declarationStringInventoryClickEvent event*event2Å
+.org.bukkit.event.inventory.InventoryClickEventTYPEI
+?src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java (2

@@ -13,14 +13,25 @@ public class QuestManager {
 	List<Quest> quests = new ArrayList<Quest>();
 	
 	public QuestManager() {
+		
+	}
+
+	public void init() {
 		loadNPCsFromConfig();
 		loadQuestsFromConfig();
 
-		// TODO: Move this spawning of NPCs to somewhere else
-		// Also make sure to despawn NPCs when server shuts down
-		// ^ Important to not have NPCs overlap.
+		spawnNPCs();
+	}
+
+	private void spawnNPCs() {
 		for (QuestNPC npc : npcs) {
 			npc.spawn();
+		}
+	}
+
+	private void despawnNPCs() {
+		for (QuestNPC npc : npcs) {
+			npc.despawn();
 		}
 	}
 
@@ -35,6 +46,21 @@ public class QuestManager {
 			quests.add(QuestDataManager.get().createQuest(questName));
 		}
 	}
+
+	public void shutdown() {
+		despawnNPCs();
+	}
+
+	public List<Quest> getQuestsForNPC(QuestNPC npc) {
+		List<Quest> npcQuests = new ArrayList<>();
+		for (Quest quest : quests) {
+			if (npc.equals(quest.getStartNPC())) {
+				npcQuests.add(quest);
+			}
+		}
+
+		return npcQuests;
+	}
 	
 	public List<Quest> getQuests() {
 		return quests;
@@ -45,6 +71,14 @@ public class QuestManager {
 			if (npc.getUniqueId().equals(id)) return npc;
 		}
 		
+		return null;
+	}
+
+	public QuestNPC getNPCbyName(String name) {
+		for (QuestNPC npc : npcs) {
+			if (npc.getName().equals(name)) return npc;
+		}
+
 		return null;
 	}
 	

@@ -39,7 +39,7 @@ public class ClassSelectionMenu {
 
             ItemStack classButton = new ItemStack(Material.BOOK);
             ItemMeta classMeta = classButton.getItemMeta();
-            classMeta.displayName(Component.text("CHANGE LATER").color(TextColor.color(0xFFD700)));
+            classMeta.displayName(Component.text(classDataHolder.type.getDisplayName()).color(TextColor.color(0xFFD700)));
             List<Component> classLore = new ArrayList<>();
             classLore.add(Component.text("Level " + classDataHolder.level).color(TextColor.color(0x00FFFF)));
             classLore.add(Component.text("Exp " + classDataHolder.exp).color(TextColor.color(0x00FFFF)));

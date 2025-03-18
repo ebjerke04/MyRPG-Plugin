@@ -14,7 +14,10 @@ import com.github.ebjerke04.myrpg.data.QuestDataManager;
 import com.github.ebjerke04.myrpg.events.EventManager;
 import com.github.ebjerke04.myrpg.players.PlayerManager;
 import com.github.ebjerke04.myrpg.quests.QuestManager;
+import com.github.ebjerke04.myrpg.util.Logging;
 
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 public class Plugin extends JavaPlugin {
@@ -33,6 +36,8 @@ public class Plugin extends JavaPlugin {
 		QuestDataManager.init();
 		
 		questManager = new QuestManager();
+		questManager.init();
+
 		playerManager = new PlayerManager();
 		
 		CommandManager.registerCommands();
@@ -50,12 +55,15 @@ public class Plugin extends JavaPlugin {
 			playerManager.handlePlayerConnect(player);
 			
 			String playerName = PlainTextComponentSerializer.plainText().serialize(player.displayName());
-			this.getLogger().log(Level.INFO, playerName + " was registered with MyRpg");
+			Logging.sendConsole(Component.text(playerName + " has been registered with MyRPG")
+				.color(TextColor.color(0xFF00FF)));
 		}
 	}
 	
 	@Override
 	public void onDisable() {
+		questManager.shutdown();
+
 		PlayerDataManager.get().shutdown();
 		QuestDataManager.get().shutdown();
 		

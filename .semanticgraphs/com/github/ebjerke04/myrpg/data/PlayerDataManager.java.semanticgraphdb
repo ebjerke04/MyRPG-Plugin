@@ -1,0 +1,407 @@
+
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java˘
+1com.github.ebjerke04.myrpg.data.PlayerDataManagerCLASSD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java ("*
+packagecom.github.ebjerke04.myrpg.data"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"o
+declarationStringZ<mark class="modifier">public </mark><mark class="modifier">class </mark>PlayerDataManager"
+accesspublic*PlayerDataManager2ö
+Ecom.github.ebjerke04.myrpg.data.PlayerDataManager.PlayerDataManager()DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java	 (2ç
+8com.github.ebjerke04.myrpg.data.PlayerDataManager.init()DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java (2å
+7com.github.ebjerke04.myrpg.data.PlayerDataManager.get()DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java! ($2ë
+<com.github.ebjerke04.myrpg.data.PlayerDataManager.shutdown()DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java" "(2•
+Pcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java& &('2™
+Ucom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java0 0(12‹
+Ücom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG G(2ñ
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaW W((2ó
+Bcom.github.ebjerke04.myrpg.data.PlayerDataManager.savePlayerData()DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java[ [(2õ
+Fcom.github.ebjerke04.myrpg.data.PlayerDataManager?instance@15.34:15.42DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java" (*2¢
+Mcom.github.ebjerke04.myrpg.data.PlayerDataManager?levelingManager@17.25:17.40DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java ((ù
+
+Ecom.github.ebjerke04.myrpg.data.PlayerDataManager.PlayerDataManager()CONSTRUCTORD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java	 ("j
+declarationStringU<mark class="modifier">private </mark><mark class="method">PlayerDataManager</mark>()*PlayerDataManager2ö
+Lcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java ("2Å
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java (2ö
+Lcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java ("2Å
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java (2ò
+Jcom.github.ebjerke04.myrpg.data.leveling.LevelingManager.LevelingManager()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java ('2õ
+Mcom.github.ebjerke04.myrpg.data.PlayerDataManager?levelingManager@17.25:17.40CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java (2Ü
+1com.github.ebjerke04.myrpg.data.PlayerDataManagerRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java	 (ó
+8com.github.ebjerke04.myrpg.data.PlayerDataManager.init()METHODD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java ("
+isFinalfalse"•
+declarationStringè<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">init</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*init2ì
+Ecom.github.ebjerke04.myrpg.data.PlayerDataManager.PlayerDataManager()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java ("2î
+Fcom.github.ebjerke04.myrpg.data.PlayerDataManager?instance@15.34:15.42CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java (
+2Y
+voidRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java (ß
+7com.github.ebjerke04.myrpg.data.PlayerDataManager.get()METHODD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java! ($"
+isFinalfalse"í
+declarationString}<mark class="modifier">public </mark><mark class="modifier">static </mark>PlayerDataManager <mark class="method">get</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typePlayerDataManager*get2î
+Fcom.github.ebjerke04.myrpg.data.PlayerDataManager?instance@15.34:15.42CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java	 (2Ü
+1com.github.ebjerke04.myrpg.data.PlayerDataManagerRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java ( ‰
+<com.github.ebjerke04.myrpg.data.PlayerDataManager.shutdown()METHODD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java" "("
+isFinalfalse"É
+declarationStringn<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">shutdown</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*shutdown2ê
+Bcom.github.ebjerke04.myrpg.data.PlayerDataManager.savePlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java# #(2Y
+voidRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java" "(ƒ
+Pcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)METHODD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java& &('"
+isFinalfalse"Ñ
+declarationStringo<mark class="modifier">public </mark>PlayerDataHolder <mark class="method">loadPlayerData</mark>(UUID playerId)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typePlayerDataHolder*loadPlayerData2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java* *(2î
+Fcom.github.ebjerke04.myrpg.players.PlayerDataHolder.PlayerDataHolder()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java'$ '(42ß
+Ycom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)!playerIdCALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java*2 *(:2µ
+gcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)?dataHolder@39.19:39.29CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java+ +(2Ø
+acom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)?level@42.6:42.11CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java+ +(2µ
+gcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)?dataHolder@39.19:39.29CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java-	 -(2¨
+Ycom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)!playerId	PARAMETERD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java&- &(52º
+gcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)?dataHolder@39.19:39.29DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java' '(2∂
+acom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)?level@42.6:42.11DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java* *(2à
+3com.github.ebjerke04.myrpg.players.PlayerDataHolderRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java& &(ò
+gcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)?dataHolder@39.19:39.29VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java' '("
+typePlayerDataHolder"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>PlayerDataHolder <mark class="class-field">dataHolder</mark> = new PlayerDataHolder()*
+dataHolder2Å
+3com.github.ebjerke04.myrpg.players.PlayerDataHolderTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java' '(2î
+Fcom.github.ebjerke04.myrpg.players.PlayerDataHolder.PlayerDataHolder()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java'$ '(4ƒ
+acom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)?level@42.6:42.11VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java* *("
+typeint"
+isFinalfalse"Ÿ
+declarationString√<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">level</mark> = getPlayerData().getInt("players." + playerId + ".level"<mark class="modifier">,</mark> 1)*level2Q
+intTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java* *(2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java* *(2ß
+Ycom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)!playerIdCALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java*2 *(:ÿ
+Ycom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerData(java.util.UUID)!playerId	PARAMETERD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java&- &(5"
+typeUUID"
+isFinalfalse""
+declarationStringUUID playerId*playerId2\
+java.util.UUIDTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java&( &(,´7
+Ucom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)METHODD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java0 0(1"
+isFinalfalse"î
+declarationString<mark class="modifier">public </mark>List&lt;ClassDataHolder&gt; <mark class="method">loadPlayerClassData</mark>(UUID playerId)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<ClassDataHolder>*loadPlayerClassData2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java4 4(%2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8. 8(;2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java; ;((2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java< <(&2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java>" >(/2c
+java.util.List.add(E)CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaA A(2m
+java.util.ArrayList.ArrayList()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java1( 1(32í
+Dcom.github.ebjerke04.myrpg.classes.ClassDataHolder.ClassDataHolder()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java6) 6(82¨
+^com.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)!playerIdCALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java2 2(%2≥
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java4@ 4(D2∑
+icom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classes@52.14:52.21CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java5 5(!2≥
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8H 8(L2π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?className@53.14:53.23CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8U 8(^2ø
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classDataHolder@54.19:54.34CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java9 9(2π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classType@56.13:56.22CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java9 9(#2ø
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classDataHolder@54.19:54.34CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java; ;(2≥
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java;2 ;(62π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?className@53.14:53.23CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java;? ;(H2ø
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classDataHolder@54.19:54.34CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java< <(2≥
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java<0 <(42π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?className@53.14:53.23CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java<= <(F2≥
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java>@ >(D2π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?className@53.14:53.23CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java>M >(V2ø
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classDataHolder@54.19:54.34CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java? ?(2ø
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?questsCompleted@62.16:62.31CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java?% ?(42π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classData@49.24:49.33CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaA A(2ø
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classDataHolder@54.19:54.34CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaA A( 2π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classData@49.24:49.33CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaD	 D(2±
+^com.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)!playerId	PARAMETERD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java07 0(?2¿
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classData@49.24:49.33DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java1 1(!2∫
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java2	 2(2æ
+icom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classes@52.14:52.21DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java4 4(2¿
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?className@53.14:53.23DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java5 5(2∆
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classDataHolder@54.19:54.34DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java6 6("2¿
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classType@56.13:56.22DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8 8(2∆
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?questsCompleted@62.16:62.31DECLARATIOND
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java> >(2c
+java.util.ListRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java0 0(2ê
+2com.github.ebjerke04.myrpg.classes.ClassDataHolderRETURN_TYPE_ARGUMENTD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java0 0(›
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classData@49.24:49.33VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java1 1(!"
+typeList<ClassDataHolder>"
+isFinalfalse"à
+declarationStrings<mark class="modifier"> </mark>List<ClassDataHolder> <mark class="class-field">classData</mark> = new ArrayList<>()*	classData2\
+java.util.ListTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java1 1(2â
+2com.github.ebjerke04.myrpg.classes.ClassDataHolderTYPE_ARGUMENTD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java1 1(2m
+java.util.ArrayList.ArrayList()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java1( 1(3ˆ
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java2	 2("
+typeString"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>String <mark class="class-field">path</mark> = "players." + playerId + ".classes"*path2^
+java.lang.StringTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java2 2(2¨
+^com.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)!playerIdCALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java2 2(%¬
+icom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classes@52.14:52.21VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java4 4("
+typeSet<String>"
+isFinalfalse"∆
+declarationString∞<mark class="modifier"> </mark>Set<String> <mark class="class-field">classes</mark> = getPlayerData().getConfigurationSection(path).getKeys(<mark class="modifier">false</mark>)*classes2[
+java.util.SetTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java4 4(2g
+java.lang.StringTYPE_ARGUMENTD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java4 4(2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java4 4(%2≥
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java4@ 4(D±
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?className@53.14:53.23VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java5 5("
+typeString"
+isFinalfalse"e
+declarationStringP<mark class="modifier"> </mark>String <mark class="class-field">className</mark>*	className2^
+java.lang.StringTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java5 5(¶
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classDataHolder@54.19:54.34VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java6 6(""
+typeClassDataHolder"
+isFinalfalse"å
+declarationStringw<mark class="modifier"> </mark>ClassDataHolder <mark class="class-field">classDataHolder</mark> = new ClassDataHolder()*classDataHolder2Ä
+2com.github.ebjerke04.myrpg.classes.ClassDataHolderTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java6 6(2í
+Dcom.github.ebjerke04.myrpg.classes.ClassDataHolder.ClassDataHolder()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java6) 6(8≠
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?classType@56.13:56.22VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8 8("
+type	ClassType"
+isFinalfalse"Ω
+declarationStringß<mark class="modifier"> </mark>ClassType <mark class="class-field">classType</mark> = ClassType.fromString(getPlayerData().getString(path + "." + className + ".type"))*	classType2z
+,com.github.ebjerke04.myrpg.classes.ClassTypeTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8 8(2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8. 8(;2≥
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8H 8(L2π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?className@53.14:53.23CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java8U 8(^ä	
+qcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?questsCompleted@62.16:62.31VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java> >("
+typeList<String>"
+isFinalfalse"¿
+declarationString™<mark class="modifier"> </mark>List<String> <mark class="class-field">questsCompleted</mark> = getPlayerData().getStringList(path + "." + className + ".quests.completed")*questsCompleted2\
+java.util.ListTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java> >(2g
+java.lang.StringTYPE_ARGUMENTD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java> >(2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java>" >(/2≥
+ecom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?path@50.9:50.13CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java>@ >(D2π
+kcom.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)?className@53.14:53.23CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java>M >(V›
+^com.github.ebjerke04.myrpg.data.PlayerDataManager.loadPlayerClassData(java.util.UUID)!playerId	PARAMETERD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java07 0(?"
+typeUUID"
+isFinalfalse""
+declarationStringUUID playerId*playerId2\
+java.util.UUIDTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java02 0(6´
+Ücom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)METHODD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG G("
+isFinalfalse"Ò
+declarationString€<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">storePlayerData</mark>(UUID playerId<mark class="modifier"><mark class="modifier">,</mark></mark> PlayerDataHolder playerData)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*storePlayerData2è
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaJ J(2ê
+Bcom.github.ebjerke04.myrpg.data.PlayerDataManager.savePlayerData()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaK K(2‡
+ëcom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)!playerDataCALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaH H(2ﬁ
+ècom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)!playerIdCALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaJ# J(+2‡
+ëcom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)!playerDataCALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaJ8 J(B2„
+ècom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)!playerId	PARAMETERD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG" G(*2Â
+ëcom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)!playerData	PARAMETERD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG= G(G2Y
+voidRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG G(è
+ècom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)!playerId	PARAMETERD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG" G(*"
+typeUUID"
+isFinalfalse""
+declarationStringUUID playerId*playerId2\
+java.util.UUIDTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG G(!”
+ëcom.github.ebjerke04.myrpg.data.PlayerDataManager.storePlayerData(java.util.UUID, com.github.ebjerke04.myrpg.players.PlayerDataHolder)!playerData	PARAMETERD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG= G(G"
+typePlayerDataHolder"
+isFinalfalse"0
+declarationStringPlayerDataHolder playerData*
+playerData2Å
+3com.github.ebjerke04.myrpg.players.PlayerDataHolderTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaG, G(<ß
+Acom.github.ebjerke04.myrpg.data.PlayerDataManager.getPlayerData()METHODD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaW W(("
+isFinalfalse"x
+declarationStringc<mark class="modifier">private </mark>FileConfiguration <mark class="method">getPlayerData</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeFileConfiguration*getPlayerData2ó
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaX X(&2Å
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaX X(2Ñ
+/org.bukkit.configuration.file.FileConfigurationRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.javaW	 W(Ñ
+Bcom.github.ebjerke04.myrpg.data.PlayerDataManager.savePlayerData()METHODD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java[ [("
+isFinalfalse"ä
+declarationStringu<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">savePlayerData</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*savePlayerData2ò
+Jcom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java\ \( 2Å
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLD
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java\ \(2Y
+voidRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java[	 [(î
+Fcom.github.ebjerke04.myrpg.data.PlayerDataManager?instance@15.34:15.42VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java" (*"
+isFinalfalse"
+typePlayerDataManager"ú
+declarationStringÜ<mark class="modifier">private </mark><mark class="modifier">static </mark>PlayerDataManager <mark class="class-field">instance</mark>"
+isStatictrue"
+accessprivate*instance2
+1com.github.ebjerke04.myrpg.data.PlayerDataManagerTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java (!á
+Mcom.github.ebjerke04.myrpg.data.PlayerDataManager?levelingManager@17.25:17.40VARIABLED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java (("
+isFinalfalse"
+typeLevelingManager"{
+declarationStringf<mark class="modifier">private </mark>LevelingManager <mark class="class-field">levelingManager</mark>"
+isStaticfalse"
+accessprivate*levelingManager2Ü
+8com.github.ebjerke04.myrpg.data.leveling.LevelingManagerTYPED
+:src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java	 (

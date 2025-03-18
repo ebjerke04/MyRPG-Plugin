@@ -1,0 +1,165 @@
+
+5src\com\github\ebjerke04\myrpg\classes\ClassType.javaÒ
+,com.github.ebjerke04.myrpg.classes.ClassTypeENUM?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ("A
+declarationString,<mark class="modifier">enum </mark>ClassType*	ClassType2™
+Zcom.github.ebjerke04.myrpg.classes.ClassType.ClassType(java.lang.String, java.lang.String)DECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2ç
+=com.github.ebjerke04.myrpg.classes.ClassType.getDisplayName()DECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ( 2ç
+=com.github.ebjerke04.myrpg.classes.ClassType.getDescription()DECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ( 2ô
+Icom.github.ebjerke04.myrpg.classes.ClassType.fromString(java.lang.String)DECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (&2í
+Bcom.github.ebjerke04.myrpg.classes.ClassType?displayName@9.25:9.36DECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java	 	($2î
+Dcom.github.ebjerke04.myrpg.classes.ClassType?description@10.25:10.36DECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java
+ 
+($2É
+3com.github.ebjerke04.myrpg.classes.ClassType?ARCHERDECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (
+2Ñ
+4com.github.ebjerke04.myrpg.classes.ClassType?WARRIORDECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2Å
+1com.github.ebjerke04.myrpg.classes.ClassType?MAGEDECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2Ö
+5com.github.ebjerke04.myrpg.classes.ClassType?ASSASSINDECLARATION?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (ì
+3com.github.ebjerke04.myrpg.classes.ClassType?ARCHERVALUE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (
+"
+enumtrue*ARCHERï
+4com.github.ebjerke04.myrpg.classes.ClassType?WARRIORVALUE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ("
+enumtrue*WARRIORè
+1com.github.ebjerke04.myrpg.classes.ClassType?MAGEVALUE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ("
+enumtrue*MAGEó
+5com.github.ebjerke04.myrpg.classes.ClassType?ASSASSINVALUE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ("
+enumtrue*ASSASSIN‰
+Zcom.github.ebjerke04.myrpg.classes.ClassType.ClassType(java.lang.String, java.lang.String)CONSTRUCTOR?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ("æ
+declarationString®<mark class="modifier"> </mark><mark class="method">ClassType</mark>(String displayName<mark class="modifier"><mark class="modifier">,</mark></mark> String description)*	ClassType2Ø
+fcom.github.ebjerke04.myrpg.classes.ClassType.ClassType(java.lang.String, java.lang.String)!displayNameCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (&2Ø
+fcom.github.ebjerke04.myrpg.classes.ClassType.ClassType(java.lang.String, java.lang.String)!descriptionCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (&2ã
+Bcom.github.ebjerke04.myrpg.classes.ClassType?displayName@9.25:9.36CALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2ç
+Dcom.github.ebjerke04.myrpg.classes.ClassType?description@10.25:10.36CALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2¥
+fcom.github.ebjerke04.myrpg.classes.ClassType.ClassType(java.lang.String, java.lang.String)!displayName	PARAMETER?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ( 2¥
+fcom.github.ebjerke04.myrpg.classes.ClassType.ClassType(java.lang.String, java.lang.String)!description	PARAMETER?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java) (42|
+,com.github.ebjerke04.myrpg.classes.ClassTypeRETURN_TYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (Á
+fcom.github.ebjerke04.myrpg.classes.ClassType.ClassType(java.lang.String, java.lang.String)!displayName	PARAMETER?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ( "
+typeString"
+isFinalfalse"'
+declarationStringString displayName*displayName2Y
+java.lang.StringTYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (Á
+fcom.github.ebjerke04.myrpg.classes.ClassType.ClassType(java.lang.String, java.lang.String)!description	PARAMETER?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java) (4"
+typeString"
+isFinalfalse"'
+declarationStringString description*description2Y
+java.lang.StringTYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java" ((”
+=com.github.ebjerke04.myrpg.classes.ClassType.getDisplayName()METHOD?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ( "
+isFinalfalse"m
+declarationStringX<mark class="modifier">public </mark>String <mark class="method">getDisplayName</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getDisplayName2ã
+Bcom.github.ebjerke04.myrpg.classes.ClassType?displayName@9.25:9.36CALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2`
+java.lang.StringRETURN_TYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (’
+=com.github.ebjerke04.myrpg.classes.ClassType.getDescription()METHOD?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java ( "
+isFinalfalse"m
+declarationStringX<mark class="modifier">public </mark>String <mark class="method">getDescription</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*getDescription2ç
+Dcom.github.ebjerke04.myrpg.classes.ClassType?description@10.25:10.36CALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2`
+java.lang.StringRETURN_TYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (ä
+Icom.github.ebjerke04.myrpg.classes.ClassType.fromString(java.lang.String)METHOD?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (&"
+isFinalfalse"¢
+declarationStringå<mark class="modifier">public </mark><mark class="modifier">static </mark>ClassType <mark class="method">fromString</mark>(String classType)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+type	ClassType*
+fromString2r
+)java.lang.String.equals(java.lang.Object)CALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2r
+)java.lang.String.equals(java.lang.Object)CALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (#2r
+)java.lang.String.equals(java.lang.Object)CALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (#2r
+)java.lang.String.equals(java.lang.Object)CALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java   (#2ú
+Scom.github.ebjerke04.myrpg.classes.ClassType.fromString(java.lang.String)!classTypeCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2|
+3com.github.ebjerke04.myrpg.classes.ClassType?ARCHERCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2ú
+Scom.github.ebjerke04.myrpg.classes.ClassType.fromString(java.lang.String)!classTypeCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2}
+4com.github.ebjerke04.myrpg.classes.ClassType?WARRIORCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2ú
+Scom.github.ebjerke04.myrpg.classes.ClassType.fromString(java.lang.String)!classTypeCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2z
+1com.github.ebjerke04.myrpg.classes.ClassType?MAGECALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (2ú
+Scom.github.ebjerke04.myrpg.classes.ClassType.fromString(java.lang.String)!classTypeCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java   (2~
+5com.github.ebjerke04.myrpg.classes.ClassType?ASSASSINCALL?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java! !(2°
+Scom.github.ebjerke04.myrpg.classes.ClassType.fromString(java.lang.String)!classType	PARAMETER?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java. (72|
+,com.github.ebjerke04.myrpg.classes.ClassTypeRETURN_TYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java (–
+Scom.github.ebjerke04.myrpg.classes.ClassType.fromString(java.lang.String)!classType	PARAMETER?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java. (7"
+typeString"
+isFinalfalse"%
+declarationStringString classType*	classType2Y
+java.lang.StringTYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java' (-–
+Bcom.github.ebjerke04.myrpg.classes.ClassType?displayName@9.25:9.36VALUE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java	 	($"
+isFinaltrue"
+typeString"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">displayName</mark>"
+isStaticfalse"
+accessprivate*displayName2Y
+java.lang.StringTYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java	 	(“
+Dcom.github.ebjerke04.myrpg.classes.ClassType?description@10.25:10.36VALUE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java
+ 
+($"
+isFinaltrue"
+typeString"í
+declarationString}<mark class="modifier">private </mark><mark class="modifier">final </mark>String <mark class="class-field">description</mark>"
+isStaticfalse"
+accessprivate*description2Y
+java.lang.StringTYPE?
+5src\com\github\ebjerke04\myrpg\classes\ClassType.java
+ 
+(

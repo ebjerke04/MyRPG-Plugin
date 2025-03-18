@@ -3,7 +3,6 @@ package com.github.ebjerke04.myrpg.commands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-
 import com.github.ebjerke04.myrpg.classes.ClassSelectionMenu;
 
 public class ClassCommand extends BaseCommand {

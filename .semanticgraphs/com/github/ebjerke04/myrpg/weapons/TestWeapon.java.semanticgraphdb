@@ -1,0 +1,167 @@
+
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java„
+-com.github.ebjerke04.myrpg.weapons.TestWeaponCLASS@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java ("-
+package"com.github.ebjerke04.myrpg.weapons"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"ô
+declarationStringÉ<mark class="modifier">public </mark><mark class="modifier">class </mark>TestWeapon<mark class="modifier"> extends </mark>BaseEvent"
+accesspublic*
+TestWeapon2ã
+:com.github.ebjerke04.myrpg.weapons.TestWeapon.TestWeapon()DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2ª
+jcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2w
++com.github.ebjerke04.myrpg.events.BaseEventEXTEND@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java  ()ˇ
+:com.github.ebjerke04.myrpg.weapons.TestWeapon.TestWeapon()CONSTRUCTOR@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java ("b
+declarationStringM<mark class="modifier">public </mark><mark class="method">TestWeapon</mark>()*
+TestWeapon2Å
+7com.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2~
+-com.github.ebjerke04.myrpg.weapons.TestWeaponRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (•1
+jcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)METHOD@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java ("
+isFinalfalse"¯
+declarationString‚<mark class="annotation">@EventHandler(priority</mark> = EventPriority.HIGHEST) <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">onPlayerUseWand</mark>(PlayerInteractEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*onPlayerUseWand2∫
+pcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)!eventCALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2∫
+pcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)!eventCALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java4 (92∫
+pcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)!eventCALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2≈
+{com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?item@29.12:29.16CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (
+2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java   (2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java!  !(&2–
+Öcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?nearbyEntities@33.15:33.29CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java# #(%2«
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entity@35.14:35.20CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java$ $(2«
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entity@35.14:35.20CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java$) $(/2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java$3 $(92«
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entity@35.14:35.20CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java%) %(/2«
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entity@35.14:35.20CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java' '( 2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java'C '(I2…
+com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?direction@32.9:32.18CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java( ((2Œ
+Écom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entityVector@39.11:39.23CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java( (("2«
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?target@37.17:37.23CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java) )(2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java) )( 2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java* *(2«
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?target@37.17:37.23CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java*% *(+2ø
+pcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)!event	PARAMETER@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java1 (62Õ
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java	 (2Ã
+{com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?item@29.12:29.16DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2–
+com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?direction@32.9:32.18DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java 	  (2◊
+Öcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?nearbyEntities@33.15:33.29DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java! !(2Œ
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entity@35.14:35.20DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java# #(2Œ
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?target@37.17:37.23DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java% %(2’
+Écom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entityVector@39.11:39.23DECLARATION@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java' '(2U
+voidRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (ç
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15VARIABLE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java	 ("
+typePlayer"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>Player <mark class="class-field">player</mark> = event.getPlayer()*player2b
+org.bukkit.entity.PlayerTYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2∫
+pcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)!eventCALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (π
+{com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?item@29.12:29.16VARIABLE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java ("
+type	ItemStack"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>ItemStack <mark class="class-field">item</mark> = player.getInventory().getItemInMainHand()*item2h
+org.bukkit.inventory.ItemStackTYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (∂
+com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?direction@32.9:32.18VARIABLE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java 	  ("
+typeVector"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>Vector <mark class="class-field">direction</mark> = player.getEyeLocation().getDirection()*	direction2`
+org.bukkit.util.VectorTYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java   (2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java   (¿
+Öcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?nearbyEntities@33.15:33.29VARIABLE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java! !("
+typeList<Entity>"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>List<Entity> <mark class="class-field">nearbyEntities</mark> = player.getNearbyEntities(100.0, 100.0, 100.0)*nearbyEntities2X
+java.util.ListTYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java! !(2k
+org.bukkit.entity.EntityTYPE_ARGUMENT@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java! !(2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java!  !(&Ω
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entity@35.14:35.20VARIABLE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java# #("
+typeEntity"
+isFinalfalse"b
+declarationStringM<mark class="modifier"> </mark>Entity <mark class="class-field">entity</mark>*entity2b
+org.bukkit.entity.EntityTYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java# #(≤
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?target@37.17:37.23VARIABLE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java% %("
+typeLivingEntity"
+isFinalfalse"Ä
+declarationStringk<mark class="modifier"> </mark>LivingEntity <mark class="class-field">target</mark> = (LivingEntity) entity*target2h
+org.bukkit.entity.LivingEntityTYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java% %(2«
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entity@35.14:35.20CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java%) %(/æ
+Écom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entityVector@39.11:39.23VARIABLE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java' '("
+typeVector"
+isFinalfalse"ƒ
+declarationStringÆ<mark class="modifier"> </mark>Vector <mark class="class-field">entityVector</mark> = entity.getLocation().toVector().subtract(player.getEyeLocation().toVector()).normalize()*entityVector2`
+org.bukkit.util.VectorTYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java' '(
+2«
+}com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?entity@35.14:35.20CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java' '( 2∆
+|com.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)?player@27.9:27.15CALL@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java'C '(Iú
+pcom.github.ebjerke04.myrpg.weapons.TestWeapon.onPlayerUseWand(org.bukkit.event.player.PlayerInteractEvent)!event	PARAMETER@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java1 (6"
+typePlayerInteractEvent"
+isFinalfalse".
+declarationStringPlayerInteractEvent event*event2u
++org.bukkit.event.player.PlayerInteractEventTYPE@
+6src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java (0

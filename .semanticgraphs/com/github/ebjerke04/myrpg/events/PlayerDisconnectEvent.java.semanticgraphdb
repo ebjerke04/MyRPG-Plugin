@@ -1,0 +1,69 @@
+
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java…
+7com.github.ebjerke04.myrpg.events.PlayerDisconnectEventCLASSJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java ("",
+package!com.github.ebjerke04.myrpg.events"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"§
+declarationStringé<mark class="modifier">public </mark><mark class="modifier">class </mark>PlayerDisconnectEvent<mark class="modifier"> extends </mark>BaseEvent"
+accesspublic*PlayerDisconnectEvent2™
+Ocom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.PlayerDisconnectEvent()DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java
+ 
+( 2Œ
+scom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java ("2Å
++com.github.ebjerke04.myrpg.events.BaseEventEXTENDJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java+ (4”
+Ocom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.PlayerDisconnectEvent()CONSTRUCTORJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java
+ 
+( "m
+declarationStringX<mark class="modifier">public </mark><mark class="method">PlayerDisconnectEvent</mark>()*PlayerDisconnectEvent2ã
+7com.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java (2í
+7com.github.ebjerke04.myrpg.events.PlayerDisconnectEventRETURN_TYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java
+ 
+( õ
+scom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)METHODJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java (""
+isFinalfalse"’
+declarationStringø<mark class="annotation">@EventHandler</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">onPlayerDisconnect</mark>(PlayerQuitEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*onPlayerDisconnect2µ
+acom.github.ebjerke04.myrpg.players.PlayerManager.handlePlayerDisconnect(org.bukkit.entity.Player)CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java" (82à
+4com.github.ebjerke04.myrpg.Plugin.getPlayerManager()CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java (2Õ
+ycom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java (2€
+Ücom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)?player@16.15:16.21CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java9 (?2“
+ycom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)!event	PARAMETERJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java3 (82‚
+Ücom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)?player@16.15:16.21DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java (2_
+voidRETURN_TYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java (ø
+Ücom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)?player@16.15:16.21VARIABLEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java ("
+typePlayer"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>Player <mark class="class-field">player</mark> = event.getPlayer()*player2l
+org.bukkit.entity.PlayerTYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java (2Õ
+ycom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java (≠
+ycom.github.ebjerke04.myrpg.events.PlayerDisconnectEvent.onPlayerDisconnect(org.bukkit.event.player.PlayerQuitEvent)!event	PARAMETERJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java3 (8"
+typePlayerQuitEvent"
+isFinalfalse"*
+declarationStringPlayerQuitEvent event*event2{
+'org.bukkit.event.player.PlayerQuitEventTYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java# (2

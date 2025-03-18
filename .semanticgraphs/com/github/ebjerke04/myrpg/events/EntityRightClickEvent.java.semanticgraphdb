@@ -1,0 +1,103 @@
+
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java”
+7com.github.ebjerke04.myrpg.events.EntityRightClickEventCLASSJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java
+ 
+("",
+package!com.github.ebjerke04.myrpg.events"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"§
+declarationStringé<mark class="modifier">public </mark><mark class="modifier">class </mark>EntityRightClickEvent<mark class="modifier"> extends </mark>BaseEvent"
+accesspublic*EntityRightClickEvent2™
+Ocom.github.ebjerke04.myrpg.events.EntityRightClickEvent.EntityRightClickEvent()DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2ÿ
+}com.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2Å
++com.github.ebjerke04.myrpg.events.BaseEventEXTENDJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java
++ 
+(4”
+Ocom.github.ebjerke04.myrpg.events.EntityRightClickEvent.EntityRightClickEvent()CONSTRUCTORJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java ("m
+declarationStringX<mark class="modifier">public </mark><mark class="method">EntityRightClickEvent</mark>()*EntityRightClickEvent2ã
+7com.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2í
+7com.github.ebjerke04.myrpg.events.EntityRightClickEventRETURN_TYPEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (û
+}com.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)METHODJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java ("
+isFinalfalse"ﬂ
+declarationString…<mark class="annotation">@EventHandler</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">onEntityRightClick</mark>(PlayerInteractEntityEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*onEntityRightClick2á
+3com.github.ebjerke04.myrpg.Plugin.getQuestManager()CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (-2•
+Qcom.github.ebjerke04.myrpg.quests.QuestNPC.rightClicked(org.bukkit.entity.Player)CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2ÿ
+Écom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2ÿ
+Écom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2ÿ
+Écom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java" ('2Á
+ícom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?villager@20.12:20.20CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java; (C2Á
+ícom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?questNPC@23.12:23.20CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2Á
+ícom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?questNPC@23.12:23.20CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2Â
+êcom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?player@19.10:19.16CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java ( 2›
+Écom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)!event	PARAMETERJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java: (?2Ï
+êcom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?player@19.10:19.16DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java
+ (2Ó
+ícom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?villager@20.12:20.20DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2Ó
+ícom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?questNPC@23.12:23.20DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2_
+voidRETURN_TYPEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (‘
+êcom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?player@19.10:19.16VARIABLEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java
+ ("
+typePlayer"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>Player <mark class="class-field">player</mark> = event.getPlayer()*player2l
+org.bukkit.entity.PlayerTYPEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (	2ÿ
+Écom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (Ú
+ícom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?villager@20.12:20.20VARIABLEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java ("
+typeVillager"
+isFinalfalse"ã
+declarationStringv<mark class="modifier"> </mark>Villager <mark class="class-field">villager</mark> = (Villager) event.getRightClicked()*villager2n
+org.bukkit.entity.VillagerTYPEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2ÿ
+Écom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java" ('µ
+ícom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?questNPC@23.12:23.20VARIABLEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java ("
+typeQuestNPC"
+isFinalfalse"•
+declarationStringè<mark class="modifier"> </mark>QuestNPC <mark class="class-field">questNPC</mark> = Plugin.getQuestManager().getNPCbyId(villager.getUniqueId())*questNPC2~
+*com.github.ebjerke04.myrpg.quests.QuestNPCTYPEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (2á
+3com.github.ebjerke04.myrpg.Plugin.getQuestManager()CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java (-2Á
+ícom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)?villager@20.12:20.20CALLJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java; (C◊
+Écom.github.ebjerke04.myrpg.events.EntityRightClickEvent.onEntityRightClick(org.bukkit.event.player.PlayerInteractEntityEvent)!event	PARAMETERJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java: (?"!
+typePlayerInteractEntityEvent"
+isFinalfalse"4
+declarationStringPlayerInteractEntityEvent event*event2Ö
+1org.bukkit.event.player.PlayerInteractEntityEventTYPEJ
+@src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java  (9

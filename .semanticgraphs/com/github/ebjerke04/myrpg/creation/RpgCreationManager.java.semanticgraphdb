@@ -1,0 +1,421 @@
+
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java‹
+6com.github.ebjerke04.myrpg.creation.RpgCreationManagerCLASSI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (".
+package#com.github.ebjerke04.myrpg.creation"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"p
+declarationString[<mark class="modifier">public </mark><mark class="modifier">class </mark>RpgCreationManager"
+accesspublic*RpgCreationManager2•
+Kcom.github.ebjerke04.myrpg.creation.RpgCreationManager.RpgCreationManager()DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java	 (2ó
+=com.github.ebjerke04.myrpg.creation.RpgCreationManager.init()DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (2ª
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (2Ã
+rcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java1 1(2º
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaY Y()2ª
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java_ _(2ª
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaw w(2ò
+<com.github.ebjerke04.myrpg.creation.RpgCreationManager.get()DECLARATIONK
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaÖ" Ö(%2ù
+Acom.github.ebjerke04.myrpg.creation.RpgCreationManager.shutdown()DECLARATIONK
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaâ â(2•
+Kcom.github.ebjerke04.myrpg.creation.RpgCreationManager?instance@17.35:17.43DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java# (+2¨
+Rcom.github.ebjerke04.myrpg.creation.RpgCreationManager?itemsInCreation@20.36:20.51DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java$ (32Æ
+Tcom.github.ebjerke04.myrpg.creation.RpgCreationManager?rpgItemNameBuffer@21.27:21.44DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (,π
+Kcom.github.ebjerke04.myrpg.creation.RpgCreationManager.RpgCreationManager()CONSTRUCTORI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java	 ("k
+declarationStringV<mark class="modifier">private </mark><mark class="method">RpgCreationManager</mark>()*RpgCreationManager2ê
+6com.github.ebjerke04.myrpg.creation.RpgCreationManagerRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java	 (ª
+=com.github.ebjerke04.myrpg.creation.RpgCreationManager.init()METHODI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java ("
+isFinalfalse"•
+declarationStringè<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">init</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*init2û
+Kcom.github.ebjerke04.myrpg.creation.RpgCreationManager.RpgCreationManager()CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (#2û
+Kcom.github.ebjerke04.myrpg.creation.RpgCreationManager?instance@17.35:17.43CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (
+2^
+voidRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (û
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)METHODI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java ("
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">beginCreateQuest</mark>(Player player)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*beginCreateQuest2µ
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java   (2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java   (2•
+Rcom.github.ebjerke04.myrpg.creation.RpgCreationManager?itemsInCreation@20.36:20.51CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java! !(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java! !(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java# #(	2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java) )(	2Õ
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)?cancelButton@37.13:37.25CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java*. *(:2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java, ,(	2¿
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java% (+2‘
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)?cancelButton@37.13:37.25DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java% %(2^
+voidRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (¶
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)?cancelButton@37.13:37.25VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java% %("
+type	Component"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark>Component <mark class="class-field">cancelButton</mark> = Component.text("here").color(TextColor.color(0xFF0000)).hoverEvent(HoverEvent.showText(Component.text("or type /rpgadmin cancel"))).clickEvent(ClickEvent.runCommand("/rpgadmin cancel"))*cancelButton2u
+"net.kyori.adventure.text.ComponentTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java% %(˚
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.beginCreateQuest(org.bukkit.entity.Player)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java% (+"
+typePlayer"
+isFinalfalse""
+declarationStringPlayer player*player2k
+org.bukkit.entity.PlayerTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java ($Ì.
+rcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)METHODI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java1 1("
+isFinalfalse"·
+declarationStringÀ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">submitQuestName</mark>(Player player<mark class="modifier"><mark class="modifier">,</mark></mark> String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*submitQuestName2µ
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java2 2(2°
+Ncom.github.ebjerke04.myrpg.data.QuestDataManager.questExists(java.lang.String)CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java6 6()2â
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java6 6(2Ã
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java2 2(2 
+wcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!nameCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java3( 3(,2 
+wcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!nameCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java6* 6(.2Ã
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java7 7(
+2‹
+àcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?questName@51.13:51.22CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java7Y 7(b2Ã
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java= =(
+2ﬂ
+ãcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?cancelButton@57.14:57.26CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java>/ >(;2•
+Rcom.github.ebjerke04.myrpg.creation.RpgCreationManager?itemsInCreation@20.36:20.51CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaC C(2Ã
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaC C(!2ß
+Tcom.github.ebjerke04.myrpg.creation.RpgCreationManager?rpgItemNameBuffer@21.27:21.44CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaD D(2Ã
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaD D(2 
+wcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!nameCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaD/ D(32Ã
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaF F(	2‹
+àcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?questName@51.13:51.22CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaH H(2Ã
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaT T(	2‡
+åcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?confirmButton@76.13:76.26CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaT T(#2ﬂ
+ãcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?cancelButton@80.13:80.25CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaU. U(:2—
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java1$ 1(*2œ
+wcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!name	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java13 1(72„
+àcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?questName@51.13:51.22DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java3 3(2Ê
+ãcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?cancelButton@57.14:57.26DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java9 9(2Á
+åcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?confirmButton@76.13:76.26DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaL L(2Ê
+ãcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?cancelButton@80.13:80.25DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaP P(2^
+voidRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java1 1(¯
+àcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?questName@51.13:51.22VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java3 3("
+type	Component"
+isFinalfalse"°
+declarationStringã<mark class="modifier"> </mark>Component <mark class="class-field">questName</mark> = Component.text(name).color(TextColor.color(0xFFD700))*	questName2u
+"net.kyori.adventure.text.ComponentTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java3 3(2 
+wcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!nameCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java3( 3(,∏
+ãcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?cancelButton@57.14:57.26VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java9 9("
+type	Component"
+isFinalfalse"®
+declarationStringí<mark class="modifier"> </mark>Component <mark class="class-field">cancelButton</mark> = Component.text("here").color(TextColor.color(0xFF0000)).hoverEvent(HoverEvent.showText(Component.text("or type /rpgadmin cancel"))).clickEvent(ClickEvent.runCommand("/rpgadmin cancel"))*cancelButton2u
+"net.kyori.adventure.text.ComponentTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java9 9(¿
+åcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?confirmButton@76.13:76.26VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaL L("
+type	Component"
+isFinalfalse"Æ
+declarationStringò<mark class="modifier"> </mark>Component <mark class="class-field">confirmButton</mark> = Component.text("Confirm").color(TextColor.color(0x00FF00)).hoverEvent(HoverEvent.showText(Component.text("or type /rpgadmin confirm"))).clickEvent(ClickEvent.runCommand("/rpgadmin confirm"))*confirmButton2u
+"net.kyori.adventure.text.ComponentTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaL L(π
+ãcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)?cancelButton@80.13:80.25VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaP P("
+type	Component"
+isFinalfalse"©
+declarationStringì<mark class="modifier"> </mark>Component <mark class="class-field">cancelButton</mark> = Component.text("Abort").color(TextColor.color(0xFF0000)).hoverEvent(HoverEvent.showText(Component.text("or type /rpgadmin cancel"))).clickEvent(ClickEvent.runCommand("/rpgadmin cancel"))*cancelButton2u
+"net.kyori.adventure.text.ComponentTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaP P(å
+ycom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java1$ 1(*"
+typePlayer"
+isFinalfalse""
+declarationStringPlayer player*player2k
+org.bukkit.entity.PlayerTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java1 1(#˛
+wcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)!name	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java13 1(7"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2c
+java.lang.StringTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java1, 1(2ÿ
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)METHODI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaY Y()"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier">public </mark>RpgCreationStep <mark class="method">getCreationStatus</mark>(Player player)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeRpgCreationStep*getCreationStatus2•
+Rcom.github.ebjerke04.myrpg.creation.RpgCreationManager?itemsInCreation@20.36:20.51CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaZ Z(2º
+icom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaZ" Z((2•
+Rcom.github.ebjerke04.myrpg.creation.RpgCreationManager?itemsInCreation@20.36:20.51CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaZ@ Z(O2º
+icom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaZT Z(Z2¡
+icom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaY1 Y(72ã
+1com.github.ebjerke04.myrpg.quests.RpgCreationStepRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaY Y(¸
+icom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaY1 Y(7"
+typePlayer"
+isFinalfalse""
+declarationStringPlayer player*player2k
+org.bukkit.entity.PlayerTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaY* Y(0Æ
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)METHODI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java_ _("
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">cancelCreateItem</mark>(Player player)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*cancelCreateItem2µ
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java`! `(22ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java`3 `(92Õ
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)?creationStep@96.18:96.30CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javab b(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javac c(	2Õ
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)?creationStep@96.18:96.30CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javah h(2Õ
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)?creationStep@96.18:96.30CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javah: h(F2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javai i(	2Õ
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)?creationStep@96.18:96.30CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javam m(2Õ
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)?creationStep@96.18:96.30CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javam: m(F2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javan n(	2•
+Rcom.github.ebjerke04.myrpg.creation.RpgCreationManager?itemsInCreation@20.36:20.51CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javar r(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javar r(2ß
+Tcom.github.ebjerke04.myrpg.creation.RpgCreationManager?rpgItemNameBuffer@21.27:21.44CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javas s(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javas$ s(*2ß
+Tcom.github.ebjerke04.myrpg.creation.RpgCreationManager?rpgItemNameBuffer@21.27:21.44CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javat t(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javat t("2¿
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java_% _(+2‘
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)?creationStep@96.18:96.30DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java` `(2^
+voidRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java_ _(ó
+zcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)?creationStep@96.18:96.30VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java` `("
+typeRpgCreationStep"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>RpgCreationStep <mark class="class-field">creationStep</mark> = getCreationStatus(player)*creationStep2Ñ
+1com.github.ebjerke04.myrpg.quests.RpgCreationStepTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java` `(2µ
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java`! `(22ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java`3 `(9˚
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.cancelCreateItem(org.bukkit.entity.Player)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java_% _(+"
+typePlayer"
+isFinalfalse""
+declarationStringPlayer player*player2k
+org.bukkit.entity.PlayerTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java_ _($Ñ
+acom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)METHODI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaw w("
+isFinalfalse"ô
+declarationStringÉ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">finishCreateItem</mark>(Player player)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*finishCreateItem2µ
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javax! x(22â
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java{ {(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javax3 x(92œ
+|com.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)?creationStep@120.18:120.30CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaz z(2ß
+Tcom.github.ebjerke04.myrpg.creation.RpgCreationManager?rpgItemNameBuffer@21.27:21.44CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java{+ {(<2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java{A {(G2•
+Rcom.github.ebjerke04.myrpg.creation.RpgCreationManager?itemsInCreation@20.36:20.51CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java} }(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java} }( 2ß
+Tcom.github.ebjerke04.myrpg.creation.RpgCreationManager?rpgItemNameBuffer@21.27:21.44CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java~ ~(2ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java~ ~("2Ω
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)!playerCALLK
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaÄ Ä(	2¿
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaw% w(+2÷
+|com.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)?creationStep@120.18:120.30DECLARATIONI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javax x(2^
+voidRETURN_TYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaw w(ô
+|com.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)?creationStep@120.18:120.30VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javax x("
+typeRpgCreationStep"
+isFinalfalse"ç
+declarationStringx<mark class="modifier"> </mark>RpgCreationStep <mark class="class-field">creationStep</mark> = getCreationStatus(player)*creationStep2Ñ
+1com.github.ebjerke04.myrpg.quests.RpgCreationStepTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javax x(2µ
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javax! x(22ª
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)!playerCALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javax3 x(9˚
+hcom.github.ebjerke04.myrpg.creation.RpgCreationManager.finishCreateItem(org.bukkit.entity.Player)!player	PARAMETERI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaw% w(+"
+typePlayer"
+isFinalfalse""
+declarationStringPlayer player*player2k
+org.bukkit.entity.PlayerTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaw w($Õ
+<com.github.ebjerke04.myrpg.creation.RpgCreationManager.get()METHODK
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaÖ" Ö(%"
+isFinalfalse"ì
+declarationString~<mark class="modifier">public </mark><mark class="modifier">static </mark>RpgCreationManager <mark class="method">get</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeRpgCreationManager*get2†
+Kcom.github.ebjerke04.myrpg.creation.RpgCreationManager?instance@17.35:17.43CALLK
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaÜ	 Ü(2í
+6com.github.ebjerke04.myrpg.creation.RpgCreationManagerRETURN_TYPEK
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaÖ Ö(!‰
+Acom.github.ebjerke04.myrpg.creation.RpgCreationManager.shutdown()METHODK
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaâ â("
+isFinalfalse"É
+declarationStringn<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">shutdown</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*shutdown2`
+voidRETURN_TYPEK
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.javaâ â(´
+Kcom.github.ebjerke04.myrpg.creation.RpgCreationManager?instance@17.35:17.43VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java# (+"
+isFinalfalse"
+typeRpgCreationManager"ù
+declarationStringá<mark class="modifier">private </mark><mark class="modifier">static </mark>RpgCreationManager <mark class="class-field">instance</mark>"
+isStatictrue"
+accessprivate*instance2â
+6com.github.ebjerke04.myrpg.creation.RpgCreationManagerTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java ("Å
+Rcom.github.ebjerke04.myrpg.creation.RpgCreationManager?itemsInCreation@20.36:20.51VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java$ (3"
+isFinalfalse""
+typeMap<UUID, RpgCreationStep>"ö
+declarationStringÑ<mark class="modifier">private </mark>Map<UUID, RpgCreationStep> <mark class="class-field">itemsInCreation</mark> = new HashMap<>();"
+isStaticfalse"
+accessprivate*itemsInCreation2`
+java.util.MapTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java	 (2j
+java.util.UUIDTYPE_ARGUMENTI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (2ç
+1com.github.ebjerke04.myrpg.quests.RpgCreationStepTYPE_ARGUMENTI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java ("2n
+java.util.HashMap.HashMap()CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java: (C“
+Tcom.github.ebjerke04.myrpg.creation.RpgCreationManager?rpgItemNameBuffer@21.27:21.44VARIABLEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (,"
+isFinalfalse"
+typeMap<UUID, String>"í
+declarationString}<mark class="modifier">private </mark>Map<UUID, String> <mark class="class-field">rpgItemNameBuffer</mark> = new HashMap<>();"
+isStaticfalse"
+accessprivate*rpgItemNameBuffer2`
+java.util.MapTYPEI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java	 (2j
+java.util.UUIDTYPE_ARGUMENTI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (2l
+java.lang.StringTYPE_ARGUMENTI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java (2n
+java.util.HashMap.HashMap()CALLI
+?src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java3 (<

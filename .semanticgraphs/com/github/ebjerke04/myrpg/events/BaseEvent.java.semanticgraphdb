@@ -1,0 +1,48 @@
+
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java°
++com.github.ebjerke04.myrpg.events.BaseEventCLASS>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java (",
+package!com.github.ebjerke04.myrpg.events"
+isFinalfalse"
+inner classfalse"
+
+isAbstracttrue"Ä
+declarationString®<mark class="modifier">public </mark><mark class="modifier">abstract </mark><mark class="modifier">class </mark>BaseEvent<mark class="modifier"><br>implements </mark>Listener"
+accesspublic*	BaseEvent2†
+7com.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()DECLARATION>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java	 	(2c
+org.bukkit.event.ListenerEXTEND>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java+ (3§
+7com.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()CONSTRUCTOR>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java	 	("a
+declarationStringL<mark class="modifier">public </mark><mark class="method">BaseEvent</mark>()*	BaseEvent2o
+'com.github.ebjerke04.myrpg.Plugin.get()CALL>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java
+ 
+( 2’
+Jcom.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()?plugin@10.13:10.19CALL>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java (2’
+Jcom.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()?plugin@10.13:10.19CALL>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java= (C2™
+Jcom.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()?plugin@10.13:10.19DECLARATION>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java
+ 
+(2z
++com.github.ebjerke04.myrpg.events.BaseEventRETURN_TYPE>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java	 	(—
+Jcom.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()?plugin@10.13:10.19VARIABLE>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java
+ 
+("
+type
+JavaPlugin"
+isFinalfalse"u
+declarationString`<mark class="modifier"> </mark>JavaPlugin <mark class="class-field">plugin</mark> = Plugin.get()*plugin2i
+!org.bukkit.plugin.java.JavaPluginTYPE>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java
+ 
+(2o
+'com.github.ebjerke04.myrpg.Plugin.get()CALL>
+4src\com\github\ebjerke04\myrpg\events\BaseEvent.java
+ 
+( 

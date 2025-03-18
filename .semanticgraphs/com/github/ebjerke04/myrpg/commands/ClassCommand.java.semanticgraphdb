@@ -1,0 +1,100 @@
+
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java∑
+0com.github.ebjerke04.myrpg.commands.ClassCommandCLASSC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (".
+package#com.github.ebjerke04.myrpg.commands"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"ù
+declarationStringá<mark class="modifier">public </mark><mark class="modifier">class </mark>ClassCommand<mark class="modifier"> extends </mark>BaseCommand"
+accesspublic*ClassCommand2ì
+?com.github.ebjerke04.myrpg.commands.ClassCommand.ClassCommand()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java
+ 
+(2Û
+ûcom.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])DECLARATIONC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (2~
+/com.github.ebjerke04.myrpg.commands.BaseCommandEXTENDC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java" (-´
+?com.github.ebjerke04.myrpg.commands.ClassCommand.ClassCommand()CONSTRUCTORC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java
+ 
+("d
+declarationStringO<mark class="modifier">public </mark><mark class="method">ClassCommand</mark>()*ClassCommand2ö
+Mcom.github.ebjerke04.myrpg.commands.BaseCommand.BaseCommand(java.lang.String)CALLC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (2Ñ
+0com.github.ebjerke04.myrpg.commands.ClassCommandRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java
+ 
+(‚
+ûcom.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])METHODC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java ("
+isFinalfalse"¨
+declarationStringñ<mark class="annotation">@Override</mark> <br><mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">onCommand</mark>(CommandSender sender<mark class="modifier"><mark class="modifier">,</mark></mark> Command command<mark class="modifier"><mark class="modifier">,</mark></mark> String label<mark class="modifier"><mark class="modifier">,</mark></mark> String[] args)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*	onCommand2≥
+fcom.github.ebjerke04.myrpg.classes.ClassSelectionMenu.openClassSelectionMenu(org.bukkit.entity.Player)CALLC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java# (92Ù
+¶com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!commandCALLC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (2Û
+•com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!senderCALLC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (2Û
+•com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!senderCALLC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java) (/2ˇ
+±com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@18.23:18.29CALLC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java: (@2Ô
+ùcom.github.ebjerke04.myrpg.commands.BaseCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])OVERRIDEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (2¯
+•com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!sender	PARAMETERC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java+ (12˘
+¶com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!command	PARAMETERC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java; (B2˜
+§com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!label	PARAMETERC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.javaK (P2ˆ
+£com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!args	PARAMETERC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java[ (_2Ü
+±com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@18.23:18.29DECLARATIONC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (2[
+booleanRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (Ä
+±com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])?player@18.23:18.29VARIABLEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java ("
+typePlayer"
+isFinalfalse"t
+declarationString_<mark class="modifier"> </mark>Player <mark class="class-field">player</mark> = (Player) sender*player2e
+org.bukkit.entity.PlayerTYPEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (2Û
+•com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!senderCALLC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java) (/√
+•com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!sender	PARAMETERC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java+ (1"
+typeCommandSender"
+isFinalfalse")
+declarationStringCommandSender sender*sender2m
+ org.bukkit.command.CommandSenderTYPEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java (*¥
+¶com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!command	PARAMETERC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java; (B"
+typeCommand"
+isFinalfalse"$
+declarationStringCommand command*command2g
+org.bukkit.command.CommandTYPEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java3 (:¢
+§com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!label	PARAMETERC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.javaK (P"
+typeString"
+isFinalfalse"!
+declarationStringString label*label2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.javaD (J•
+£com.github.ebjerke04.myrpg.commands.ClassCommand.onCommand(org.bukkit.command.CommandSender, org.bukkit.command.Command, java.lang.String, java.lang.String[])!args	PARAMETERC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.java[ (_"
+typeString[]"
+isFinalfalse""
+declarationStringString[] args*args2_
+java.lang.String[]TYPEC
+9src\com\github\ebjerke04\myrpg\commands\ClassCommand.javaR (Z

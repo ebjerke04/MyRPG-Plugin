@@ -1,0 +1,459 @@
+
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java≈
+0com.github.ebjerke04.myrpg.data.QuestDataManagerCLASSC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java ("*
+packagecom.github.ebjerke04.myrpg.data"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"n
+declarationStringY<mark class="modifier">public </mark><mark class="modifier">class </mark>QuestDataManager"
+accesspublic*QuestDataManager2ó
+Ccom.github.ebjerke04.myrpg.data.QuestDataManager.QuestDataManager()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java	 (2ã
+7com.github.ebjerke04.myrpg.data.QuestDataManager.init()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java (2ä
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java  (#2è
+;com.github.ebjerke04.myrpg.data.QuestDataManager.shutdown()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java   (2ì
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java$ $('2î
+@com.github.ebjerke04.myrpg.data.QuestDataManager.saveQuestData()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java( ((2¢
+Ncom.github.ebjerke04.myrpg.data.QuestDataManager.questExists(java.lang.String)DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java, ,(2ó
+Ccom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestNPCNames()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java0 0(%2î
+@com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestNames()DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java8 8("2•
+Qcom.github.ebjerke04.myrpg.data.QuestDataManager.questPublished(java.lang.String)DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java@ @(2†
+Lcom.github.ebjerke04.myrpg.data.QuestDataManager.createNPC(java.lang.String)DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaD D(2¢
+Ncom.github.ebjerke04.myrpg.data.QuestDataManager.createQuest(java.lang.String)DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaH H(2°
+Mcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaL L(!2£
+Ocom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java^ ^(%2ß
+Scom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javai i(2ô
+Ecom.github.ebjerke04.myrpg.data.QuestDataManager?instance@17.33:17.41DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java! ()Ÿ
+Ccom.github.ebjerke04.myrpg.data.QuestDataManager.QuestDataManager()CONSTRUCTORC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java	 ("i
+declarationStringT<mark class="modifier">private </mark><mark class="method">QuestDataManager</mark>()*QuestDataManager2ô
+Lcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java ("2Ä
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java (2ô
+Lcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java ("2Ä
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java (2Ñ
+0com.github.ebjerke04.myrpg.data.QuestDataManagerRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java	 (è
+7com.github.ebjerke04.myrpg.data.QuestDataManager.init()METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java ("
+isFinalfalse"•
+declarationStringè<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">init</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*init2ê
+Ccom.github.ebjerke04.myrpg.data.QuestDataManager.QuestDataManager()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java (!2í
+Ecom.github.ebjerke04.myrpg.data.QuestDataManager?instance@17.33:17.41CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java (
+2X
+voidRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java (ü
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java  (#"
+isFinalfalse"ë
+declarationString|<mark class="modifier">public </mark><mark class="modifier">static </mark>QuestDataManager <mark class="method">get</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeQuestDataManager*get2í
+Ecom.github.ebjerke04.myrpg.data.QuestDataManager?instance@17.33:17.41CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java	 (2Ñ
+0com.github.ebjerke04.myrpg.data.QuestDataManagerRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java (ﬁ
+;com.github.ebjerke04.myrpg.data.QuestDataManager.shutdown()METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java   ("
+isFinalfalse"É
+declarationStringn<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">shutdown</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*shutdown2ç
+@com.github.ebjerke04.myrpg.data.QuestDataManager.saveQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java! !(2X
+voidRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java   (ü
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java$ $('"
+isFinalfalse"w
+declarationStringb<mark class="modifier">private </mark>FileConfiguration <mark class="method">getQuestData</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeFileConfiguration*getQuestData2ñ
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java% %(&2Ä
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java% %(2É
+/org.bukkit.configuration.file.FileConfigurationRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java$	 $(¸
+@com.github.ebjerke04.myrpg.data.QuestDataManager.saveQuestData()METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java( (("
+isFinalfalse"â
+declarationStringt<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">saveQuestData</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*saveQuestData2ó
+Jcom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java) )( 2Ä
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java) )(2X
+voidRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java(	 ((’
+Ncom.github.ebjerke04.myrpg.data.QuestDataManager.questExists(java.lang.String)METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java, ,("
+isFinalfalse"î
+declarationString<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">questExists</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*questExists2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java-	 -(2†
+Scom.github.ebjerke04.myrpg.data.QuestDataManager.questExists(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java-- -(12•
+Scom.github.ebjerke04.myrpg.data.QuestDataManager.questExists(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java,# ,('2[
+booleanRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java, ,(Œ
+Scom.github.ebjerke04.myrpg.data.QuestDataManager.questExists(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java,# ,('"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java, ,("Ù
+Ccom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestNPCNames()METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java0 0(%"
+isFinalfalse"{
+declarationStringf<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getQuestNPCNames</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*getQuestNPCNames2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java1 1(2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java2  2(,2b
+java.util.ListRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java0 0(2m
+java.lang.StringRETURN_TYPE_ARGUMENTC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java0 0(Î
+@com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestNames()METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java8 8(""
+isFinalfalse"x
+declarationStringc<mark class="modifier">public </mark>List&lt;String&gt; <mark class="method">getQuestNames</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<String>*getQuestNames2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java9 9(2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java:  :(,2b
+java.util.ListRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java8 8(2m
+java.lang.StringRETURN_TYPE_ARGUMENTC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java8 8(Â
+Qcom.github.ebjerke04.myrpg.data.QuestDataManager.questPublished(java.lang.String)METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java@ @("
+isFinalfalse"ò
+declarationStringÇ<mark class="modifier">public </mark><mark class="modifier">boolean</mark> <mark class="method">questPublished</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeboolean*questPublished2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaA	 A(2£
+Vcom.github.ebjerke04.myrpg.data.QuestDataManager.questPublished(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaA/ A(32®
+Vcom.github.ebjerke04.myrpg.data.QuestDataManager.questPublished(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java@& @(*2[
+booleanRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java@ @(—
+Vcom.github.ebjerke04.myrpg.data.QuestDataManager.questPublished(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java@& @(*"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java@ @(%ì	
+Lcom.github.ebjerke04.myrpg.data.QuestDataManager.createNPC(java.lang.String)METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaD D("
+isFinalfalse"u
+declarationString`<mark class="modifier">public </mark>QuestNPC <mark class="method">createNPC</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeQuestNPC*	createNPC2ö
+Mcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaE E( 2±
+dcom.github.ebjerke04.myrpg.quests.QuestNPC.QuestNPC(com.github.ebjerke04.myrpg.quests.NPCDataHolder)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaE E(2û
+Qcom.github.ebjerke04.myrpg.data.QuestDataManager.createNPC(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaE! E(%2£
+Qcom.github.ebjerke04.myrpg.data.QuestDataManager.createNPC(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaD" D(&2~
+*com.github.ebjerke04.myrpg.quests.QuestNPCRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaD D(Ã
+Qcom.github.ebjerke04.myrpg.data.QuestDataManager.createNPC(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaD" D(&"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaD D(!í	
+Ncom.github.ebjerke04.myrpg.data.QuestDataManager.createQuest(java.lang.String)METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaH H("
+isFinalfalse"t
+declarationString_<mark class="modifier">public </mark>Quest <mark class="method">createQuest</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeQuest*createQuest2ú
+Ocom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaI I(2≠
+`com.github.ebjerke04.myrpg.quests.Quest.Quest(com.github.ebjerke04.myrpg.quests.QuestDataHolder)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaI I(2†
+Scom.github.ebjerke04.myrpg.data.QuestDataManager.createQuest(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaI  I($2•
+Scom.github.ebjerke04.myrpg.data.QuestDataManager.createQuest(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaH! H(%2{
+'com.github.ebjerke04.myrpg.quests.QuestRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaH H(Œ
+Scom.github.ebjerke04.myrpg.data.QuestDataManager.createQuest(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaH! H(%"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaH H( Î
+Mcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaL L(!"
+isFinalfalse"|
+declarationStringg<mark class="modifier">private </mark>NPCDataHolder <mark class="method">getNPCData</mark>(String name)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeNPCDataHolder*
+getNPCData2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaR R("2å
+?com.github.ebjerke04.myrpg.quests.NPCDataHolder.NPCDataHolder()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaM M((2í
+Ejava.lang.NullPointerException.NullPointerException(java.lang.String)CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaV V(!2´
+^com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?data@77.16:77.20CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaO O(2ü
+Rcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaO O(2ü
+Rcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaQ Q(2™
+]com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?path@81.9:81.13CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaR1 R(52Ø
+bcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?location@82.11:82.19CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaU U(2´
+^com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?data@77.16:77.20CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaX X(2Ø
+bcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?location@82.11:82.19CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaX X(2´
+^com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?data@77.16:77.20CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaZ	 Z(2§
+Rcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaL) L(-2≤
+^com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?data@77.16:77.20DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaM M(2±
+]com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?path@81.9:81.13DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaQ	 Q(2∂
+bcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?location@82.11:82.19DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaR R(2É
+/com.github.ebjerke04.myrpg.quests.NPCDataHolderRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaL	 L(Í
+^com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?data@77.16:77.20VARIABLEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaM M("
+typeNPCDataHolder"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>NPCDataHolder <mark class="class-field">data</mark> = new NPCDataHolder()*data2|
+/com.github.ebjerke04.myrpg.quests.NPCDataHolderTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaM M(2å
+?com.github.ebjerke04.myrpg.quests.NPCDataHolder.NPCDataHolder()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaM M((’
+]com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?path@81.9:81.13VARIABLEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaQ	 Q("
+typeString"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark>String <mark class="class-field">path</mark> = "npcs." + name + ".spawn"*path2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaQ Q(2ü
+Rcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaQ Q(ã
+bcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?location@82.11:82.19VARIABLEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaR R("
+typeLocation"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>Location <mark class="class-field">location</mark> = getQuestData().getLocation(path)*location2`
+org.bukkit.LocationTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaR R(
+2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaR R("2™
+]com.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)?path@81.9:81.13CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaR1 R(5Õ
+Rcom.github.ebjerke04.myrpg.data.QuestDataManager.getNPCData(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaL) L(-"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaL" L((
+Ocom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java^ ^(%"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier">private </mark>QuestDataHolder <mark class="method">getQuestData</mark>(String questName)"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typeQuestDataHolder*getQuestData2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javac c(2ê
+Ccom.github.ebjerke04.myrpg.quests.QuestDataHolder.QuestDataHolder()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java_ _(,2≠
+`com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)?data@95.18:95.22CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java` `(2¶
+Ycom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)!questNameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java` `(2¶
+Ycom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)!questNameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javab b(%2≠
+`com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)?data@95.18:95.22CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javac c(2¨
+_com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)?path@98.9:98.13CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javac( c(,2≠
+`com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)?data@95.18:95.22CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javae	 e(2´
+Ycom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)!questName	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java^- ^(62¥
+`com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)?data@95.18:95.22DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java_ _(2≥
+_com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)?path@98.9:98.13DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javab	 b(2Ö
+1com.github.ebjerke04.myrpg.quests.QuestDataHolderRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java^	 ^(˘
+`com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)?data@95.18:95.22VARIABLEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java_ _("
+typeQuestDataHolder"
+isFinalfalse"Å
+declarationStringl<mark class="modifier"> </mark>QuestDataHolder <mark class="class-field">data</mark> = new QuestDataHolder()*data2~
+1com.github.ebjerke04.myrpg.quests.QuestDataHolderTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java_ _(2ê
+Ccom.github.ebjerke04.myrpg.quests.QuestDataHolder.QuestDataHolder()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java_ _(,⁄
+_com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)?path@98.9:98.13VARIABLEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javab	 b("
+typeString"
+isFinalfalse"x
+declarationStringc<mark class="modifier"> </mark>String <mark class="class-field">path</mark> = "quests." + questName*path2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javab b(2¶
+Ycom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)!questNameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javab b(%ﬁ
+Ycom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData(java.lang.String)!questName	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java^- ^(6"
+typeString"
+isFinalfalse"%
+declarationStringString questName*	questName2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java^& ^(,≥
+Scom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)METHODC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javai i("
+isFinalfalse"ó
+declarationStringÅ<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">addQuestToConfig</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*addQuestToConfig2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javak k(2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javal l(2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javam m(2å
+?com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javan n(2ç
+@com.github.ebjerke04.myrpg.data.QuestDataManager.saveQuestData()CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javap p(2•
+Xcom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaj j( 2≤
+ecom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)?path@106.9:106.13CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javak k(2≤
+ecom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)?path@106.9:106.13CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javal l(2≤
+ecom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)?path@106.9:106.13CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javam m(2≤
+ecom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)?path@106.9:106.13CALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javan n(2™
+Xcom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javai% i()2π
+ecom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)?path@106.9:106.13DECLARATIONC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaj	 j(2X
+voidRETURN_TYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javai i(⁄
+ecom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)?path@106.9:106.13VARIABLEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaj	 j("
+typeString"
+isFinalfalse"s
+declarationString^<mark class="modifier"> </mark>String <mark class="class-field">path</mark> = "quests." + name*path2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaj j(2•
+Xcom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)!nameCALLC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javaj j( ”
+Xcom.github.ebjerke04.myrpg.data.QuestDataManager.addQuestToConfig(java.lang.String)!name	PARAMETERC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javai% i()"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2]
+java.lang.StringTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.javai i($é
+Ecom.github.ebjerke04.myrpg.data.QuestDataManager?instance@17.33:17.41VARIABLEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java! ()"
+isFinalfalse"
+typeQuestDataManager"õ
+declarationStringÖ<mark class="modifier">private </mark><mark class="modifier">static </mark>QuestDataManager <mark class="class-field">instance</mark>"
+isStatictrue"
+accessprivate*instance2}
+0com.github.ebjerke04.myrpg.data.QuestDataManagerTYPEC
+9src\com\github\ebjerke04\myrpg\data\QuestDataManager.java ( 

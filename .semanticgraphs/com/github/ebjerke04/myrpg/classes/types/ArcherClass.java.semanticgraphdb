@@ -1,0 +1,22 @@
+
+=src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.javaÐ
+4com.github.ebjerke04.myrpg.classes.types.ArcherClassCLASSG
+=src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.java ("3
+package(com.github.ebjerke04.myrpg.classes.types"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"™
+declarationStringƒ<mark class="modifier">public </mark><mark class="modifier">class </mark>ArcherClass<mark class="modifier"> extends </mark>RpgClass"
+accesspublic*ArcherClass2š
+Bcom.github.ebjerke04.myrpg.classes.types.ArcherClass.ArcherClass()DECLARATIONG
+=src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.java (2~
++com.github.ebjerke04.myrpg.classes.RpgClassEXTENDG
+=src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.java! ()Ñ
+Bcom.github.ebjerke04.myrpg.classes.types.ArcherClass.ArcherClass()CONSTRUCTORG
+=src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.java ("c
+declarationStringN<mark class="modifier">public </mark><mark class="method">ArcherClass</mark>()*ArcherClass2³
+bcom.github.ebjerke04.myrpg.classes.RpgClass.RpgClass(com.github.ebjerke04.myrpg.classes.ClassType)CALLG
+=src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.java (2Œ
+4com.github.ebjerke04.myrpg.classes.types.ArcherClassRETURN_TYPEG
+=src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.java (

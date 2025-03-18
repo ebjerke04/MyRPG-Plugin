@@ -1,0 +1,106 @@
+
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java©
+4com.github.ebjerke04.myrpg.events.PlayerMessageEventCLASSG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (",
+package!com.github.ebjerke04.myrpg.events"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"°
+declarationStringã<mark class="modifier">public </mark><mark class="modifier">class </mark>PlayerMessageEvent<mark class="modifier"> extends </mark>BaseEvent"
+accesspublic*PlayerMessageEvent2°
+Icom.github.ebjerke04.myrpg.events.PlayerMessageEvent.PlayerMessageEvent()DECLARATIONG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2«
+ocom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)DECLARATIONG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2~
++com.github.ebjerke04.myrpg.events.BaseEventEXTENDG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java( (1ª
+Icom.github.ebjerke04.myrpg.events.PlayerMessageEvent.PlayerMessageEvent()CONSTRUCTORG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java ("j
+declarationStringU<mark class="modifier">public </mark><mark class="method">PlayerMessageEvent</mark>()*PlayerMessageEvent2à
+7com.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2å
+4com.github.ebjerke04.myrpg.events.PlayerMessageEventRETURN_TYPEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (è
+ocom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)METHODG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java ("
+isFinalfalse"Œ
+declarationString∏<mark class="annotation">@EventHandler</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">onPlayerChat</mark>(AsyncChatEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*onPlayerChat2≥
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java2 (C2ç
+<com.github.ebjerke04.myrpg.creation.RpgCreationManager.get()CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java, (/2√
+rcom.github.ebjerke04.myrpg.creation.RpgCreationManager.submitQuestName(org.bukkit.entity.Player, java.lang.String)CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (+2ç
+<com.github.ebjerke04.myrpg.creation.RpgCreationManager.get()CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2∆
+ucom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)!eventCALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2”
+Åcom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?player@19.9:19.15CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.javaD (J2“
+Äcom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?step@20.18:20.22CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java
+ (2∆
+ucom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)!eventCALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2∆
+ucom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)!eventCALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.javaG (L2”
+Åcom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?player@19.9:19.15CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java, (22’
+Écom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?message@25.10:25.17CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java4 (;2À
+ucom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)!event	PARAMETERG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java) (.2⁄
+Åcom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?player@19.9:19.15DECLARATIONG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java	 (2Ÿ
+Äcom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?step@20.18:20.22DECLARATIONG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2‹
+Écom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?message@25.10:25.17DECLARATIONG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java
+ (2\
+voidRETURN_TYPEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (≠
+Åcom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?player@19.9:19.15VARIABLEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java	 ("
+typePlayer"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>Player <mark class="class-field">player</mark> = event.getPlayer()*player2i
+org.bukkit.entity.PlayerTYPEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2∆
+ucom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)!eventCALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java ( 
+Äcom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?step@20.18:20.22VARIABLEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java ("
+typeRpgCreationStep"
+isFinalfalse"ü
+declarationStringâ<mark class="modifier"> </mark>RpgCreationStep <mark class="class-field">step</mark> = RpgCreationManager.get().getCreationStatus(player)*step2Ç
+1com.github.ebjerke04.myrpg.quests.RpgCreationStepTYPEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (2≥
+bcom.github.ebjerke04.myrpg.creation.RpgCreationManager.getCreationStatus(org.bukkit.entity.Player)CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java2 (C2ç
+<com.github.ebjerke04.myrpg.creation.RpgCreationManager.get()CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java, (/2”
+Åcom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?player@19.9:19.15CALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.javaD (J›
+Écom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)?message@25.10:25.17VARIABLEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java
+ ("
+typeString"
+isFinalfalse"™
+declarationStringî<mark class="modifier"> </mark>String <mark class="class-field">message</mark> = PlainTextComponentSerializer.plainText().serialize(event.message())*message2a
+java.lang.StringTYPEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java (	2∆
+ucom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)!eventCALLG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.javaG (L¶
+ucom.github.ebjerke04.myrpg.events.PlayerMessageEvent.onPlayerChat(io.papermc.paper.event.player.AsyncChatEvent)!event	PARAMETERG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java) (."
+typeAsyncChatEvent"
+isFinalfalse")
+declarationStringAsyncChatEvent event*event2}
+,io.papermc.paper.event.player.AsyncChatEventTYPEG
+=src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java ((

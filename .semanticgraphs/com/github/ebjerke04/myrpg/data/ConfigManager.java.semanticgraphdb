@@ -1,0 +1,372 @@
+
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java¯
+-com.github.ebjerke04.myrpg.data.ConfigManagerCLASS@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java ("*
+packagecom.github.ebjerke04.myrpg.data"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"k
+declarationStringV<mark class="modifier">public </mark><mark class="modifier">class </mark>ConfigManager"
+accesspublic*ConfigManager2é
+=com.github.ebjerke04.myrpg.data.ConfigManager.ConfigManager()DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2Ö
+4com.github.ebjerke04.myrpg.data.ConfigManager.init()DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java   (2Ñ
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java$ $( 2ì
+Bcom.github.ebjerke04.myrpg.data.ConfigManager.setupDefaultConfig()DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java( (( 2ù
+Lcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java/ /(2ö
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaB B(#2õ
+Jcom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaF F(2ù
+Lcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaQ Q(2ì
+Bcom.github.ebjerke04.myrpg.data.ConfigManager?instance@15.30:15.38DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (&2ë
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java ( 2í
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java. (52ñ
+Ecom.github.ebjerke04.myrpg.data.ConfigManager?configFiles@20.33:20.44DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java! (,≠
+=com.github.ebjerke04.myrpg.data.ConfigManager.ConfigManager()CONSTRUCTOR@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java ("e
+declarationStringP<mark class="modifier">public </mark><mark class="method">ConfigManager</mark>()*ConfigManager2q
+'com.github.ebjerke04.myrpg.Plugin.get()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2å
+Bcom.github.ebjerke04.myrpg.data.ConfigManager.setupDefaultConfig()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (	2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2~
+-com.github.ebjerke04.myrpg.data.ConfigManagerRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (˜
+4com.github.ebjerke04.myrpg.data.ConfigManager.init()METHOD@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java   ("
+isFinalfalse"•
+declarationStringè<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">init</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*init2á
+=com.github.ebjerke04.myrpg.data.ConfigManager.ConfigManager()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java! !(2å
+Bcom.github.ebjerke04.myrpg.data.ConfigManager?instance@15.30:15.38CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java! !(
+2U
+voidRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java   (Ü
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()METHOD@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java$ $( "
+isFinalfalse"é
+declarationStringy<mark class="modifier">public </mark><mark class="modifier">static </mark>ConfigManager <mark class="method">get</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typeConfigManager*get2å
+Bcom.github.ebjerke04.myrpg.data.ConfigManager?instance@15.30:15.38CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java%	 %(2~
+-com.github.ebjerke04.myrpg.data.ConfigManagerRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java$ $(ú
+Bcom.github.ebjerke04.myrpg.data.ConfigManager.setupDefaultConfig()METHOD@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java( (( "
+isFinalfalse"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">setupDefaultConfig</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*setupDefaultConfig2a
+java.util.Map.put(K, V)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java+ +(2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java) )(2ã
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java* *(	2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java* *(2è
+Ecom.github.ebjerke04.myrpg.data.ConfigManager?configFiles@20.33:20.44CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java+ +(2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java+% +(+2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java, ,(2U
+voidRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java(	 ((Ï!
+Lcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)METHOD@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java/ /("
+isFinalfalse"í
+declarationString}<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">createConfig</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*createConfig2u
++java.util.Map.containsKey(java.lang.Object)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java0 0(2_
+java.io.File.exists()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java4 4(2f
+java.io.File.createNewFile()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java6	 6(2o
+%java.lang.Throwable.printStackTrace()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java9 9(2a
+java.util.Map.put(K, V)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java>
+ >(2a
+java.util.Map.put(K, V)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java? ?(2ã
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java0 0(2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java0 0(2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java2 2(2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java2/ 2(32¶
+\com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?file@50.7:50.11CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java4 4(2¶
+\com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?file@50.7:50.11CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java6 6(2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java8 8(
+2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java84 8(82§
+Zcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?e@55.24:55.25CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java9 9(2¶
+\com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?file@50.7:50.11CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java=A =(E2ã
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java> >(	2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java> >(2©
+_com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?config@61.20:61.26CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java> >(2è
+Ecom.github.ebjerke04.myrpg.data.ConfigManager?configFiles@20.33:20.44CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java? ?(2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java? ?(2¶
+\com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?file@50.7:50.11CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java? ?(2†
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)!name	PARAMETER@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java/! /(%2≠
+\com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?file@50.7:50.11DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java2 2(2∞
+_com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?config@61.20:61.26DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java= =(2´
+Zcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?e@55.24:55.25DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java7 7(2U
+voidRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java/ /(Ö
+\com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?file@50.7:50.11VARIABLE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java2 2("
+typeFile"
+isFinalfalse"Ø
+declarationStringô<mark class="modifier"> </mark>File <mark class="class-field">file</mark> = new File(plugin.getDataFolder()<mark class="modifier">,</mark> name + ".yml")*file2V
+java.io.FileTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java2 2(2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java2 2(2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java2/ 2(3£
+_com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?config@61.20:61.26VARIABLE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java= =("
+typeFileConfiguration"
+isFinalfalse"ö
+declarationStringÑ<mark class="modifier"> </mark>FileConfiguration <mark class="class-field">config</mark> = YamlConfiguration.loadConfiguration(file)*config2y
+/org.bukkit.configuration.file.FileConfigurationTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java= =(2¶
+\com.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?file@50.7:50.11CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java=A =(E∆
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)!name	PARAMETER@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java/! /(%"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2Z
+java.lang.StringTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java/ /( ’
+Zcom.github.ebjerke04.myrpg.data.ConfigManager.createConfig(java.lang.String)?e@55.24:55.25VARIABLE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java7 7("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2]
+java.io.IOExceptionTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java7 7(¬
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)METHOD@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaB B(#"
+isFinalfalse"~
+declarationStringi<mark class="modifier">public </mark>FileConfiguration <mark class="method">getConfig</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeFileConfiguration*	getConfig2m
+#java.util.Map.get(java.lang.Object)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaC C(2ã
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaC	 C(2ò
+Ncom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaC C(2ù
+Ncom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)!name	PARAMETER@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaB+ B(/2Ä
+/org.bukkit.configuration.file.FileConfigurationRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaB B(√
+Ncom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)!name	PARAMETER@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaB+ B(/"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2Z
+java.lang.StringTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaB$ B(*…
+Jcom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)METHOD@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaF F("
+isFinalfalse"ê
+declarationString{<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">saveConfig</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*
+saveConfig2u
++java.util.Map.containsKey(java.lang.Object)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaG G(2m
+#java.util.Map.get(java.lang.Object)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaI I(2m
+#java.util.Map.get(java.lang.Object)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaI' I(*2o
+%java.lang.Throwable.printStackTrace()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaL L(2ã
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaG G(2ô
+Ocom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaG G(2ã
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaI I(2ô
+Ocom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaI I(2è
+Ecom.github.ebjerke04.myrpg.data.ConfigManager?configFiles@20.33:20.44CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaI I(&2ô
+Ocom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaI+ I(/2ä
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaK K(
+2ô
+Ocom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaK2 K(62¢
+Xcom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)?e@74.24:74.25CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaL L(2û
+Ocom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)!name	PARAMETER@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaF F(#2©
+Xcom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)?e@74.24:74.25DECLARATION@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaJ J(2U
+voidRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaF F(ƒ
+Ocom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)!name	PARAMETER@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaF F(#"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2Z
+java.lang.StringTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaF F(”
+Xcom.github.ebjerke04.myrpg.data.ConfigManager.saveConfig(java.lang.String)?e@74.24:74.25VARIABLE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaJ J("
+typeIOException"
+isFinalfalse""
+declarationStringIOException e*e2]
+java.io.IOExceptionTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaJ J(˝
+Lcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)METHOD@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaQ Q("
+isFinalfalse"í
+declarationString}<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">reloadConfig</mark>(String name)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*reloadConfig2u
++java.util.Map.containsKey(java.lang.Object)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaR R(2m
+#java.util.Map.get(java.lang.Object)CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaSE S(H2ã
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaR R(2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaR R(2ã
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaS S(
+2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaS S(2è
+Ecom.github.ebjerke04.myrpg.data.ConfigManager?configFiles@20.33:20.44CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaS9 S(D2õ
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)!nameCALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaSI S(M2†
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)!name	PARAMETER@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaQ! Q(%2U
+voidRETURN_TYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaQ Q(∆
+Qcom.github.ebjerke04.myrpg.data.ConfigManager.reloadConfig(java.lang.String)!name	PARAMETER@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaQ! Q(%"
+typeString"
+isFinalfalse" 
+declarationStringString name*name2Z
+java.lang.StringTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.javaQ Q( ¸
+Bcom.github.ebjerke04.myrpg.data.ConfigManager?instance@15.30:15.38VARIABLE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (&"
+isFinalfalse"
+typeConfigManager"ò
+declarationStringÇ<mark class="modifier">private </mark><mark class="modifier">static </mark>ConfigManager <mark class="class-field">instance</mark>"
+isStatictrue"
+accessprivate*instance2w
+-com.github.ebjerke04.myrpg.data.ConfigManagerTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (ﬂ
+@com.github.ebjerke04.myrpg.data.ConfigManager?plugin@17.26:17.32VALUE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java ( "
+isFinaltrue"
+type
+JavaPlugin"ë
+declarationString|<mark class="modifier">private </mark><mark class="modifier">final </mark>JavaPlugin <mark class="class-field">plugin</mark>"
+isStaticfalse"
+accessprivate*plugin2k
+!org.bukkit.plugin.java.JavaPluginTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (€
+Acom.github.ebjerke04.myrpg.data.ConfigManager?configs@19.46:19.53VALUE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java. (5"
+isFinaltrue"&
+typeMap<String, FileConfiguration>"∫
+declarationString§<mark class="modifier">private </mark><mark class="modifier">final </mark>Map<String, FileConfiguration> <mark class="class-field">configs</mark> = new HashMap<>();"
+isStaticfalse"
+accessprivate*configs2W
+java.util.MapTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2c
+java.lang.StringTYPE_ARGUMENT@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2Ç
+/org.bukkit.configuration.file.FileConfigurationTYPE_ARGUMENT@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (,2e
+java.util.HashMap.HashMap()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java< (E©
+Ecom.github.ebjerke04.myrpg.data.ConfigManager?configFiles@20.33:20.44VALUE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java! (,"
+isFinaltrue"
+typeMap<String, File>"±
+declarationStringõ<mark class="modifier">private </mark><mark class="modifier">final </mark>Map<String, File> <mark class="class-field">configFiles</mark> = new HashMap<>();"
+isStaticfalse"
+accessprivate*configFiles2W
+java.util.MapTYPE@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2c
+java.lang.StringTYPE_ARGUMENT@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2_
+java.io.FileTYPE_ARGUMENT@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java (2e
+java.util.HashMap.HashMap()CALL@
+6src\com\github\ebjerke04\myrpg\data\ConfigManager.java3 (<

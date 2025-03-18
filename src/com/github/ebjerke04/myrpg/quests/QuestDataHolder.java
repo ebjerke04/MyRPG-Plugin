@@ -5,4 +5,6 @@ public class QuestDataHolder {
 	public String name;
 	public int minLevel;
 
+	public QuestNPC startNPC;
+
 }

@@ -1,0 +1,28 @@
+
+;src\com\github\ebjerke04\myrpg\commands\CommandManager.javaù
+2com.github.ebjerke04.myrpg.commands.CommandManagerCLASSE
+;src\com\github\ebjerke04\myrpg\commands\CommandManager.java (".
+package#com.github.ebjerke04.myrpg.commands"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"l
+declarationStringW<mark class="modifier">public </mark><mark class="modifier">class </mark>CommandManager"
+accesspublic*CommandManager2õ
+Ecom.github.ebjerke04.myrpg.commands.CommandManager.registerCommands()DECLARATIONE
+;src\com\github\ebjerke04\myrpg\commands\CommandManager.java ($π
+Ecom.github.ebjerke04.myrpg.commands.CommandManager.registerCommands()METHODE
+;src\com\github\ebjerke04\myrpg\commands\CommandManager.java ($"
+isFinalfalse"±
+declarationStringõ<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">registerCommands</mark>()"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*registerCommands2î
+Ecom.github.ebjerke04.myrpg.commands.RpgAdminCommand.RpgAdminCommand()CALLE
+;src\com\github\ebjerke04\myrpg\commands\CommandManager.java (2é
+?com.github.ebjerke04.myrpg.commands.ClassCommand.ClassCommand()CALLE
+;src\com\github\ebjerke04\myrpg\commands\CommandManager.java (2Z
+voidRETURN_TYPEE
+;src\com\github\ebjerke04\myrpg\commands\CommandManager.java (

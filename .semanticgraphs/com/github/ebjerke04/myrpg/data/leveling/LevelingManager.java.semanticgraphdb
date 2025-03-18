@@ -1,0 +1,208 @@
+
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.javaì
+8com.github.ebjerke04.myrpg.data.leveling.LevelingManagerCLASSK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java
+ 
+("3
+package(com.github.ebjerke04.myrpg.data.leveling"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"m
+declarationStringX<mark class="modifier">public </mark><mark class="modifier">class </mark>LevelingManager"
+accesspublic*LevelingManager2¶
+Jcom.github.ebjerke04.myrpg.data.leveling.LevelingManager.LevelingManager()DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2´
+Ocom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java ("2ß
+Kcom.github.ebjerke04.myrpg.data.leveling.LevelingManager?levels@12.35:12.41DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java# ()ﬁ
+Jcom.github.ebjerke04.myrpg.data.leveling.LevelingManager.LevelingManager()CONSTRUCTORK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java ("g
+declarationStringR<mark class="modifier">public </mark><mark class="method">LevelingManager</mark>()*LevelingManager2§
+Ocom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2î
+8com.github.ebjerke04.myrpg.data.leveling.LevelingManagerRETURN_TYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (ô7
+Ocom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()METHODK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (""
+isFinalfalse"ê
+declarationString{<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">populateLevelDataMap</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*populateLevelDataMap2û
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java8 (A2à
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java2 (52Å
+,java.lang.Integer.parseInt(java.lang.String)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java ( 2|
+'com.github.ebjerke04.myrpg.Plugin.get()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2t
+java.lang.Integer.toString(int)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java#) #(12û
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java$ $(%2à
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java$ $(2|
+'com.github.ebjerke04.myrpg.Plugin.get()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java% %(2û
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java)& )(/2à
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java)  )(#2l
+java.util.Map.put(K, V)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java*
+ *(2ö
+Ecom.github.ebjerke04.myrpg.data.leveling.PlayerLevel.PlayerLevel(int)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java* *( 2ƒ
+ocom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelConfigSections@19.14:19.33CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (/2º
+gcom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelString@23.14:23.25CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java! (,2µ
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?level@25.8:25.13CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2∏
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?maxLevel@22.6:22.14CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2∏
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?maxLevel@22.6:22.14CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java ("2µ
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?level@25.8:25.13CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java% (*2º
+gcom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelString@23.14:23.25CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java^ (i2≤
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?i@34.11:34.12CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java" "(2∏
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?maxLevel@22.6:22.14CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java" "(2≤
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?i@34.11:34.12CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java"! "("2≤
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?i@34.11:34.12CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java#2 #(32µ
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?path@35.10:35.14CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java$9 $(=2∏
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?maxLevel@22.6:22.14CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java%\ %(d2¥
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?i@34.11:34.12CALLM
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java%Ñ %(Ö2µ
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?path@35.10:35.14CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java)A )(E2†
+Kcom.github.ebjerke04.myrpg.data.leveling.LevelingManager?levels@12.35:12.41CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java* *(	2≤
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?i@34.11:34.12CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java* *(2∏
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelExp@41.7:41.15CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java*! *()2À
+ocom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelConfigSections@19.14:19.33DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (!2ø
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?maxLevel@22.6:22.14DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2√
+gcom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelString@23.14:23.25DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2º
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?level@25.8:25.13DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2π
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?i@34.11:34.12DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java" "(2º
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?path@35.10:35.14DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java#
+ #(2ø
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelExp@41.7:41.15DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java) )(2π
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?e@28.34:28.35DECLARATIONK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java" (#2`
+voidRETURN_TYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java	 (˘
+ocom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelConfigSections@19.14:19.33VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (!"
+typeSet<String>"
+isFinalfalse"Ú
+declarationString‹<mark class="modifier"> </mark>Set<String> <mark class="class-field">levelConfigSections</mark> = ConfigManager.get().getConfig("config").getConfigurationSection("level-data").getKeys(<mark class="modifier">false</mark>)*levelConfigSections2b
+java.util.SetTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2n
+java.lang.StringTYPE_ARGUMENTK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2û
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java8 (A2à
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java2 (5≈
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?maxLevel@22.6:22.14VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java ("
+typeint"
+isFinalfalse"É
+declarationStringn<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">maxLevel</mark> = 1*maxLevel2X
+intTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (ø
+gcom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelString@23.14:23.25VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java ("
+typeString"
+isFinalfalse"g
+declarationStringR<mark class="modifier"> </mark>String <mark class="class-field">levelString</mark>*levelString2e
+java.lang.StringTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (ú
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?level@25.8:25.13VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java ("
+typeint"
+isFinalfalse"ù
+declarationStringá<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">level</mark> = Integer.parseInt(levelString)*level2X
+intTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2Å
+,java.lang.Integer.parseInt(java.lang.String)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java ( 2º
+gcom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelString@23.14:23.25CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java! (,∞
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?i@34.11:34.12VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java" "("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 1*i2X
+intTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java" "(
+¸
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?path@35.10:35.14VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java#
+ #("
+typeString"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark>String <mark class="class-field">path</mark> = "level-data." + Integer.toString(i)*path2e
+java.lang.StringTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java# #(	2t
+java.lang.Integer.toString(int)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java#) #(12≤
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?i@34.11:34.12CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java#2 #(3Ò
+ccom.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?levelExp@41.7:41.15VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java) )("
+typeint"
+isFinalfalse"À
+declarationStringµ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">levelExp</mark> = ConfigManager.get().getConfig("config").getInt(path + ".expToNextLevel")*levelExp2X
+intTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java) )(2û
+Icom.github.ebjerke04.myrpg.data.ConfigManager.getConfig(java.lang.String)CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java)& )(/2à
+3com.github.ebjerke04.myrpg.data.ConfigManager.get()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java)  )(#2µ
+`com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?path@35.10:35.14CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java)A )(Eé
+]com.github.ebjerke04.myrpg.data.leveling.LevelingManager.populateLevelDataMap()?e@28.34:28.35VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java" (#"
+typeNumberFormatException"
+isFinalfalse",
+declarationStringNumberFormatException e*e2t
+java.lang.NumberFormatExceptionTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (!ı
+Kcom.github.ebjerke04.myrpg.data.leveling.LevelingManager?levels@12.35:12.41VARIABLEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java# ()"
+isFinalfalse"!
+typeMap<Integer, PlayerLevel>"è
+declarationStringz<mark class="modifier">private </mark>Map<Integer, PlayerLevel> <mark class="class-field">levels</mark> = new HashMap<>();"
+isStaticfalse"
+accessprivate*levels2b
+java.util.MapTYPEK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java	 (2o
+java.lang.IntegerTYPE_ARGUMENTK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (2í
+4com.github.ebjerke04.myrpg.data.leveling.PlayerLevelTYPE_ARGUMENTK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java (!2p
+java.util.HashMap.HashMap()CALLK
+Asrc\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java0 (9

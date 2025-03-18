@@ -1,0 +1,212 @@
+
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.javaå
+.com.github.ebjerke04.myrpg.quests.QuestManagerCLASSA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (",
+package!com.github.ebjerke04.myrpg.quests"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"j
+declarationStringU<mark class="modifier">public </mark><mark class="modifier">class </mark>QuestManager"
+accesspublic*QuestManager2è
+=com.github.ebjerke04.myrpg.quests.QuestManager.QuestManager()DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2ï
+Ccom.github.ebjerke04.myrpg.quests.QuestManager.loadNPCsFromConfig()DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java ( 2ó
+Ecom.github.ebjerke04.myrpg.quests.QuestManager.loadQuestsFromConfig()DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java   ("2å
+:com.github.ebjerke04.myrpg.quests.QuestManager.getQuests()DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java& &(2õ
+Icom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java* *(2ë
+?com.github.ebjerke04.myrpg.quests.QuestManager?npcs@10.16:10.20DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java
+ 
+(2ì
+Acom.github.ebjerke04.myrpg.quests.QuestManager?quests@12.13:12.19DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (Û	
+=com.github.ebjerke04.myrpg.quests.QuestManager.QuestManager()CONSTRUCTORA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java ("d
+declarationStringO<mark class="modifier">public </mark><mark class="method">QuestManager</mark>()*QuestManager2é
+Ccom.github.ebjerke04.myrpg.quests.QuestManager.loadNPCsFromConfig()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2ê
+Ecom.github.ebjerke04.myrpg.quests.QuestManager.loadQuestsFromConfig()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2}
+2com.github.ebjerke04.myrpg.quests.QuestNPC.spawn()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2ä
+?com.github.ebjerke04.myrpg.quests.QuestManager?npcs@10.16:10.20CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2ò
+Mcom.github.ebjerke04.myrpg.quests.QuestManager.QuestManager()?npc@21.16:21.19CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2ü
+Mcom.github.ebjerke04.myrpg.quests.QuestManager.QuestManager()?npc@21.16:21.19DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2Ä
+.com.github.ebjerke04.myrpg.quests.QuestManagerRETURN_TYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (ü
+Mcom.github.ebjerke04.myrpg.quests.QuestManager.QuestManager()?npc@21.16:21.19VARIABLEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java ("
+typeQuestNPC"
+isFinalfalse"a
+declarationStringL<mark class="modifier"> </mark>QuestNPC <mark class="class-field">npc</mark>*npc2u
+*com.github.ebjerke04.myrpg.quests.QuestNPCTYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (€
+Ccom.github.ebjerke04.myrpg.quests.QuestManager.loadNPCsFromConfig()METHODA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java ( "
+isFinalfalse"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">loadNPCsFromConfig</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*loadNPCsFromConfig2é
+Ccom.github.ebjerke04.myrpg.data.QuestDataManager.getQuestNPCNames()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java/ (?2Å
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java) (,2`
+java.util.List.add(E)CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2ó
+Lcom.github.ebjerke04.myrpg.data.QuestDataManager.createNPC(java.lang.String)CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java# (,2Å
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java ( 2ä
+?com.github.ebjerke04.myrpg.quests.QuestManager?npcs@10.16:10.20CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2¢
+Wcom.github.ebjerke04.myrpg.quests.QuestManager.loadNPCsFromConfig()?npcName@27.14:27.21CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java- (42©
+Wcom.github.ebjerke04.myrpg.quests.QuestManager.loadNPCsFromConfig()?npcName@27.14:27.21DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2V
+voidRETURN_TYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java	 (ì
+Wcom.github.ebjerke04.myrpg.quests.QuestManager.loadNPCsFromConfig()?npcName@27.14:27.21VARIABLEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java ("
+typeString"
+isFinalfalse"c
+declarationStringN<mark class="modifier"> </mark>String <mark class="class-field">npcName</mark>*npcName2[
+java.lang.StringTYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (Í
+Ecom.github.ebjerke04.myrpg.quests.QuestManager.loadQuestsFromConfig()METHODA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java   (""
+isFinalfalse"ê
+declarationString{<mark class="modifier">private </mark><mark class="modifier">void</mark> <mark class="method">loadQuestsFromConfig</mark>()"
+isStaticfalse"
+accessprivate"
+
+isAbstractfalse"
+typevoid*loadQuestsFromConfig2ã
+@com.github.ebjerke04.myrpg.data.QuestDataManager.getQuestNames()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java!1 !(>2Å
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java!+ !(.2`
+java.util.List.add(E)CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java"
+ "(2ô
+Ncom.github.ebjerke04.myrpg.data.QuestDataManager.createQuest(java.lang.String)CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java"% "(02Å
+6com.github.ebjerke04.myrpg.data.QuestDataManager.get()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java" "("2å
+Acom.github.ebjerke04.myrpg.quests.QuestManager?quests@12.13:12.19CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java" "(	2¶
+[com.github.ebjerke04.myrpg.quests.QuestManager.loadQuestsFromConfig()?questName@33.14:33.23CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java"1 "(:2≠
+[com.github.ebjerke04.myrpg.quests.QuestManager.loadQuestsFromConfig()?questName@33.14:33.23DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java! !(2V
+voidRETURN_TYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java 	  (õ
+[com.github.ebjerke04.myrpg.quests.QuestManager.loadQuestsFromConfig()?questName@33.14:33.23VARIABLEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java! !("
+typeString"
+isFinalfalse"e
+declarationStringP<mark class="modifier"> </mark>String <mark class="class-field">questName</mark>*	questName2[
+java.lang.StringTYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java! !(ﬁ
+:com.github.ebjerke04.myrpg.quests.QuestManager.getQuests()METHODA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java& &("
+isFinalfalse"s
+declarationString^<mark class="modifier">public </mark>List&lt;Quest&gt; <mark class="method">getQuests</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeList<Quest>*	getQuests2å
+Acom.github.ebjerke04.myrpg.quests.QuestManager?quests@12.13:12.19CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java'	 '(2`
+java.util.ListRETURN_TYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java& &(2Ç
+'com.github.ebjerke04.myrpg.quests.QuestRETURN_TYPE_ARGUMENTA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java& &(Æ
+Icom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)METHODA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java* *("
+isFinalfalse"r
+declarationString]<mark class="modifier">public </mark>QuestNPC <mark class="method">getNPCbyId</mark>(UUID id)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeQuestNPC*
+getNPCbyId2r
+'java.util.UUID.equals(java.lang.Object)CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java, ,(2É
+8com.github.ebjerke04.myrpg.quests.QuestNPC.getUniqueId()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java, ,(2ä
+?com.github.ebjerke04.myrpg.quests.QuestManager?npcs@10.16:10.20CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java+ +(2§
+Ycom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)?npc@43.16:43.19CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java, ,(
+2ó
+Lcom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)!idCALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java,  ,("2§
+Ycom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)?npc@43.16:43.19CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java,, ,(/2ú
+Lcom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)!id	PARAMETERA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java*! *(#2´
+Ycom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)?npc@43.16:43.19DECLARATIONA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java+ +(2|
+*com.github.ebjerke04.myrpg.quests.QuestNPCRETURN_TYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java* *(´
+Ycom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)?npc@43.16:43.19VARIABLEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java+ +("
+typeQuestNPC"
+isFinalfalse"a
+declarationStringL<mark class="modifier"> </mark>QuestNPC <mark class="class-field">npc</mark>*npc2u
+*com.github.ebjerke04.myrpg.quests.QuestNPCTYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java+ +(π
+Lcom.github.ebjerke04.myrpg.quests.QuestManager.getNPCbyId(java.util.UUID)!id	PARAMETERA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java*! *(#"
+typeUUID"
+isFinalfalse"
+declarationStringUUID id*id2Y
+java.util.UUIDTYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java* *( ª
+?com.github.ebjerke04.myrpg.quests.QuestManager?npcs@10.16:10.20VARIABLEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java
+ 
+("
+isFinalfalse"
+typeList<QuestNPC>"Ö
+declarationStringp<mark class="modifier"> </mark>List<QuestNPC> <mark class="class-field">npcs</mark> = new ArrayList<QuestNPC>();"
+isStaticfalse"
+accesspackage_private*npcs2Y
+java.util.ListTYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java
+ 
+(2~
+*com.github.ebjerke04.myrpg.quests.QuestNPCTYPE_ARGUMENTA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java
+ 
+(2j
+java.util.ArrayList.ArrayList()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java
+ 
+(.µ
+Acom.github.ebjerke04.myrpg.quests.QuestManager?quests@12.13:12.19VARIABLEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java ("
+isFinalfalse"
+typeList<Quest>"Å
+declarationStringl<mark class="modifier"> </mark>List<Quest> <mark class="class-field">quests</mark> = new ArrayList<Quest>();"
+isStaticfalse"
+accesspackage_private*quests2Y
+java.util.ListTYPEA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2{
+'com.github.ebjerke04.myrpg.quests.QuestTYPE_ARGUMENTA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (2j
+java.util.ArrayList.ArrayList()CALLA
+7src\com\github\ebjerke04\myrpg\quests\QuestManager.java (*

@@ -1,0 +1,30 @@
+
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.javaÛ
+1com.github.ebjerke04.myrpg.quests.RpgCreationStepENUMD
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java ("G
+declarationString2<mark class="modifier">enum </mark>RpgCreationStep*RpgCreationStep2—
+Bcom.github.ebjerke04.myrpg.quests.RpgCreationStep?ENTER_QUEST_NAMEDECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java (2™
+Dcom.github.ebjerke04.myrpg.quests.RpgCreationStep?CONFIRM_QUEST_NAMEDECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java (2—
+Bcom.github.ebjerke04.myrpg.quests.RpgCreationStep?ENTER_CLASS_NAMEDECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java (2™
+Dcom.github.ebjerke04.myrpg.quests.RpgCreationStep?CONFIRM_CLASS_NAMEDECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java (2“
+>com.github.ebjerke04.myrpg.quests.RpgCreationStep?NOT_CREATINGDECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java (±
+Bcom.github.ebjerke04.myrpg.quests.RpgCreationStep?ENTER_QUEST_NAMEVALUED
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java ("
+enumtrue*ENTER_QUEST_NAMEµ
+Dcom.github.ebjerke04.myrpg.quests.RpgCreationStep?CONFIRM_QUEST_NAMEVALUED
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java ("
+enumtrue*CONFIRM_QUEST_NAME±
+Bcom.github.ebjerke04.myrpg.quests.RpgCreationStep?ENTER_CLASS_NAMEVALUED
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java ("
+enumtrue*ENTER_CLASS_NAMEµ
+Dcom.github.ebjerke04.myrpg.quests.RpgCreationStep?CONFIRM_CLASS_NAMEVALUED
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java ("
+enumtrue*CONFIRM_CLASS_NAME©
+>com.github.ebjerke04.myrpg.quests.RpgCreationStep?NOT_CREATINGVALUED
+:src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java ("
+enumtrue*NOT_CREATING

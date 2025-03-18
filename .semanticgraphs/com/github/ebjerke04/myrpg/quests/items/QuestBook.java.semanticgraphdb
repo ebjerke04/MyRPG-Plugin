@@ -1,0 +1,312 @@
+
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java◊
+1com.github.ebjerke04.myrpg.quests.items.QuestBookCLASSD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java ("2
+package'com.github.ebjerke04.myrpg.quests.items"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"g
+declarationStringR<mark class="modifier">public </mark><mark class="modifier">class </mark>QuestBook"
+accesspublic*	QuestBook2µ
+`com.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java ((2•
+Pcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java   (é
+`com.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)METHODD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (("
+isFinalfalse"¬
+declarationString¨<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">addToPlayerInventory</mark>(Player player)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*addToPlayerInventory2m
+java.util.ArrayList.ArrayList()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java ((2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?book@20.12:20.16CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?meta@21.11:21.15CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?lore@24.18:24.22CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?meta@21.11:21.15CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?lore@24.18:24.22CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?book@20.12:20.16CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?meta@21.11:21.15CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2µ
+gcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)!playerCALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?book@20.12:20.16CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java# ('2∫
+gcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)!player	PARAMETERD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java0 (62∆
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?book@20.12:20.16DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2∆
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?meta@21.11:21.15DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2∆
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?lore@24.18:24.22DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2Y
+voidRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (È
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?book@20.12:20.16VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java ("
+type	ItemStack"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>ItemStack <mark class="class-field">book</mark> = new ItemStack(Material.WRITTEN_BOOK)*book2l
+org.bukkit.inventory.ItemStackTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (ö
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?meta@21.11:21.15VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java ("
+typeItemMeta"
+isFinalfalse"w
+declarationStringb<mark class="modifier"> </mark>ItemMeta <mark class="class-field">meta</mark> = book.getItemMeta()*meta2p
+"org.bukkit.inventory.meta.ItemMetaTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (
+2ø
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?book@20.12:20.16CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (ª
+qcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)?lore@24.18:24.22VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java ("
+typeList<Component>"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>List<Component> <mark class="class-field">lore</mark> = new ArrayList<>()*lore2\
+java.util.ListTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2y
+"net.kyori.adventure.text.ComponentTYPE_ARGUMENTD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java (2m
+java.util.ArrayList.ArrayList()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java ((
+gcom.github.ebjerke04.myrpg.quests.items.QuestBook.addToPlayerInventory(org.bukkit.entity.Player)!player	PARAMETERD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java0 (6"
+typePlayer"
+isFinalfalse""
+declarationStringPlayer player*player2f
+org.bukkit.entity.PlayerTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java) (/¿G
+Pcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)METHODD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java   ("
+isFinalfalse"≤
+declarationStringú<mark class="modifier">public </mark><mark class="modifier">static </mark><mark class="modifier">void</mark> <mark class="method">open</mark>(Player player)"
+isStatictrue"
+accesspublic"
+
+isAbstractfalse"
+typevoid*open2c
+java.util.List.size()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java#; #(?2à
+:com.github.ebjerke04.myrpg.quests.QuestManager.getQuests()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java#/ #(82Å
+3com.github.ebjerke04.myrpg.Plugin.getQuestManager()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java# #(,2e
+java.util.List.get(int)CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$6 $(92à
+:com.github.ebjerke04.myrpg.quests.QuestManager.getQuests()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$* $(32Å
+3com.github.ebjerke04.myrpg.Plugin.getQuestManager()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$ $('2É
+5com.github.ebjerke04.myrpg.quests.Quest.getMinLevel()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java) )((2
+1com.github.ebjerke04.myrpg.quests.Quest.getName()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java4- 4(42m
+java.util.ArrayList.ArrayList()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java6 6()2¨
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java# #(2¨
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java#C #(D2¨
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$: $(;2¨
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java' '(2Ø
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?quest@36.9:36.14CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java) )(2µ
+gcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?playerLevel@38.7:38.18CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java, ,(2∑
+icom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questMinLevel@41.7:41.20CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java, ,("2≥
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?material@43.12:43.20CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java,$ ,(,2µ
+gcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?playerLevel@38.7:38.18CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java- -(2∑
+icom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questMinLevel@41.7:41.20CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java- -((2≥
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?material@43.12:43.20CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java-* -(22∂
+hcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questActive@39.11:39.22CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java/ /(2≥
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?material@43.12:43.20CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java/ /(2≥
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?material@43.12:43.20CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java1' 1(/2¥
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItem@49.13:49.22CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java2 2(%2Ø
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?quest@36.9:36.14CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java4' 4(,2∏
+jcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItemMeta@50.12:50.25CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java5 5(2≥
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?itemName@52.13:52.21CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java5 5(%2Ø
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?lore@54.19:54.23CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java7 7(2∑
+icom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questMinLevel@41.7:41.20CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java7. 7(;2∏
+jcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItemMeta@50.12:50.25CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java8 8(2Ø
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?lore@54.19:54.23CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java8 8(2¥
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItem@49.13:49.22CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java9 9(2∏
+jcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItemMeta@50.12:50.25CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java9 9(&2¥
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?inventory@33.12:33.21CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java; ;(2¨
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java; ;(2¥
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItem@49.13:49.22CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java; ;(!2•
+Wcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)!playerCALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java> >(2¥
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?inventory@33.12:33.21CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java> >( 2™
+Wcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)!player	PARAMETERD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java    (&2ª
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?inventory@33.12:33.21DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java! !(2≥
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java# #(2∂
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?quest@36.9:36.14DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$	 $(2º
+gcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?playerLevel@38.7:38.18DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java& &(2Ω
+hcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questActive@39.11:39.22DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java' '(2æ
+icom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questMinLevel@41.7:41.20DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java) )(2∫
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?material@43.12:43.20DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java+ +(2ª
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItem@49.13:49.22DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java1 1(2ø
+jcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItemMeta@50.12:50.25DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java2 2(2∫
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?itemName@52.13:52.21DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java4 4(2∂
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?lore@54.19:54.23DECLARATIOND
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java6 6(2Y
+voidRETURN_TYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java   (¬
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?inventory@33.12:33.21VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java! !("
+type	Inventory"
+isFinalfalse"È
+declarationString”<mark class="modifier"> </mark>Inventory <mark class="class-field">inventory</mark> = Bukkit.createInventory(<mark class="modifier">null</mark><mark class="modifier">,</mark> 9 * 6, Component.text("Quest Book"))*	inventory2l
+org.bukkit.inventory.InventoryTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java! !(£
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java# #("
+typeint"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">i</mark> = 0*i2Q
+intTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java# #(
+à
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?quest@36.9:36.14VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$	 $("
+typeQuest"
+isFinalfalse"é
+declarationStringy<mark class="modifier"> </mark>Quest <mark class="class-field">quest</mark> = Plugin.getQuestManager().getQuests().get(i)*quest2u
+'com.github.ebjerke04.myrpg.quests.QuestTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$ $(2e
+java.util.List.get(int)CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$6 $(92à
+:com.github.ebjerke04.myrpg.quests.QuestManager.getQuests()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$* $(32Å
+3com.github.ebjerke04.myrpg.Plugin.getQuestManager()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$ $('2¨
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java$: $(;¡
+gcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?playerLevel@38.7:38.18VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java& &("
+typeint"
+isFinalfalse"Ü
+declarationStringq<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">playerLevel</mark> = 3*playerLevel2Q
+intTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java& &(≤
+hcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questActive@39.11:39.22VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java' '("
+typeboolean"
+isFinalfalse"ø
+declarationString©<mark class="modifier"> </mark><mark class="modifier">boolean</mark> <mark class="class-field">questActive</mark> = (i == 1) ? true : <mark class="modifier">false</mark>*questActive2U
+booleanTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java' '(
+2¨
+^com.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?i@35.11:35.12CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java' '(í
+icom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questMinLevel@41.7:41.20VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java) )("
+typeint"
+isFinalfalse"õ
+declarationStringÖ<mark class="modifier"> </mark><mark class="modifier">int</mark> <mark class="class-field">questMinLevel</mark> = quest.getMinLevel()*questMinLevel2Q
+intTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java) )(2É
+5com.github.ebjerke04.myrpg.quests.Quest.getMinLevel()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java) )((2Ø
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?quest@36.9:36.14CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java) )(∆
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?material@43.12:43.20VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java+ +("
+typeMaterial"
+isFinalfalse"|
+declarationStringg<mark class="modifier"> </mark>Material <mark class="class-field">material</mark> = Material.WHITE_WOOL*material2a
+org.bukkit.MaterialTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java+ +(ë
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItem@49.13:49.22VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java1 1("
+type	ItemStack"
+isFinalfalse"Ç
+declarationStringm<mark class="modifier"> </mark>ItemStack <mark class="class-field">questItem</mark> = new ItemStack(material)*	questItem2l
+org.bukkit.inventory.ItemStackTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java1 1(2≥
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?material@43.12:43.20CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java1' 1(/†
+jcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItemMeta@50.12:50.25VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java2 2("
+typeItemMeta"
+isFinalfalse"Ö
+declarationStringp<mark class="modifier"> </mark>ItemMeta <mark class="class-field">questItemMeta</mark> = questItem.getItemMeta()*questItemMeta2p
+"org.bukkit.inventory.meta.ItemMetaTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java2 2(2¥
+fcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?questItem@49.13:49.22CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java2 2(%ó
+ecom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?itemName@52.13:52.21VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java4 4("
+type	Component"
+isFinalfalse"â
+declarationStringt<mark class="modifier"> </mark>Component <mark class="class-field">itemName</mark> = Component.text(quest.getName())*itemName2p
+"net.kyori.adventure.text.ComponentTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java4 4(2
+1com.github.ebjerke04.myrpg.quests.Quest.getName()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java4- 4(42Ø
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?quest@36.9:36.14CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java4' 4(,´
+acom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)?lore@54.19:54.23VARIABLED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java6 6("
+typeList<Component>"
+isFinalfalse"}
+declarationStringh<mark class="modifier"> </mark>List<Component> <mark class="class-field">lore</mark> = new ArrayList<>()*lore2\
+java.util.ListTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java6 6(2y
+"net.kyori.adventure.text.ComponentTYPE_ARGUMENTD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java6 6(2m
+java.util.ArrayList.ArrayList()CALLD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java6 6()‡
+Wcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)!player	PARAMETERD
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java    (&"
+typePlayer"
+isFinalfalse""
+declarationStringPlayer player*player2f
+org.bukkit.entity.PlayerTYPED
+:src\com\github\ebjerke04\myrpg\quests\items\QuestBook.java   (

@@ -1,0 +1,145 @@
+
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.javaÚ	
+*com.github.ebjerke04.myrpg.quests.QuestNPCCLASS=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (",
+package!com.github.ebjerke04.myrpg.quests"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"f
+declarationStringQ<mark class="modifier">public </mark><mark class="modifier">class </mark>QuestNPC"
+accesspublic*QuestNPC2²
+dcom.github.ebjerke04.myrpg.quests.QuestNPC.QuestNPC(com.github.ebjerke04.myrpg.quests.NPCDataHolder)DECLARATION=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2€
+2com.github.ebjerke04.myrpg.quests.QuestNPC.spawn()DECLARATION=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2Ÿ
+Qcom.github.ebjerke04.myrpg.quests.QuestNPC.rightClicked(org.bukkit.entity.Player)DECLARATION=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java" "(2†
+8com.github.ebjerke04.myrpg.quests.QuestNPC.getUniqueId()DECLARATION=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java& &(2‰
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27DECLARATION=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2‡
+9com.github.ebjerke04.myrpg.quests.QuestNPC?id@15.14:15.16DECLARATION=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (š
+dcom.github.ebjerke04.myrpg.quests.QuestNPC.QuestNPC(com.github.ebjerke04.myrpg.quests.NPCDataHolder)CONSTRUCTOR=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java ("r
+declarationString]<mark class="modifier">public </mark><mark class="method">QuestNPC</mark>(NPCDataHolder data)*QuestNPC2°
+icom.github.ebjerke04.myrpg.quests.QuestNPC.QuestNPC(com.github.ebjerke04.myrpg.quests.NPCDataHolder)!dataCALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2‚
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2µ
+icom.github.ebjerke04.myrpg.quests.QuestNPC.QuestNPC(com.github.ebjerke04.myrpg.quests.NPCDataHolder)!data	PARAMETER=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (#2x
+*com.github.ebjerke04.myrpg.quests.QuestNPCRETURN_TYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (…
+icom.github.ebjerke04.myrpg.quests.QuestNPC.QuestNPC(com.github.ebjerke04.myrpg.quests.NPCDataHolder)!data	PARAMETER=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (#"
+typeNPCDataHolder"
+isFinalfalse"'
+declarationStringNPCDataHolder data*data2v
+/com.github.ebjerke04.myrpg.quests.NPCDataHolderTYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (·
+2com.github.ebjerke04.myrpg.quests.QuestNPC.spawn()METHOD=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java ("
+isFinalfalse"€
+declarationStringk<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">spawn</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*spawn2‚
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java@ (D2‚
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2‚
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java5 (92Ž
+Gcom.github.ebjerke04.myrpg.quests.QuestNPC.spawn()?villager@24.11:24.19CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (
+2Ž
+Gcom.github.ebjerke04.myrpg.quests.QuestNPC.spawn()?villager@24.11:24.19CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (
+2Ž
+Gcom.github.ebjerke04.myrpg.quests.QuestNPC.spawn()?villager@24.11:24.19CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (
+2‚
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java% ()2Ž
+Gcom.github.ebjerke04.myrpg.quests.QuestNPC.spawn()?villager@24.11:24.19CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (
+2€
+9com.github.ebjerke04.myrpg.quests.QuestNPC?id@15.14:15.16CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2Ž
+Gcom.github.ebjerke04.myrpg.quests.QuestNPC.spawn()?villager@24.11:24.19CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2•
+Gcom.github.ebjerke04.myrpg.quests.QuestNPC.spawn()?villager@24.11:24.19DECLARATION=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2R
+voidRETURN_TYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (×
+Gcom.github.ebjerke04.myrpg.quests.QuestNPC.spawn()?villager@24.11:24.19VARIABLE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java ("
+typeVillager"
+isFinalfalse"§
+declarationString‘<mark class="modifier"> </mark>Villager <mark class="class-field">villager</mark> = data.location.getWorld().spawn(data.location, Villager.class)*villager2a
+org.bukkit.entity.VillagerTYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (
+2‚
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java (2‚
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java5 (9»
+Qcom.github.ebjerke04.myrpg.quests.QuestNPC.rightClicked(org.bukkit.entity.Player)METHOD=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java" "("
+isFinalfalse"”
+declarationString<mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">rightClicked</mark>(Player player)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*rightClicked2Ÿ
+Xcom.github.ebjerke04.myrpg.quests.QuestNPC.rightClicked(org.bukkit.entity.Player)!playerCALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java# #(2‚
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java#: #(>2¤
+Xcom.github.ebjerke04.myrpg.quests.QuestNPC.rightClicked(org.bukkit.entity.Player)!player	PARAMETER=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java"! "('2R
+voidRETURN_TYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java" "(Ó
+Xcom.github.ebjerke04.myrpg.quests.QuestNPC.rightClicked(org.bukkit.entity.Player)!player	PARAMETER=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java"! "('"
+typePlayer"
+isFinalfalse""
+declarationStringPlayer player*player2_
+org.bukkit.entity.PlayerTYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java" "( ³
+8com.github.ebjerke04.myrpg.quests.QuestNPC.getUniqueId()METHOD=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java& &("
+isFinalfalse"h
+declarationStringS<mark class="modifier">public </mark>UUID <mark class="method">getUniqueId</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeUUID*getUniqueId2€
+9com.github.ebjerke04.myrpg.quests.QuestNPC?id@15.14:15.16CALL=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java'	 '(2\
+java.util.UUIDRETURN_TYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java& &(Ã
+;com.github.ebjerke04.myrpg.quests.QuestNPC?data@13.23:13.27VARIABLE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java ("
+isFinalfalse"
+typeNPCDataHolder"n
+declarationStringY<mark class="modifier">private </mark>NPCDataHolder <mark class="class-field">data</mark>"
+isStaticfalse"
+accessprivate*data2v
+/com.github.ebjerke04.myrpg.quests.NPCDataHolderTYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java	 (Š
+9com.github.ebjerke04.myrpg.quests.QuestNPC?id@15.14:15.16VARIABLE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java ("
+isFinalfalse"
+typeUUID"c
+declarationStringN<mark class="modifier">private </mark>UUID <mark class="class-field">id</mark>"
+isStaticfalse"
+accessprivate*id2U
+java.util.UUIDTYPE=
+3src\com\github\ebjerke04\myrpg\quests\QuestNPC.java	 (

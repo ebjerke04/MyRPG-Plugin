@@ -1,0 +1,80 @@
+
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.javaã
+4com.github.ebjerke04.myrpg.data.leveling.PlayerLevelCLASSG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java ("3
+package(com.github.ebjerke04.myrpg.data.leveling"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"i
+declarationStringT<mark class="modifier">public </mark><mark class="modifier">class </mark>PlayerLevel"
+accesspublic*PlayerLevel2ù
+Ecom.github.ebjerke04.myrpg.data.leveling.PlayerLevel.PlayerLevel(int)DECLARATIONG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (2¢
+Jcom.github.ebjerke04.myrpg.data.leveling.PlayerLevel.getExperienceToNext()DECLARATIONG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java
+ 
+(2ó
+?com.github.ebjerke04.myrpg.data.leveling.PlayerLevel.toString()DECLARATIONG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (2ß
+Ocom.github.ebjerke04.myrpg.data.leveling.PlayerLevel?experienceToNext@4.13:4.29DECLARATIONG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (Œ
+Ecom.github.ebjerke04.myrpg.data.leveling.PlayerLevel.PlayerLevel(int)CONSTRUCTORG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java ("ñ
+declarationStringÄ<mark class="modifier">public </mark><mark class="method">PlayerLevel</mark>(<mark class="modifier">int</mark> experienceToNext)*PlayerLevel2ß
+Vcom.github.ebjerke04.myrpg.data.leveling.PlayerLevel.PlayerLevel(int)!experienceToNextCALLG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (*2†
+Ocom.github.ebjerke04.myrpg.data.leveling.PlayerLevel?experienceToNext@4.13:4.29CALLG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (2¨
+Vcom.github.ebjerke04.myrpg.data.leveling.PlayerLevel.PlayerLevel(int)!experienceToNext	PARAMETERG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java ((2å
+4com.github.ebjerke04.myrpg.data.leveling.PlayerLevelRETURN_TYPEG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (¸
+Vcom.github.ebjerke04.myrpg.data.leveling.PlayerLevel.PlayerLevel(int)!experienceToNext	PARAMETERG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (("
+typeint"
+isFinalfalse"G
+declarationString2<mark class="modifier">int</mark> experienceToNext*experienceToNext2T
+intTYPEG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (õ
+Jcom.github.ebjerke04.myrpg.data.leveling.PlayerLevel.getExperienceToNext()METHODG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java
+ 
+("
+isFinalfalse"ç
+declarationStringx<mark class="modifier">public </mark><mark class="modifier">int</mark> <mark class="method">getExperienceToNext</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeint*getExperienceToNext2†
+Ocom.github.ebjerke04.myrpg.data.leveling.PlayerLevel?experienceToNext@4.13:4.29CALLG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java	 (2[
+intRETURN_TYPEG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java
+ 
+(‡
+?com.github.ebjerke04.myrpg.data.leveling.PlayerLevel.toString()METHODG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java ("
+isFinalfalse"g
+declarationStringR<mark class="modifier">public </mark>String <mark class="method">toString</mark>()"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typeString*toString2p
+java.lang.Integer.toString(int)CALLG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (2†
+Ocom.github.ebjerke04.myrpg.data.leveling.PlayerLevel?experienceToNext@4.13:4.29CALLG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (*2h
+java.lang.StringRETURN_TYPEG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java (‚
+Ocom.github.ebjerke04.myrpg.data.leveling.PlayerLevel?experienceToNext@4.13:4.29VARIABLEG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java ("
+isFinalfalse"
+typeint"é
+declarationStringy<mark class="modifier">private </mark><mark class="modifier">int</mark> <mark class="class-field">experienceToNext</mark>"
+isStaticfalse"
+accessprivate*experienceToNext2T
+intTYPEG
+=src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java	 (

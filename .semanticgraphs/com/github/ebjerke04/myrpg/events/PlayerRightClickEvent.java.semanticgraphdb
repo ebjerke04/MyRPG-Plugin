@@ -1,0 +1,120 @@
+
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.javaÕ
+7com.github.ebjerke04.myrpg.events.PlayerRightClickEventCLASSJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java ("",
+package!com.github.ebjerke04.myrpg.events"
+isFinalfalse"
+inner classfalse"
+
+isAbstractfalse"§
+declarationStringé<mark class="modifier">public </mark><mark class="modifier">class </mark>PlayerRightClickEvent<mark class="modifier"> extends </mark>BaseEvent"
+accesspublic*PlayerRightClickEvent2™
+Ocom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.PlayerRightClickEvent()DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2“
+wcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2Å
++com.github.ebjerke04.myrpg.events.BaseEventEXTENDJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java+ (4”
+Ocom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.PlayerRightClickEvent()CONSTRUCTORJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java ("m
+declarationStringX<mark class="modifier">public </mark><mark class="method">PlayerRightClickEvent</mark>()*PlayerRightClickEvent2ã
+7com.github.ebjerke04.myrpg.events.BaseEvent.BaseEvent()CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2í
+7com.github.ebjerke04.myrpg.events.PlayerRightClickEventRETURN_TYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (Ö%
+wcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)METHODJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java ("
+isFinalfalse"Ÿ
+declarationString√<mark class="annotation">@EventHandler</mark> <br><mark class="modifier">public </mark><mark class="modifier">void</mark> <mark class="method">onPlayerRightClick</mark>(PlayerInteractEvent event)"
+isStaticfalse"
+accesspublic"
+
+isAbstractfalse"
+typevoid*onPlayerRightClick2}
+)java.lang.String.equals(java.lang.Object)CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.javaB (H2§
+Pcom.github.ebjerke04.myrpg.quests.items.QuestBook.open(org.bukkit.entity.Player)CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2—
+}com.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2—
+}com.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java5 (:2—
+}com.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2ﬂ
+äcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?player@23.10:23.16CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2›
+àcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?item@24.13:24.17CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2›
+àcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?item@24.13:24.17CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2›
+àcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?item@24.13:24.17CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2·
+åcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?itemName@27.14:27.22CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.javaO (W2›
+àcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?item@24.13:24.17CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2Á
+ícom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?itemNameString@28.11:28.25CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java3 (A2ﬂ
+äcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?player@23.10:23.16CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2—
+}com.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java! !(
+2÷
+}com.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)!event	PARAMETERJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java4 (92Ê
+äcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?player@23.10:23.16DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java
+ (2‰
+àcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?item@24.13:24.17DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2Ë
+åcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?itemName@27.14:27.22DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2Ó
+ícom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?itemNameString@28.11:28.25DECLARATIONJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2_
+voidRETURN_TYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java («
+äcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?player@23.10:23.16VARIABLEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java
+ ("
+typePlayer"
+isFinalfalse"v
+declarationStringa<mark class="modifier"> </mark>Player <mark class="class-field">player</mark> = event.getPlayer()*player2l
+org.bukkit.entity.PlayerTYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (	2—
+}com.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)!eventCALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (Ù
+àcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?item@24.13:24.17VARIABLEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java ("
+type	ItemStack"
+isFinalfalse"è
+declarationStringz<mark class="modifier"> </mark>ItemStack <mark class="class-field">item</mark> = player.getInventory().getItemInMainHand()*item2r
+org.bukkit.inventory.ItemStackTYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2ﬂ
+äcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?player@23.10:23.16CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (˘
+åcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?itemName@27.14:27.22VARIABLEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java ("
+type	Component"
+isFinalfalse"ä
+declarationStringu<mark class="modifier"> </mark>Component <mark class="class-field">itemName</mark> = item.getItemMeta().displayName()*itemName2v
+"net.kyori.adventure.text.ComponentTYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (2›
+àcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?item@24.13:24.17CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (î
+ícom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?itemNameString@28.11:28.25VARIABLEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java ("
+typeString"
+isFinalfalse"™
+declarationStringî<mark class="modifier"> </mark>String <mark class="class-field">itemNameString</mark> = PlainTextComponentSerializer.plainText().serialize(itemName)*itemNameString2d
+java.lang.StringTYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java (
+2·
+åcom.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)?itemName@27.14:27.22CALLJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.javaO (WΩ
+}com.github.ebjerke04.myrpg.events.PlayerRightClickEvent.onPlayerRightClick(org.bukkit.event.player.PlayerInteractEvent)!event	PARAMETERJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java4 (9"
+typePlayerInteractEvent"
+isFinalfalse".
+declarationStringPlayerInteractEvent event*event2
++org.bukkit.event.player.PlayerInteractEventTYPEJ
+@src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java  (3

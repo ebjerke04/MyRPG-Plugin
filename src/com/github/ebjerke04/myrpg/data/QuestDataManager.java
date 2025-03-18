@@ -8,6 +8,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 
+import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.quests.NPCDataHolder;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestDataHolder;
@@ -81,11 +82,6 @@ public class QuestDataManager {
 
 		String path = "npcs." + name + ".spawn";
 		Location location = getQuestData().getLocation(path);
-
-		// TODO: Maybe not throw error, just set to null and dont spawn it later maybe?
-		if (location == null)
-			throw new NullPointerException("NPC location should not be null");
-
 		data.location = location;
 
 		return data;
@@ -97,7 +93,12 @@ public class QuestDataManager {
 		data.name = questName;
 		
 		String path = "quests." + questName;
+		
 		data.minLevel = getQuestData().getInt(path + ".min-level");
+
+		// TODO: Add null check
+		String startNPCName = getQuestData().getString(path + ".steps.1.npc"); 
+		data.startNPC = Plugin.getQuestManager().getNPCbyName(startNPCName);
 		
 		return data;
 	}
