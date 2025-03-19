@@ -58,7 +58,7 @@ public class PlayerManager {
 		players.get(playerId).setActiveClass(playerClass);
 	}
 	
-	public PlayerDataHolder getPlayerData(UUID playerId) {
+	public PlayerDataHolder getRpgPlayer(UUID playerId) {
 		return players.get(playerId);
 	}
 	

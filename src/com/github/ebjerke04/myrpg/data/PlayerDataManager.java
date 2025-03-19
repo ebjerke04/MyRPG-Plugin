@@ -40,8 +40,8 @@ public class PlayerDataManager {
 		PlayerDataHolder dataHolder = new PlayerDataHolder();
 		
 		// Load level from config, default to 1 if not found
-		int level = getPlayerData().getInt("players." + playerId + ".level", 1);
-		dataHolder.level = level;
+		//int level = getPlayerData().getInt("players." + playerId + ".level", 1);
+		//dataHolder.level = level;
 		
 		return dataHolder;
 	}
@@ -72,7 +72,7 @@ public class PlayerDataManager {
 	public void storePlayerData(UUID playerId, PlayerDataHolder playerData) {
 		if (playerData == null) return;
 		
-		getPlayerData().set("players." + playerId + ".level", playerData.level);
+		//getPlayerData().set("players." + playerId + ".level", playerData.level);
 		savePlayerData();
 	}
 

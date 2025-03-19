@@ -1,6 +1,8 @@
 package com.github.ebjerke04.myrpg.quests;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 import java.util.logging.Level;
 
@@ -11,6 +13,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.entity.Villager;
 
 import com.github.ebjerke04.myrpg.Plugin;
+import com.github.ebjerke04.myrpg.players.PlayerDataHolder;
+import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -52,13 +56,27 @@ public class QuestNPC {
 	}
 	
 	public void rightClicked(Player player) {
-		player.sendMessage(Component.text("You clicked NPC: " + data.name));
+		Logging.sendConsole(Component.text("Clicked NPC: " + getName())
+			.color(TextColor.color(0xFF00FF)));
 
 		List<Quest> availableQuests = Plugin.getQuestManager().getQuestsForNPC(this);
 		if (!availableQuests.isEmpty()) {
+			UUID playerId = player.getUniqueId();
+			PlayerDataHolder rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
+			List<String> completedQuests = rpgPlayer.getActiveClass().getQuestsCompleted();
+
+			// Sort through available quests.
+			// Check if quest has been completed, ensure only the quest with the lowest level is began.
+			Quest earliestQuest = null;
 			for (Quest quest : availableQuests) {
 				player.sendMessage(Component.text("Quest: " + quest.getName() + " is available!")
 					.color(TextColor.color(0xFF00FF)));
+
+				if (completedQuests.contains(quest.getName())) continue;
+				if (earliestQuest == null) earliestQuest = quest;
+
+				if (quest.getMinLevel() < earliestQuest.getMinLevel())
+					earliestQuest = quest;
 			}
 		}
 	}

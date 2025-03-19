@@ -6,10 +6,8 @@ public class PlayerDataHolder {
 
 	private RpgClass activeClass;
 
-	public int level;
-	
 	public PlayerDataHolder() {
-		this.level = 999;
+		
 	}
 
 	public void setActiveClass(RpgClass activeClass) {

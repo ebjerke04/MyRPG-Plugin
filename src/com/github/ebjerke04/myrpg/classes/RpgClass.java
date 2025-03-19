@@ -1,5 +1,7 @@
 package com.github.ebjerke04.myrpg.classes;
 
+import java.util.List;
+
 public class RpgClass {
 
     private ClassType classType;
@@ -17,6 +19,10 @@ public class RpgClass {
 
     public ClassType getType() {
         return classType;
+    }
+
+    public List<String> getQuestsCompleted() {
+        return classData.questsCompleted;
     }
     
 }

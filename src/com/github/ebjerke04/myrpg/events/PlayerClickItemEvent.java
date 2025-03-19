@@ -15,8 +15,10 @@ import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.classes.ClassSelectionMenu;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
+import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 public class PlayerClickItemEvent extends BaseEvent {
@@ -41,7 +43,8 @@ public class PlayerClickItemEvent extends BaseEvent {
 				// Handle create new class button click
 				player.closeInventory();
 				// TODO: Open class creation menu
-				Bukkit.getLogger().log(Level.SEVERE, "Class creation button clicked");
+				Logging.sendConsole(Component.text("Class creation button clicked")
+					.color(TextColor.color(0xFF0000)));
 			} else if (clickedItem.getType() == Material.BOOK) {
 				// Handle existing class selection
 				String className = clickedItem.getItemMeta().displayName().toString();
