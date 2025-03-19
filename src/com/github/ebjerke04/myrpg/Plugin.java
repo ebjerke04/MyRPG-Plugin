@@ -1,8 +1,7 @@
 package com.github.ebjerke04.myrpg;
 
-import java.util.logging.Level;
-
 import org.bukkit.Bukkit;
+import org.bukkit.craftbukkit.v1_21_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -45,15 +44,12 @@ public class Plugin extends JavaPlugin {
 		EventManager.registerEvents();
 		
 		RpgCreationManager.init();
-		
-		this.getLogger().log(Level.INFO, "Initialized MyRPG @ Version: 1.0");
 
 		// TODO: More refined system of handling a server reload.
 		// Simply calling the handlePlayerConnect function is not the best looking way of handling this.
 		// Good temporary fix to aid in making testing of new features quick and simple.
 		for (Player player : Bukkit.getOnlinePlayers()) {
 			playerManager.handlePlayerConnect(player);
-			
 			String playerName = PlainTextComponentSerializer.plainText().serialize(player.displayName());
 			Logging.sendConsole(Component.text(playerName + " has been registered with MyRPG")
 				.color(TextColor.color(0xFF00FF)));
@@ -63,7 +59,7 @@ public class Plugin extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		questManager.shutdown();
-
+		
 		PlayerDataManager.get().shutdown();
 		QuestDataManager.get().shutdown();
 		

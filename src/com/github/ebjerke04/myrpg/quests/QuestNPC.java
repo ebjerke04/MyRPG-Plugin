@@ -13,7 +13,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.entity.Villager;
 
 import com.github.ebjerke04.myrpg.Plugin;
-import com.github.ebjerke04.myrpg.players.PlayerDataHolder;
+import com.github.ebjerke04.myrpg.classes.RpgClass;
+import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
@@ -34,7 +35,7 @@ public class QuestNPC {
 			Bukkit.getLogger().log(Level.SEVERE, "Location for NPC " + data.name + " was null, did not spawn");
 			return;
 		}
-
+		
 		Villager villager = data.location.getWorld().spawn(data.location, Villager.class);
 		
 		villager.setRemoveWhenFarAway(false);
@@ -62,21 +63,33 @@ public class QuestNPC {
 		List<Quest> availableQuests = Plugin.getQuestManager().getQuestsForNPC(this);
 		if (!availableQuests.isEmpty()) {
 			UUID playerId = player.getUniqueId();
-			PlayerDataHolder rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
-			List<String> completedQuests = rpgPlayer.getActiveClass().getQuestsCompleted();
+			RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
+			RpgClass activeClass = rpgPlayer.getActiveClass();
+
+			if (activeClass == null) {
+				Logging.sendConsole(Component.text("Tried to click NPC without class selected")
+					.color(TextColor.color(0xFF00FF)));
+				return;
+			}
+
+			List<String> completedQuests = activeClass.getQuestsCompleted();
 
 			// Sort through available quests.
 			// Check if quest has been completed, ensure only the quest with the lowest level is began.
 			Quest earliestQuest = null;
 			for (Quest quest : availableQuests) {
-				player.sendMessage(Component.text("Quest: " + quest.getName() + " is available!")
-					.color(TextColor.color(0xFF00FF)));
-
 				if (completedQuests.contains(quest.getName())) continue;
 				if (earliestQuest == null) earliestQuest = quest;
 
 				if (quest.getMinLevel() < earliestQuest.getMinLevel())
 					earliestQuest = quest;
+			}
+
+			if (earliestQuest != null) {
+				player.sendMessage(Component.text("Quest: " + earliestQuest.getName() + " can be started!")
+					.color(TextColor.color(0xFF00FF)));
+
+				
 			}
 		}
 	}

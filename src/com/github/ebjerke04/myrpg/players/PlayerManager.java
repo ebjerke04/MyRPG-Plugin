@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
+import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
 
@@ -17,7 +18,7 @@ import com.github.ebjerke04.myrpg.classes.types.ArcherClass;
 
 public class PlayerManager {
 	
-	private Map<UUID, PlayerDataHolder> players = new HashMap<>();
+	private Map<UUID, RpgPlayer> players = new HashMap<>();
 	
 	public PlayerManager() {
 		// Constructor remains empty as we'll handle player data on join/quit
@@ -25,7 +26,7 @@ public class PlayerManager {
 	
 	public void handlePlayerConnect(Player player) {
 		UUID playerId = player.getUniqueId();
-		PlayerDataHolder dataHolder = PlayerDataManager.get().loadPlayerData(playerId);
+		RpgPlayer dataHolder = PlayerDataManager.get().loadPlayerData(playerId);
 		players.put(playerId, dataHolder);
 	}
 	
@@ -43,11 +44,14 @@ public class PlayerManager {
 			playerClass = new ArcherClass();
 			break;
 		case WARRIOR:
-			return;
+			playerClass = new ArcherClass();
+			break;
 		case MAGE:
-			return;
+			playerClass = new ArcherClass();
+			break;
 		case ASSASSIN:
-			return;
+			playerClass = new ArcherClass();
+			break;
 		default:
 			throw new IllegalArgumentException("Class type not recognized: " + classData.type.getDisplayName());
 		}
@@ -58,7 +62,7 @@ public class PlayerManager {
 		players.get(playerId).setActiveClass(playerClass);
 	}
 	
-	public PlayerDataHolder getRpgPlayer(UUID playerId) {
+	public RpgPlayer getRpgPlayer(UUID playerId) {
 		return players.get(playerId);
 	}
 	

@@ -2,9 +2,10 @@ com\github\ebjerke04\myrpg\classes\ClassDataHolder.class
 com\github\ebjerke04\myrpg\classes\RpgClass.class
 com\github\ebjerke04\myrpg\quests\Quest.class
 com\github\ebjerke04\myrpg\util\Logging.class
+com\github\ebjerke04\myrpg\players\RpgPlayer.class
 com\github\ebjerke04\myrpg\creation\RpgCreationManager.class
+com\github\ebjerke04\myrpg\interfaces\PlayerScoreboard.class
 com\github\ebjerke04\myrpg\commands\RpgAdminCommand.class
-com\github\ebjerke04\myrpg\players\PlayerDataHolder.class
 com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.class
 com\github\ebjerke04\myrpg\quests\items\QuestBook.class
 com\github\ebjerke04\myrpg\quests\QuestManager.class

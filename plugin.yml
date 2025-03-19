@@ -4,6 +4,7 @@ version: 1.0
 description: Make your ownw RPG game, including quests, custom mobs, etc!
 author: ebjerke04
 api-version: 1.13
+depend: [ProtocolLib]
 
 commands:
   rpgadmin:

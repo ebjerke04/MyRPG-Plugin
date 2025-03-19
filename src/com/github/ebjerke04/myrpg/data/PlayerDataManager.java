@@ -9,7 +9,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.classes.ClassType;
 import com.github.ebjerke04.myrpg.data.leveling.LevelingManager;
-import com.github.ebjerke04.myrpg.players.PlayerDataHolder;
+import com.github.ebjerke04.myrpg.players.RpgPlayer;
 
 public class PlayerDataManager {
 	
@@ -36,8 +36,8 @@ public class PlayerDataManager {
 		savePlayerData();
 	}
 
-	public PlayerDataHolder loadPlayerData(UUID playerId) {
-		PlayerDataHolder dataHolder = new PlayerDataHolder();
+	public RpgPlayer loadPlayerData(UUID playerId) {
+		RpgPlayer dataHolder = new RpgPlayer();
 		
 		// Load level from config, default to 1 if not found
 		//int level = getPlayerData().getInt("players." + playerId + ".level", 1);
@@ -69,7 +69,7 @@ public class PlayerDataManager {
 		return classData;
 	}
 
-	public void storePlayerData(UUID playerId, PlayerDataHolder playerData) {
+	public void storePlayerData(UUID playerId, RpgPlayer playerData) {
 		if (playerData == null) return;
 		
 		//getPlayerData().set("players." + playerId + ".level", playerData.level);
