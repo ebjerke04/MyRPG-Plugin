@@ -9,6 +9,8 @@ import org.bukkit.entity.Player;
 
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
+import com.github.ebjerke04.myrpg.quests.Quest;
+import com.github.ebjerke04.myrpg.quests.QuestInProgress;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
@@ -26,8 +28,8 @@ public class PlayerManager {
 	
 	public void handlePlayerConnect(Player player) {
 		UUID playerId = player.getUniqueId();
-		RpgPlayer dataHolder = PlayerDataManager.get().loadPlayerData(playerId);
-		players.put(playerId, dataHolder);
+		RpgPlayer rpgPlayer = PlayerDataManager.get().loadPlayerData(playerId);
+		players.put(playerId, rpgPlayer);
 	}
 	
 	public void handlePlayerDisconnect(Player player) {
@@ -60,6 +62,13 @@ public class PlayerManager {
 
 		UUID playerId = player.getUniqueId();
 		players.get(playerId).setActiveClass(playerClass);
+	}
+
+	public void assignQuest(Player player, Quest quest) {
+		UUID playerId = player.getUniqueId();
+		RpgPlayer rpgPlayer = players.get(playerId);
+		
+		QuestInProgress toAssign = new QuestInProgress(quest);
 	}
 	
 	public RpgPlayer getRpgPlayer(UUID playerId) {

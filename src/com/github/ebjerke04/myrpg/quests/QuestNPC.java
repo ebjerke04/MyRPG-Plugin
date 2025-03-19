@@ -84,12 +84,20 @@ public class QuestNPC {
 				if (quest.getMinLevel() < earliestQuest.getMinLevel())
 					earliestQuest = quest;
 			}
-
+			
 			if (earliestQuest != null) {
 				player.sendMessage(Component.text("Quest: " + earliestQuest.getName() + " can be started!")
 					.color(TextColor.color(0xFF00FF)));
 
-				
+				// TODO: be able to figure out if a quest is in progress.
+				// if the NPC is related to a quest in progress and allows the quest to progress do that
+				boolean questInProgress = false;
+				if (questInProgress) {
+					// send message to player...
+					
+				} else {
+					Plugin.getPlayerManager().assignQuest(player, earliestQuest);
+				}
 			}
 		}
 	}

@@ -2,27 +2,34 @@ package com.github.ebjerke04.myrpg.classes;
 
 import java.util.List;
 
+import com.github.ebjerke04.myrpg.quests.QuestInProgress;
+
 public class RpgClass {
 
     private ClassType classType;
 
-    protected ClassDataHolder classData;
+    private List<QuestInProgress> questsInProgress;
+    private List<String> questsCompleted;
 
     public RpgClass(ClassType classType) {
         this.classType = classType;
-        this.classData = null;
     }
 
     public void setUserData(ClassDataHolder classData) {
-        this.classData = classData;
+        this.questsInProgress = classData.questsInProgress;
+        this.questsCompleted = classData.questsCompleted;
     }
 
     public ClassType getType() {
         return classType;
     }
 
+    public List<QuestInProgress> getQuestsInProgress() {
+        return questsInProgress;
+    }
+
     public List<String> getQuestsCompleted() {
-        return classData.questsCompleted;
+        return questsCompleted;
     }
     
 }
