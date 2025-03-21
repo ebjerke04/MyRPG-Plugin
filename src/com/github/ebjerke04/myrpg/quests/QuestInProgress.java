@@ -5,7 +5,7 @@ import java.util.Stack;
 public class QuestInProgress {
 
     private Stack<QuestStep> steps;
-
+    
     public QuestInProgress(Quest quest) {
         this.steps = quest.getSteps();
     }

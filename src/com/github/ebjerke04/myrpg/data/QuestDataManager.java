@@ -1,7 +1,10 @@
 package com.github.ebjerke04.myrpg.data;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Stack;
 import java.util.logging.Level;
 
 import org.bukkit.Bukkit;
@@ -13,6 +16,13 @@ import com.github.ebjerke04.myrpg.quests.NPCDataHolder;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestDataHolder;
 import com.github.ebjerke04.myrpg.quests.QuestNPC;
+import com.github.ebjerke04.myrpg.quests.QuestStep;
+import com.github.ebjerke04.myrpg.quests.QuestStepNpcInteract;
+import com.github.ebjerke04.myrpg.quests.QuestStepType;
+import com.github.ebjerke04.myrpg.util.Logging;
+
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
 
 public class QuestDataManager {
 	
@@ -99,6 +109,36 @@ public class QuestDataManager {
 		// TODO: Add null check
 		String startNPCName = getQuestData().getString(path + ".steps.1.npc"); 
 		data.startNPC = Plugin.getQuestManager().getNPCbyName(startNPCName);
+		
+		List<String> stepConfigKeys = new ArrayList<String>(getQuestData().getConfigurationSection(path + ".steps").getKeys(false));
+		Map<Integer, QuestStep> questSteps = new HashMap<>();
+		for (String stepString : stepConfigKeys) {
+			String stepPath = path + "." + stepString + ".";
+			QuestStepType stepType = QuestStepType.fromString(getQuestData().getString(stepPath + "type"));
+
+			switch (stepType) {
+			case NPC_INTERACT:
+				String npcName = getQuestData().getString(stepPath + "npc-name");
+				QuestNPC questNPC = Plugin.getQuestManager().getNPCbyName(npcName);
+				questSteps.put(Integer.parseInt(stepString), new QuestStepNpcInteract(questNPC));
+				break;
+			case null:
+				Logging.sendConsole(Component.text("Quest step type registered as null for quest step, " + stepString
+					+ ", for quest: " + questName).color(TextColor.color(0xFF0000)));
+				break;
+			default:
+				Logging.sendConsole(Component.text("Yeahhh this should not happen...")
+					.color(TextColor.color(0xFF0000)));
+				break;
+			}
+		}
+
+		Stack<QuestStep> questStepStack = new Stack<>();
+		for (int i = 0; i < questSteps.size(); i++) {
+			int stepNumber = i + 1;
+			questStepStack.insertElementAt(questSteps.get(stepNumber), 0);
+		}
+		data.steps = questStepStack;
 		
 		return data;
 	}

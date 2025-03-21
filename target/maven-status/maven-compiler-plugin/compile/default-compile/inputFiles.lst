@@ -29,8 +29,11 @@ D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\items\QuestBook
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\NPCDataHolder.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\Quest.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestDataHolder.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestInProgress.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestManager.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestNPC.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestStep.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestStepType.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\util\Logging.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java
