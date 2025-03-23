@@ -113,7 +113,7 @@ public class QuestDataManager {
 		List<String> stepConfigKeys = new ArrayList<String>(getQuestData().getConfigurationSection(path + ".steps").getKeys(false));
 		Map<Integer, QuestStep> questSteps = new HashMap<>();
 		for (String stepString : stepConfigKeys) {
-			String stepPath = path + "." + stepString + ".";
+			String stepPath = path + ".steps." + stepString + ".";
 			QuestStepType stepType = QuestStepType.fromString(getQuestData().getString(stepPath + "type"));
 
 			switch (stepType) {

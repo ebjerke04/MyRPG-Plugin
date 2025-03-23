@@ -11,6 +11,7 @@ public class EventManager {
 		new EntityRightClickEvent();
 		new PlayerRightClickEvent();
 		new PlayerClickItemEvent();
+		new PlayerMovingEvent();
 		
 		new TestWeapon();
 	}

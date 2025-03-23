@@ -8,6 +8,7 @@ com\github\ebjerke04\myrpg\creation\RpgCreationManager.class
 com\github\ebjerke04\myrpg\interfaces\PlayerScoreboard.class
 com\github\ebjerke04\myrpg\quests\QuestStepType.class
 com\github\ebjerke04\myrpg\commands\RpgAdminCommand.class
+com\github\ebjerke04\myrpg\quests\QuestStepNpcInteract.class
 com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.class
 com\github\ebjerke04\myrpg\quests\items\QuestBook.class
 com\github\ebjerke04\myrpg\quests\QuestManager.class
@@ -17,16 +18,17 @@ com\github\ebjerke04\myrpg\players\PlayerManager$1.class
 com\github\ebjerke04\myrpg\commands\CommandManager.class
 com\github\ebjerke04\myrpg\events\PlayerMessageEvent$1.class
 com\github\ebjerke04\myrpg\classes\ClassSelectionMenu.class
+com\github\ebjerke04\myrpg\events\PlayerMovingEvent.class
 com\github\ebjerke04\myrpg\players\PlayerManager.class
 com\github\ebjerke04\myrpg\quests\QuestNPC.class
 com\github\ebjerke04\myrpg\commands\BaseCommand.class
 com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.class
 com\github\ebjerke04\myrpg\Plugin.class
-com\github\ebjerke04\myrpg\data\QuestDataManager$1.class
 com\github\ebjerke04\myrpg\events\PlayerConnectEvent.class
 com\github\ebjerke04\myrpg\data\QuestDataManager.class
 com\github\ebjerke04\myrpg\events\EventManager.class
 com\github\ebjerke04\myrpg\quests\NPCDataHolder.class
+com\github\ebjerke04\myrpg\world\Region3D.class
 com\github\ebjerke04\myrpg\classes\ClassType.class
 com\github\ebjerke04\myrpg\events\EntityRightClickEvent.class
 com\github\ebjerke04\myrpg\classes\types\ArcherClass.class

@@ -73,7 +73,6 @@ public class QuestNPC {
 			}
 
 			List<String> completedQuests = activeClass.getQuestsCompleted();
-
 			// Sort through available quests.
 			// Check if quest has been completed, ensure only the quest with the lowest level is began.
 			Quest earliestQuest = null;
