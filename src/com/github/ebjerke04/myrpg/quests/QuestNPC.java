@@ -2,14 +2,7 @@ package com.github.ebjerke04.myrpg.quests;
 
 import java.util.List;
 import java.util.UUID;
-import java.util.logging.Level;
-
-import org.bukkit.Bukkit;
-import org.bukkit.Chunk;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-import org.bukkit.entity.Villager;
-
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
@@ -30,28 +23,42 @@ public class QuestNPC extends NPC {
 		Logging.sendConsole(Component.text("Clicked NPC: " + getName())
 			.color(TextColor.color(0xFF00FF)));
 		
-		// TODO: getQuestsForNPC() does not account for NPCs that aren't the start NPC.
-		// Logic works for starting quests but will not capture all cases...
-		List<Quest> availableQuests = Plugin.getWorldManager().getQuestsForNPC(this);
-		if (!availableQuests.isEmpty()) {
-			UUID playerId = player.getUniqueId();
-			RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
-			RpgClass activeClass = rpgPlayer.getActiveClass();
+		UUID playerId = player.getUniqueId();
+		RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
+		RpgClass activeClass = rpgPlayer.getActiveClass();
 
-			if (activeClass == null) {
-				Logging.sendConsole(Component.text("Tried to click NPC without class selected")
-					.color(TextColor.color(0xFF00FF)));
-				return;
+		if (activeClass == null) {
+			Logging.sendConsole(Component.text("Tried to click NPC without class selected")
+				.color(TextColor.color(0xFF00FF)));
+			return;
+		}
+
+		List<QuestInProgress> questsInProgress = rpgPlayer.getQuestsInProgress();
+		if (!questsInProgress.isEmpty()) {
+			for (QuestInProgress questInProgress : questsInProgress) {
+				QuestStep currentStep = questInProgress.getCurrentStep();
+				if (currentStep.getType() == QuestStepType.NPC_INTERACT) {
+					QuestStepNpcInteract interactStep = (QuestStepNpcInteract) currentStep;
+					QuestNPC npc = interactStep.getQuestNPC();
+					if (npc.equals(this)) {
+						// TODO: proceed with quest...Need to test this...
+						questInProgress.attemptProgression();
+						return;
+					}
+				}
 			}
+		}
 
+		List<Quest> availableQuests = Plugin.getWorldManager().getQuestsByStartNPC(this);
+		if (!availableQuests.isEmpty()) {
 			List<String> completedQuests = activeClass.getQuestsCompleted();
 			// Sort through available quests.
-			// Check if quest has been completed, ensure only the quest with the lowest level is began.
+			// Check if quest has been completed, ensure only the quest with the lowest level is started.
 			Quest earliestQuest = null;
 			for (Quest quest : availableQuests) {
 				if (completedQuests.contains(quest.getName())) continue;
 				if (earliestQuest == null) earliestQuest = quest;
-
+				
 				if (quest.getMinLevel() < earliestQuest.getMinLevel())
 					earliestQuest = quest;
 			}
@@ -60,20 +67,7 @@ public class QuestNPC extends NPC {
 				player.sendMessage(Component.text("Quest: " + earliestQuest.getName() + " can be started!")
 					.color(TextColor.color(0xFF00FF)));
 
-				// if the NPC is related to a quest in progress and allows the quest to progress do that
-				boolean isQuestInProgress = false;
-				List<QuestInProgress> questsInProgress = rpgPlayer.getQuestsInProgress();
-				for (QuestInProgress questInProgress : questsInProgress) {
-					if (earliestQuest.getUniqueId().equals(questInProgress.getRespectiveId()))
-						isQuestInProgress = true;
-				}
-				if (isQuestInProgress) {
-					// TODO: figure out what to do if a NPC related to quest in progress is clicked
-					player.sendMessage(Component.text("Quest in progress detected")
-						.color(TextColor.color(0x0000FF)));
-				} else {
-					Plugin.getPlayerManager().assignQuest(player, earliestQuest);
-				}
+				Plugin.getPlayerManager().assignQuestToPlayer(player, earliestQuest);
 			}
 		}
 	}

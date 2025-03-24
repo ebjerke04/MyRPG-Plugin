@@ -1,9 +1,6 @@
 package com.github.ebjerke04.myrpg.events;
 
 import java.util.List;
-import java.util.logging.Level;
-
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

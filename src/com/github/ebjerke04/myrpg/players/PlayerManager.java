@@ -12,6 +12,9 @@ import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
 import com.github.ebjerke04.myrpg.classes.types.ArcherClass;
+import com.github.ebjerke04.myrpg.classes.types.AssassinClass;
+import com.github.ebjerke04.myrpg.classes.types.MageClass;
+import com.github.ebjerke04.myrpg.classes.types.WarriorClass;
 
 public class PlayerManager {
 	
@@ -41,13 +44,13 @@ public class PlayerManager {
 			playerClass = new ArcherClass();
 			break;
 		case WARRIOR:
-			playerClass = new ArcherClass();
+			playerClass = new WarriorClass();
 			break;
 		case MAGE:
-			playerClass = new ArcherClass();
+			playerClass = new MageClass();
 			break;
 		case ASSASSIN:
-			playerClass = new ArcherClass();
+			playerClass = new AssassinClass();
 			break;
 		default:
 			throw new IllegalArgumentException("Class type not recognized: " + classData.type.getDisplayName());
@@ -59,7 +62,7 @@ public class PlayerManager {
 		players.get(playerId).setActiveClass(playerClass);
 	}
 
-	public void assignQuest(Player player, Quest quest) {
+	public void assignQuestToPlayer(Player player, Quest quest) {
 		UUID playerId = player.getUniqueId();
 		RpgPlayer rpgPlayer = players.get(playerId);
 		

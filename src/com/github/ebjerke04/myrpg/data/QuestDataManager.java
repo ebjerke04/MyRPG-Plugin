@@ -77,15 +77,15 @@ public class QuestDataManager {
 		return getQuestData().getBoolean("quests." + name + ".published");
 	}
 
-	public QuestNPC createNPC(String name) {
-		return new QuestNPC(getNPCData(name));
+	public QuestNPC createQuestNPC(String name) {
+		return new QuestNPC(getQuestNPCData(name));
 	}
 	
 	public Quest createQuest(String name) {
 		return new Quest(getQuestData(name));
 	}
 
-	private NPCDataHolder getNPCData(String name) {
+	private NPCDataHolder getQuestNPCData(String name) {
 		NPCDataHolder data = new NPCDataHolder();
 
 		data.name = name;

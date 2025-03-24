@@ -10,10 +10,11 @@ import com.github.ebjerke04.myrpg.creation.RpgCreationManager;
 import com.github.ebjerke04.myrpg.data.ConfigManager;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
 import com.github.ebjerke04.myrpg.data.QuestDataManager;
+import com.github.ebjerke04.myrpg.data.WorldDataManager;
 import com.github.ebjerke04.myrpg.events.EventManager;
 import com.github.ebjerke04.myrpg.players.PlayerManager;
-import com.github.ebjerke04.myrpg.quests.WorldManager;
 import com.github.ebjerke04.myrpg.util.Logging;
+import com.github.ebjerke04.myrpg.world.WorldManager;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -31,6 +32,7 @@ public class Plugin extends JavaPlugin {
 		instance = this;
 		
 		ConfigManager.init();
+		WorldDataManager.init();
 		PlayerDataManager.init();
 		QuestDataManager.init();
 		

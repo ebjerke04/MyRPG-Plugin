@@ -1,12 +1,14 @@
-package com.github.ebjerke04.myrpg.quests;
+package com.github.ebjerke04.myrpg.world;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 import com.github.ebjerke04.myrpg.data.QuestDataManager;
+import com.github.ebjerke04.myrpg.data.WorldDataManager;
 import com.github.ebjerke04.myrpg.economy.BankingService;
-import com.github.ebjerke04.myrpg.world.NPC;
+import com.github.ebjerke04.myrpg.quests.Quest;
+import com.github.ebjerke04.myrpg.quests.QuestNPC;
 
 public class WorldManager {
 
@@ -43,8 +45,10 @@ public class WorldManager {
 
 	private void loadNPCsFromConfig() {
 		for (String npcName : QuestDataManager.get().getQuestNPCNames()) {
-			npcs.add(QuestDataManager.get().createNPC(npcName));
+			npcs.add(QuestDataManager.get().createQuestNPC(npcName));
 		}
+		
+		npcs.addAll(WorldDataManager.get().createBankingNPCs());
 	}
 	
 	private void loadQuestsFromConfig() {
@@ -57,7 +61,7 @@ public class WorldManager {
 		despawnNPCs();
 	}
 
-	public List<Quest> getQuestsForNPC(QuestNPC npc) {
+	public List<Quest> getQuestsByStartNPC(QuestNPC npc) {
 		List<Quest> npcQuests = new ArrayList<>();
 		for (Quest quest : quests) {
 			if (npc.equals(quest.getStartNPC())) {

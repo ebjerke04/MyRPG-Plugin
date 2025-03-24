@@ -7,11 +7,17 @@ public class QuestInProgress {
 
     private UUID respectiveId;
 
-    private Stack<QuestStep> steps; 
+    private Stack<QuestStep> steps = new Stack<>(); 
     
     public QuestInProgress(Quest quest) {
         respectiveId = quest.getUniqueId();
-        this.steps = quest.getSteps();
+
+        this.steps.addAll(quest.getSteps());
+    }
+
+    public void attemptProgression() {
+        // TODO: handle quest progression.
+        // if requirement is met, pop QuestStep from stack and expose next step.
     }
 
     public UUID getRespectiveId() {
