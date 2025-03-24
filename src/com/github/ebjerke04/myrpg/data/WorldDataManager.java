@@ -8,6 +8,10 @@ import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import com.github.ebjerke04.myrpg.economy.BankerNPC;
+import com.github.ebjerke04.myrpg.util.Logging;
+
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
 
 public class WorldDataManager {
 
@@ -20,15 +24,21 @@ public class WorldDataManager {
 
     public List<BankerNPC> createBankingNPCs() {
         String path = "economy.banker-locations";
-        Set<String> npcLocationPaths = getWorldData().getConfigurationSection(path).getKeys(false);
 
-        List<BankerNPC> bankingNpcs = new ArrayList<>();
-        for (String subPath : npcLocationPaths) {
-            Location bankerLocation = getWorldData().getLocation(path + "." + subPath);
-            bankingNpcs.add(new BankerNPC(bankerLocation));
-        } 
+		List<BankerNPC> bankingNpcs = new ArrayList<>();
+		try {
+			Set<String> npcLocationPaths = getWorldData().getConfigurationSection(path).getKeys(false);
+	
+			for (String subPath : npcLocationPaths) {
+				Location bankerLocation = getWorldData().getLocation(path + "." + subPath);
+				bankingNpcs.add(new BankerNPC(bankerLocation));
+			} 
+		} catch (NullPointerException e) {
+			Logging.sendConsole(Component.text("No BankingNPCs created yet")
+				.color(TextColor.color(0xFF0000)));
+		}
 
-        return bankingNpcs;
+		return bankingNpcs;
     }
 	
 	public static void init() {

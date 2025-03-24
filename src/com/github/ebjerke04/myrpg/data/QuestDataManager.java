@@ -66,11 +66,14 @@ public class QuestDataManager {
 	}
 	
 	public List<String> getQuestNames() {
+		List<String> questNames = new ArrayList<>();
 		if (getQuestData().contains("quests")) {
-			return new ArrayList<String>(getQuestData().getConfigurationSection("quests").getKeys(false));
+			questNames = new ArrayList<String>(getQuestData().getConfigurationSection("quests").getKeys(false));
 		}
 		
-		return null;
+		if (questNames.isEmpty()) Logging.sendConsole(Component.text("No quests have been created yet")
+			.color(TextColor.color(0xFF0000)));
+		return questNames;
 	}
 	
 	public boolean questPublished(String name) {

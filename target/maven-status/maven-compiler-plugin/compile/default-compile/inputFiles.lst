@@ -3,6 +3,9 @@ C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\classes\ClassType.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\classes\RpgClass.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\classes\types\ArcherClass.java
+C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\classes\types\AssassinClass.java
+C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\classes\types\MageClass.java
+C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\classes\types\WarriorClass.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\BaseCommand.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\ClassCommand.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\CommandManager.java
@@ -13,6 +16,7 @@ C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\data\PlayerDataManager.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\data\QuestDataManager.java
+C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\data\WorldDataManager.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\BankerNPC.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\BankingService.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\CurrencyConversionType.java
@@ -40,8 +44,8 @@ C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepNpcInteract.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepType.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java
-C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\WorldManager.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\util\Logging.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\world\NPC.java
 C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\world\Region3D.java
+C:\Users\21ete\Documents\Development\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\world\WorldManager.java
