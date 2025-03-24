@@ -5,9 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
-import java.util.logging.Level;
-
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 
@@ -17,9 +14,12 @@ import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestDataHolder;
 import com.github.ebjerke04.myrpg.quests.QuestNPC;
 import com.github.ebjerke04.myrpg.quests.QuestStep;
+import com.github.ebjerke04.myrpg.quests.QuestStepEnterArea;
 import com.github.ebjerke04.myrpg.quests.QuestStepNpcInteract;
 import com.github.ebjerke04.myrpg.quests.QuestStepType;
 import com.github.ebjerke04.myrpg.util.Logging;
+import com.github.ebjerke04.myrpg.world.NPC;
+import com.github.ebjerke04.myrpg.world.Region3D;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -107,8 +107,16 @@ public class QuestDataManager {
 		data.minLevel = getQuestData().getInt(path + ".min-level");
 
 		// TODO: Add null check
-		String startNPCName = getQuestData().getString(path + ".steps.1.npc"); 
-		data.startNPC = Plugin.getQuestManager().getNPCbyName(startNPCName);
+		String startNPCName = getQuestData().getString(path + ".steps.1.npc");
+		NPC startNPC = Plugin.getWorldManager().getNPCbyName(startNPCName);
+		
+		if (startNPC instanceof QuestNPC) {
+			data.startNPC = (QuestNPC) startNPC;
+		} else {
+			Logging.sendConsole(Component.text("Start NPC for quest, " + questName + ", not a QuestNPC")
+				.color(TextColor.color(0xFF0000)));
+			throw new IllegalStateException();
+		}
 		
 		List<String> stepConfigKeys = new ArrayList<String>(getQuestData().getConfigurationSection(path + ".steps").getKeys(false));
 		Map<Integer, QuestStep> questSteps = new HashMap<>();
@@ -119,8 +127,17 @@ public class QuestDataManager {
 			switch (stepType) {
 			case NPC_INTERACT:
 				String npcName = getQuestData().getString(stepPath + "npc-name");
-				QuestNPC questNPC = Plugin.getQuestManager().getNPCbyName(npcName);
+				// TODO: make sure actually QuestNPC
+				QuestNPC questNPC = (QuestNPC) Plugin.getWorldManager().getNPCbyName(npcName);
 				questSteps.put(Integer.parseInt(stepString), new QuestStepNpcInteract(questNPC));
+				break;
+			case ENTER_AREA:
+				Location corner1 = getQuestData().getLocation(stepPath + "corner1");
+				Location corner2 = getQuestData().getLocation(stepPath + "corner2");
+				Region3D region3D = new Region3D(corner1, corner2);
+				questSteps.put(Integer.parseInt(stepString), new QuestStepEnterArea(region3D));
+				break;
+			case KILL_ENTITY:
 				break;
 			case null:
 				Logging.sendConsole(Component.text("Quest step type registered as null for quest step, " + stepString

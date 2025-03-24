@@ -12,7 +12,7 @@ import com.github.ebjerke04.myrpg.data.PlayerDataManager;
 import com.github.ebjerke04.myrpg.data.QuestDataManager;
 import com.github.ebjerke04.myrpg.events.EventManager;
 import com.github.ebjerke04.myrpg.players.PlayerManager;
-import com.github.ebjerke04.myrpg.quests.QuestManager;
+import com.github.ebjerke04.myrpg.quests.WorldManager;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
@@ -23,7 +23,7 @@ public class Plugin extends JavaPlugin {
 	
 	private static Plugin instance;
 	
-	private QuestManager questManager;
+	private WorldManager worldManager;
 	private PlayerManager playerManager;
 	
 	@Override
@@ -34,8 +34,8 @@ public class Plugin extends JavaPlugin {
 		PlayerDataManager.init();
 		QuestDataManager.init();
 		
-		questManager = new QuestManager();
-		questManager.init();
+		worldManager = new WorldManager();
+		worldManager.init();
 
 		playerManager = new PlayerManager();
 		
@@ -58,7 +58,7 @@ public class Plugin extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-		questManager.shutdown();
+		worldManager.shutdown();
 		
 		PlayerDataManager.get().shutdown();
 		QuestDataManager.get().shutdown();
@@ -66,8 +66,8 @@ public class Plugin extends JavaPlugin {
 		RpgCreationManager.get().shutdown();
 	}
 	
-	public static QuestManager getQuestManager() {
-		return instance.questManager;
+	public static WorldManager getWorldManager() {
+		return instance.worldManager;
 	}
 	
 	public static PlayerManager getPlayerManager() {

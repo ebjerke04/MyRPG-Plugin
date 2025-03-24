@@ -1,11 +1,13 @@
 package com.github.ebjerke04.myrpg.quests;
 
 import java.util.Stack;
+import java.util.UUID;
 
 public class Quest {
 	
 	private final String NAME;
 	private final int MIN_LEVEL;
+	private UUID questId;
 
 	private QuestNPC startNPC;
 	private Stack<QuestStep> steps;
@@ -16,6 +18,8 @@ public class Quest {
 
 		this.startNPC = data.startNPC;
 		this.steps = data.steps;
+
+		questId = UUID.randomUUID();
 	}
 	
 	public String getName() {
@@ -24,6 +28,10 @@ public class Quest {
 	
 	public int getMinLevel() {
 		return MIN_LEVEL;
+	}
+
+	public UUID getUniqueId() {
+		return questId;
 	}
 
 	public QuestNPC getStartNPC() {

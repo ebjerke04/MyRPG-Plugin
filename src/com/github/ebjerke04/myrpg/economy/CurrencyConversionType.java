@@ -1,0 +1,56 @@
+package com.github.ebjerke04.myrpg.economy;
+
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+
+import com.github.ebjerke04.myrpg.util.Logging;
+
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
+
+public enum CurrencyConversionType {
+    
+    COPPER_TO_IRON(new ItemStack(Material.IRON_INGOT, 1), new ItemStack(Material.COPPER_INGOT, 64)),
+    IRON_TO_COPPER(new ItemStack(Material.COPPER_INGOT, 64), new ItemStack(Material.IRON_INGOT, 1)),
+    IRON_TO_GOLD(new ItemStack(Material.GOLD_INGOT, 1), new ItemStack(Material.IRON_INGOT, 64)),
+    GOLD_TO_IRON(new ItemStack(Material.IRON_INGOT, 64), new ItemStack(Material.GOLD_INGOT, 1));
+
+    private final ItemStack to, from;
+
+    CurrencyConversionType(ItemStack to, ItemStack from) {
+        this.to = to;
+        this.from = from;
+    }
+
+    public ItemStack getTo() {
+        return to;
+    }
+
+    public ItemStack getFrom() {
+        return from;
+    }
+
+    public static CurrencyConversionType fromItemInfo(Material itemType, int itemCount) {
+        if (itemType != Material.COPPER_INGOT && itemType != Material.IRON_INGOT && itemType != Material.GOLD_INGOT)
+            throw new IllegalArgumentException("fromItemInfo can only take COPPER_INGOT, IRON_INGOT, or GOLD_INGOT as an item type");
+
+        if (itemCount != 1 && itemCount != 64)
+            throw new IllegalArgumentException("fromItemInfo can only take 1 or 64 as an itemCount");
+
+        switch (itemType) {
+        case COPPER_INGOT:
+            if (itemCount == 64) return IRON_TO_COPPER;
+        case IRON_INGOT:
+            if (itemCount == 1) return COPPER_TO_IRON;
+            else if (itemCount == 64) return GOLD_TO_IRON;
+        case GOLD_INGOT:
+            if (itemCount == 1) return IRON_TO_GOLD;
+        default:
+            Logging.sendConsole(Component.text("Should not have reached here")
+                .color(TextColor.color(0xFF0000)));
+        }
+        
+        return null;
+    }
+
+}

@@ -19,7 +19,7 @@ public class PlayerMovingEvent extends BaseEvent {
     @EventHandler
     public void onPlayerMoving(PlayerMoveEvent event) {
         Player player = event.getPlayer();
-
+        
         Location corner1 = new Location(player.getWorld(), -21.0, 78.0, 95.0);
         Location corner2 = new Location(player.getWorld(), -32.0, 84.0, 85.0);
         Region3D region = new Region3D(corner1, corner2);

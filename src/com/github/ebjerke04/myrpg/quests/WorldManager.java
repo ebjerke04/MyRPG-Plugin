@@ -5,14 +5,18 @@ import java.util.List;
 import java.util.UUID;
 
 import com.github.ebjerke04.myrpg.data.QuestDataManager;
+import com.github.ebjerke04.myrpg.economy.BankingService;
+import com.github.ebjerke04.myrpg.world.NPC;
 
-public class QuestManager {
+public class WorldManager {
+
+	private BankingService bankingService;
 	
-	List<QuestNPC> npcs = new ArrayList<QuestNPC>();
+	List<NPC> npcs = new ArrayList<>();
 	
 	List<Quest> quests = new ArrayList<Quest>();
 	
-	public QuestManager() {
+	public WorldManager() {
 		
 	}
 
@@ -21,16 +25,18 @@ public class QuestManager {
 		loadQuestsFromConfig();
 
 		spawnNPCs();
+
+		bankingService = new BankingService();
 	}
 
 	private void spawnNPCs() {
-		for (QuestNPC npc : npcs) {
+		for (NPC npc : npcs) {
 			npc.spawn();
 		}
 	}
 
 	private void despawnNPCs() {
-		for (QuestNPC npc : npcs) {
+		for (NPC npc : npcs) {
 			npc.despawn();
 		}
 	}
@@ -66,21 +72,24 @@ public class QuestManager {
 		return quests;
 	}
 
-	public QuestNPC getNPCbyId(UUID id) {
-		for (QuestNPC npc : npcs) {
+	public NPC getNPCbyId(UUID id) {
+		for (NPC npc : npcs) {
 			if (npc.getUniqueId().equals(id)) return npc;
 		}
 		
 		return null;
 	}
 
-	public QuestNPC getNPCbyName(String name) {
-		for (QuestNPC npc : npcs) {
+	public NPC getNPCbyName(String name) {
+		for (NPC npc : npcs) {
 			if (npc.getName().equals(name)) return npc;
 		}
 
 		return null;
 	}
 	
+	public BankingService getBankingService() {
+		return bankingService;
+	}
 
 }

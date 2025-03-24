@@ -30,7 +30,7 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.2.0</version>
         <configuration>
-          <outputDirectory>D:\Development\MyRPG\Test Server\plugins</outputDirectory>
+          <outputDirectory>outputdir</outputDirectory>
         </configuration>
       </plugin>
     </plugins>

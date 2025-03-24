@@ -15,6 +15,7 @@ import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.classes.ClassSelectionMenu;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
+import com.github.ebjerke04.myrpg.economy.CurrencyConversionType;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
@@ -31,6 +32,7 @@ public class PlayerClickItemEvent extends BaseEvent {
 	public void onPlayerClickItem(InventoryClickEvent event) {
 		Component inventoryTitle = event.getView().title();
 		String titleString = PlainTextComponentSerializer.plainText().serialize(inventoryTitle);
+
 		if (titleString.equals("Class Selection")) {
 			// Cancel ALL item movement in this inventory
 			event.setCancelled(true);
@@ -58,6 +60,19 @@ public class PlayerClickItemEvent extends BaseEvent {
 				
 				Plugin.getPlayerManager().handleClassSelection(player, clickedClassData);
 			}
+		} else if (titleString.equals("Currency Exchange")) {
+			event.setCancelled(true);
+			if (event.getCurrentItem() == null) return;
+
+			ItemStack clickedItem = event.getCurrentItem();
+			Player player = (Player) event.getWhoClicked();
+
+			Material itemType = clickedItem.getType();
+			int itemCount = clickedItem.getAmount();
+			CurrencyConversionType type = CurrencyConversionType.fromItemInfo(itemType, itemCount);
+			
+			boolean success = Plugin.getWorldManager().getBankingService().handleCurrencyConversion(player, type);
+			if (!success) player.closeInventory();
 		}
 	}
 	

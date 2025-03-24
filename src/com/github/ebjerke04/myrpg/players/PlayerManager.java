@@ -1,7 +1,6 @@
 package com.github.ebjerke04.myrpg.players;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -11,10 +10,6 @@ import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
-import com.github.ebjerke04.myrpg.util.Logging;
-
-import net.kyori.adventure.text.Component;
-
 import com.github.ebjerke04.myrpg.classes.RpgClass;
 import com.github.ebjerke04.myrpg.classes.types.ArcherClass;
 
@@ -69,6 +64,7 @@ public class PlayerManager {
 		RpgPlayer rpgPlayer = players.get(playerId);
 		
 		QuestInProgress toAssign = new QuestInProgress(quest);
+		rpgPlayer.assignQuest(toAssign);
 	}
 	
 	public RpgPlayer getRpgPlayer(UUID playerId) {

@@ -33,8 +33,8 @@ public class QuestBook {
 	public static void open(Player player) {
 		Inventory inventory = Bukkit.createInventory(null, 9 * 6, Component.text("Quest Book"));
 		
-		for (int i = 0; i < Plugin.getQuestManager().getQuests().size(); i++) {
-			Quest quest = Plugin.getQuestManager().getQuests().get(i);
+		for (int i = 0; i < Plugin.getWorldManager().getQuests().size(); i++) {
+			Quest quest = Plugin.getWorldManager().getQuests().get(i);
 			
 			int playerLevel = 3; // somehow get player level
 			boolean questActive = (i == 1) ? true : false;
