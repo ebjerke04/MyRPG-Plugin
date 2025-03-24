@@ -18,7 +18,7 @@ public class Region3D {
         {
             Logging.sendConsole(Component.text("Region3D cannot have two locations from different worlds.")
                 .color(TextColor.color(0xFF0000)));
-            throw new IllegalArgumentException();
+            throw new IllegalStateException();
         }
         this.world = corner1.getWorld();
 

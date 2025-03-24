@@ -42,7 +42,7 @@ public abstract class NPC {
 	public void despawn() {
 		Chunk chunk = data.location.getChunk();
 		if (!chunk.isLoaded()) chunk.load();
-
+		
 		Entity entity = Bukkit.getEntity(id);
 		if (entity != null) {
 			entity.remove();
