@@ -42,7 +42,8 @@ public class QuestNPC extends NPC {
 					QuestNPC npc = interactStep.getQuestNPC();
 					if (npc.equals(this)) {
 						// TODO: proceed with quest...Need to test this...
-						questInProgress.attemptProgression();
+						player.sendMessage(Component.text("Successfully went to next step in progress"));
+						rpgPlayer.attemptQuestProgression(questInProgress);
 						return;
 					}
 				}
@@ -64,9 +65,16 @@ public class QuestNPC extends NPC {
 			}
 			
 			if (earliestQuest != null) {
-				player.sendMessage(Component.text("Quest: " + earliestQuest.getName() + " can be started!")
-					.color(TextColor.color(0xFF00FF)));
+				for (QuestInProgress questInProgress : questsInProgress) {
+					if (earliestQuest.getUniqueId().equals(questInProgress.getRespectiveId())) {
+						player.sendMessage(Component.text("You have already started the quest for this NPC")
+							.color(TextColor.color(0xFF00FF)));
+						return;
+					}
+				}
 
+				player.sendMessage(Component.text("Quest: " + earliestQuest.getName() + " has been started!")
+					.color(TextColor.color(0xFF00FF)));
 				Plugin.getPlayerManager().assignQuestToPlayer(player, earliestQuest);
 			}
 		}

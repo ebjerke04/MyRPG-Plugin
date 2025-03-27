@@ -110,7 +110,7 @@ public class QuestDataManager {
 		data.minLevel = getQuestData().getInt(path + ".min-level");
 
 		// TODO: Add null check
-		String startNPCName = getQuestData().getString(path + ".steps.1.npc");
+		String startNPCName = getQuestData().getString(path + ".steps.1.npc-name");
 		NPC startNPC = Plugin.getWorldManager().getNPCbyName(startNPCName);
 		
 		if (startNPC instanceof QuestNPC) {

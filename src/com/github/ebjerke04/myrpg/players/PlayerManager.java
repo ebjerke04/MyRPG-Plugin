@@ -26,7 +26,7 @@ public class PlayerManager {
 	
 	public void handlePlayerConnect(Player player) {
 		UUID playerId = player.getUniqueId();
-		RpgPlayer rpgPlayer = PlayerDataManager.get().loadPlayerData(playerId);
+		RpgPlayer rpgPlayer = PlayerDataManager.get().loadPlayerData(player);
 		players.put(playerId, rpgPlayer);
 	}
 	

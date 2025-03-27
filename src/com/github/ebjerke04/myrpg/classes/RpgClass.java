@@ -28,6 +28,10 @@ public class RpgClass {
         return questsInProgress;
     }
 
+    public void setQuestCompleted(String questName) {
+        questsCompleted.add(questName);
+    }
+
     public List<String> getQuestsCompleted() {
         return questsCompleted;
     }

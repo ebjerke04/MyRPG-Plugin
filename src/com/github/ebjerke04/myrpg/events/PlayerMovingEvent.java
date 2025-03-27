@@ -1,14 +1,19 @@
 package com.github.ebjerke04.myrpg.events;
 
-import org.bukkit.Location;
+import java.util.List;
+import java.util.UUID;
+
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerMoveEvent;
 
+import com.github.ebjerke04.myrpg.Plugin;
+import com.github.ebjerke04.myrpg.players.RpgPlayer;
+import com.github.ebjerke04.myrpg.quests.QuestInProgress;
+import com.github.ebjerke04.myrpg.quests.QuestStep;
+import com.github.ebjerke04.myrpg.quests.QuestStepEnterArea;
+import com.github.ebjerke04.myrpg.quests.QuestStepType;
 import com.github.ebjerke04.myrpg.world.Region3D;
-
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextColor;
 
 public class PlayerMovingEvent extends BaseEvent {
 
@@ -20,13 +25,22 @@ public class PlayerMovingEvent extends BaseEvent {
     public void onPlayerMoving(PlayerMoveEvent event) {
         Player player = event.getPlayer();
         
-        Location corner1 = new Location(player.getWorld(), -21.0, 78.0, 95.0);
-        Location corner2 = new Location(player.getWorld(), -32.0, 84.0, 85.0);
-        Region3D region = new Region3D(corner1, corner2);
-        
-        if (region.isInRegion(player.getLocation())) {
-            player.sendMessage(Component.text("You are in this region!")
-                .color(TextColor.color(0x0000FF)));
+        UUID playerId = player.getUniqueId();
+        RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
+
+        List<QuestInProgress> questsInProgress = rpgPlayer.getQuestsInProgress();
+        if (questsInProgress.isEmpty()) return;
+
+        for (QuestInProgress questInProgress : questsInProgress) {
+            QuestStep currentStep = questInProgress.getCurrentStep();
+            if (currentStep.getType() == QuestStepType.ENTER_AREA) {
+                QuestStepEnterArea enterStep = (QuestStepEnterArea) currentStep;
+                Region3D stepRegion = enterStep.getRegion3D();
+                if (stepRegion.isInRegion(player.getLocation())) {
+                    rpgPlayer.attemptQuestProgression(questInProgress);
+                    break;
+                }
+            }
         }
     }
     

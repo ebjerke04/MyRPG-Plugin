@@ -1,7 +1,6 @@
 package com.github.ebjerke04.myrpg;
 
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.v1_21_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -46,7 +46,7 @@ public class PlayerClickItemEvent extends BaseEvent {
 					.color(TextColor.color(0xFF0000)));
 			} else if (clickedItem.getType() == Material.BOOK) {
 				// Handle existing class selection
-				String className = clickedItem.getItemMeta().displayName().toString();
+				//String className = clickedItem.getItemMeta().displayName().toString();
 				player.closeInventory();
 				
 				int clickedSlot = event.getSlot();

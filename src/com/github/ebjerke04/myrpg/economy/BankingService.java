@@ -25,6 +25,7 @@ public class BankingService {
         int itemCount = 0;
         for (int slotNumber = 0; slotNumber < inventory.getSize(); slotNumber++) {
             ItemStack item = inventory.getItem(slotNumber);
+            if (item == null) continue;
             if (item.getType().equals(type.getFrom().getType())) itemCount += item.getAmount();
         }
 
@@ -32,6 +33,7 @@ public class BankingService {
         if (itemCount >= requiredAmount) {
             for (int slotNumber = 0; slotNumber < inventory.getSize(); slotNumber++) {
                 ItemStack item = inventory.getItem(slotNumber);
+                if (item == null) continue;
                 if (!item.getType().equals(type.getFrom().getType())) continue;
                 // TODO: Finish logic for handling currency conversion.
                 if (item.getAmount() >= requiredAmount) {
@@ -43,6 +45,8 @@ public class BankingService {
                 }
             }
 
+            // TODO: Has some weird issues I dont really understand in terms of
+            // why the wrong amount of ingots get added to player's inventory.
             inventory.addItem(type.getTo());
             return true;
         } else {

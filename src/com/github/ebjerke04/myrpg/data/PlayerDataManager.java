@@ -6,22 +6,23 @@ import java.util.Set;
 import java.util.UUID;
 
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
+
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.classes.ClassType;
-import com.github.ebjerke04.myrpg.data.leveling.LevelingManager;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 
 public class PlayerDataManager {
 	
 	private static PlayerDataManager instance;
 	
-	private LevelingManager levelingManager;
+	//private LevelingManager levelingManager;
 	
 	private PlayerDataManager() {
 		ConfigManager.get().createConfig("player_data");
 		ConfigManager.get().reloadConfig("player_data");
 		
-		levelingManager = new LevelingManager();
+		//levelingManager = new LevelingManager();
 	}
 	
 	public static void init() {
@@ -36,8 +37,8 @@ public class PlayerDataManager {
 		savePlayerData();
 	}
 
-	public RpgPlayer loadPlayerData(UUID playerId) {
-		RpgPlayer dataHolder = new RpgPlayer();
+	public RpgPlayer loadPlayerData(Player player) {
+		RpgPlayer dataHolder = new RpgPlayer(player);
 		
 		// Load level from config, default to 1 if not found
 		//int level = getPlayerData().getInt("players." + playerId + ".level", 1);
@@ -76,14 +77,14 @@ public class PlayerDataManager {
 		savePlayerData();
 	}
 
-	/*
+	
 	public void registerPlayer(Player player) {
 		getPlayerData().set("players." + player.getUniqueId() + ".classes.archer1.level", 1);
 		getPlayerData().set("players." + player.getUniqueId() + ".classes.archer1.exp", 0);
 
 		savePlayerData();
 	}
-	*/
+	
 	
 	private FileConfiguration getPlayerData() {
 		return ConfigManager.get().getConfig("player_data");

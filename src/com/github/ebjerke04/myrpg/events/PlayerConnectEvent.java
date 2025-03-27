@@ -40,7 +40,7 @@ public class PlayerConnectEvent extends BaseEvent {
 		QuestBook.addToPlayerInventory(player);
 
 		if (player.hasPlayedBefore()) {
-			
+			//PlayerDataManager.get().registerPlayer(player);
 		} else {
 			
 		}
