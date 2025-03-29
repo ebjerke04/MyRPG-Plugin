@@ -125,20 +125,25 @@ public class QuestDataManager {
 		Map<Integer, QuestStep> questSteps = new HashMap<>();
 		for (String stepString : stepConfigKeys) {
 			String stepPath = path + ".steps." + stepString + ".";
-			QuestStepType stepType = QuestStepType.fromString(getQuestData().getString(stepPath + "type"));
 
+			String description = getQuestData().getString(stepPath + "description");
+			List<String> dialogue = getQuestData().getStringList(stepPath + "dialogue");
+			
+			QuestStepType stepType = QuestStepType.fromString(getQuestData().getString(stepPath + "type"));
 			switch (stepType) {
 			case NPC_INTERACT:
 				String npcName = getQuestData().getString(stepPath + "npc-name");
 				// TODO: make sure actually QuestNPC
 				QuestNPC questNPC = (QuestNPC) Plugin.getWorldManager().getNPCbyName(npcName);
-				questSteps.put(Integer.parseInt(stepString), new QuestStepNpcInteract(questNPC));
+				questSteps.put(Integer.parseInt(stepString), 
+					new QuestStepNpcInteract(questNPC, description, dialogue));
 				break;
 			case ENTER_AREA:
 				Location corner1 = getQuestData().getLocation(stepPath + "corner1");
 				Location corner2 = getQuestData().getLocation(stepPath + "corner2");
 				Region3D region3D = new Region3D(corner1, corner2);
-				questSteps.put(Integer.parseInt(stepString), new QuestStepEnterArea(region3D));
+				questSteps.put(Integer.parseInt(stepString), 
+					new QuestStepEnterArea(region3D, description, dialogue));
 				break;
 			case KILL_ENTITY:
 				break;

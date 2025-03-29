@@ -14,6 +14,8 @@ public class QuestInProgress {
 
     private Stack<QuestStep> steps = new Stack<>(); 
     private String name;
+
+    private boolean isComplete = false;
     
     public QuestInProgress(Quest quest) {
         respectiveId = quest.getUniqueId();
@@ -23,16 +25,16 @@ public class QuestInProgress {
     }
 
     /**
-     * @return true if attempt at quest progression results in the quest being completed
+     * @return true if attempt at quest progression is successful
      */
     public boolean attemptProgression() {
         // TODO: handle quest progression.
         // if requirement is met, pop QuestStep from stack and expose next step.
-        steps.pop();
+        boolean succesful = true;
+        if (succesful) {
+            steps.pop();
 
-        if (steps.isEmpty()) {
-            Logging.sendConsole(Component.text("Quest has been completed")
-                .color(TextColor.color(0xFF00FF)));
+            if (steps.isEmpty()) isComplete = true;
             return true;
         }
 
@@ -49,6 +51,10 @@ public class QuestInProgress {
 
     public String getName() {
         return name;
+    }
+
+    public boolean isComplete() {
+        return isComplete;
     }
 
     @Override

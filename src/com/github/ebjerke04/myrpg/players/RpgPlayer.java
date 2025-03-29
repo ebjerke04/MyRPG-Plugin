@@ -35,12 +35,16 @@ public class RpgPlayer {
 
 	public void attemptQuestProgression(QuestInProgress quest) {
 		if (quest.attemptProgression()) {
-			for (int i = 0; i < questsInProgress.size(); i++) {
-				if (questsInProgress.get(i).equals(quest)) {
-					activeClass.setQuestCompleted(quest.getName());
-					player.sendMessage(Component.text("Quest has been completed!"));
-					questsInProgress.remove(i);
-					break;
+			// progression successful, do stuff here
+
+			if (quest.isComplete()) {
+				for (int i = 0; i < questsInProgress.size(); i++) {
+					if (questsInProgress.get(i).equals(quest)) {
+						activeClass.setQuestCompleted(quest.getName());
+						player.sendMessage(Component.text("Quest has been completed!"));
+						questsInProgress.remove(i);
+						break;
+					}
 				}
 			}
 		}
