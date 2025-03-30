@@ -12,8 +12,18 @@ import org.bukkit.scoreboard.ScoreboardManager;
 import org.bukkit.scoreboard.Team;
 
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
 
 public class PlayerScoreboard {
+
+    public static final PlayerScoreboard defaultScoreboard = new PlayerScoreboard(
+        Component.text("MyRPG").color(TextColor.color(0xFF0000)),
+		List.of(
+			Component.text("Set default").color(TextColor.color(0xFF00FF)),
+			Component.text("join message").color(TextColor.color(0x0000FF)),
+			Component.text("in config").color(TextColor.color(0x00FF00))
+		)
+    );
     
     private Scoreboard scoreboard;
     private Objective objective;

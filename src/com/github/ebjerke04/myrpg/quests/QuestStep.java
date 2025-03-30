@@ -7,6 +7,7 @@ public class QuestStep {
     private QuestStepType stepType;
     private String description;
     private List<String> dialogue;
+    private boolean dialoguing = false;
 
     public QuestStep(QuestStepType stepType, String description, List<String> dialogue) {
         this.stepType = stepType;
@@ -20,6 +21,14 @@ public class QuestStep {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setDialoguing(boolean status) {
+        dialoguing = status;
+    }
+
+    public boolean isDialoguing() {
+        return dialoguing;
     }
 
     public List<String> getDialogue() {

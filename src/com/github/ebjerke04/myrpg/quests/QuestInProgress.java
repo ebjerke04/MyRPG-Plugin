@@ -3,11 +3,6 @@ package com.github.ebjerke04.myrpg.quests;
 import java.util.Stack;
 import java.util.UUID;
 
-import com.github.ebjerke04.myrpg.util.Logging;
-
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextColor;
-
 public class QuestInProgress {
 
     private UUID respectiveId;
@@ -24,21 +19,21 @@ public class QuestInProgress {
         this.steps.addAll(quest.getSteps());
     }
 
+    public void revealNextStep() {
+        steps.pop();
+
+        if (steps.isEmpty()) isComplete = true;
+    }
+
     /**
      * @return true if attempt at quest progression is successful
      */
     public boolean attemptProgression() {
         // TODO: handle quest progression.
         // if requirement is met, pop QuestStep from stack and expose next step.
-        boolean succesful = true;
-        if (succesful) {
-            steps.pop();
-
-            if (steps.isEmpty()) isComplete = true;
-            return true;
-        }
-
-        return false;
+        boolean successful = true;
+        
+        return successful;
     }
 
     public UUID getRespectiveId() {

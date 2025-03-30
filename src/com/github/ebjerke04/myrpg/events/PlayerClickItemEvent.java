@@ -1,6 +1,8 @@
 package com.github.ebjerke04.myrpg.events;
 
 import java.util.List;
+import java.util.UUID;
+
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -13,6 +15,9 @@ import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.classes.ClassSelectionMenu;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
 import com.github.ebjerke04.myrpg.economy.CurrencyConversionType;
+import com.github.ebjerke04.myrpg.players.RpgPlayer;
+import com.github.ebjerke04.myrpg.quests.Quest;
+import com.github.ebjerke04.myrpg.quests.QuestInProgress;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
@@ -31,7 +36,6 @@ public class PlayerClickItemEvent extends BaseEvent {
 		String titleString = PlainTextComponentSerializer.plainText().serialize(inventoryTitle);
 
 		if (titleString.equals("Class Selection")) {
-			// Cancel ALL item movement in this inventory
 			event.setCancelled(true);
 			if (event.getCurrentItem() == null) return;
 			
@@ -70,6 +74,25 @@ public class PlayerClickItemEvent extends BaseEvent {
 			
 			boolean success = Plugin.getWorldManager().getBankingService().handleCurrencyConversion(player, type);
 			if (!success) player.closeInventory();
+		} else if (titleString.equals("Quest Book")) {
+			event.setCancelled(true);
+			if (event.getCurrentItem() == null) return;
+
+			ItemStack clickedItem = event.getCurrentItem();
+			Player player = (Player) event.getWhoClicked();
+			UUID playerId = player.getUniqueId();
+			RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
+
+			String questName = PlainTextComponentSerializer.plainText().serialize(clickedItem.effectiveName());
+			Quest clickedQuest = Plugin.getWorldManager().getQuestByName(questName);
+			if (clickedQuest == null) return; // TODO: maybe handle better
+
+			if (rpgPlayer.getActiveClass().getQuestsCompleted().contains(questName)) {
+				player.sendMessage(Component.text("This quest has already been completed"));
+				return;
+			}
+
+			rpgPlayer.setTrackedQuest(clickedQuest.getUniqueId());
 		}
 	}
 	

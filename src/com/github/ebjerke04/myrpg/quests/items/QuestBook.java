@@ -49,9 +49,9 @@ public class QuestBook {
 			ItemMeta iconMeta = questIcon.getItemMeta();
 			iconMeta.displayName(Component.text(questName).color(TextColor.color(0x00FF00)));
 			iconMeta.lore(List.of(
-				Component.text(stepDescription),
-				Component.text("Started"),
-				Component.text("Left-click to track")
+				Component.text(stepDescription).color(TextColor.color(0xFF0000)),
+				Component.text("Started").color(TextColor.color(0x0000FF)),
+				Component.text("Left-click to track").color(TextColor.color(0xFFFF00))
 			));
 			questIcon.setItemMeta(iconMeta);
 
@@ -60,18 +60,23 @@ public class QuestBook {
 
 		List<Quest> allQuests = Plugin.getWorldManager().getQuests();
 		for (Quest quest : allQuests) {
-			if (!isQuestInProgress(quest, questsInProgress)) {
+			if (rpgPlayer.getActiveClass() == null) break;
+			if (!isQuestInProgress(quest, questsInProgress) && !isQuestComplete(quest, rpgPlayer.getActiveClass().getQuestsCompleted())) {
 				String questName = quest.getName();
 				String stepDescription = quest.getSteps().peek().getDescription();
 				int minLevel = quest.getMinLevel();
 
-				ItemStack questIcon = new ItemStack(Material.GREEN_WOOL, 1);
+				Material iconColor = Material.RED_WOOL;
+				int playerLevel = 10; // TODO: design system to fetch player level
+				if (playerLevel >= minLevel) iconColor = Material.GREEN_WOOL;
+				
+				ItemStack questIcon = new ItemStack(iconColor, 1);
 				ItemMeta iconMeta = questIcon.getItemMeta();
 				iconMeta.displayName(Component.text(questName).color(TextColor.color(0x00FF00)));
 				iconMeta.lore(List.of(
-					Component.text(stepDescription),
-					Component.text("Minimum level to start: " + minLevel),
-					Component.text("Left-click to track")
+					Component.text(stepDescription).color(TextColor.color(0xFF0000)),
+					Component.text("Min: " + minLevel + "lvl").color(TextColor.color(0x0000FF)),
+					Component.text("Left-click to track").color(TextColor.color(0xFFFF00))
 				));
 				questIcon.setItemMeta(iconMeta);
 
@@ -88,6 +93,10 @@ public class QuestBook {
 		}
 
 		return false;
+	}
+
+	private static boolean isQuestComplete(Quest quest, List<String> questsComplete) {
+		return questsComplete.contains(quest.getName());
 	}
 	
 }

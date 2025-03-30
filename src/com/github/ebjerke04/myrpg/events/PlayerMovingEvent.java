@@ -33,6 +33,11 @@ public class PlayerMovingEvent extends BaseEvent {
 
         for (QuestInProgress questInProgress : questsInProgress) {
             QuestStep currentStep = questInProgress.getCurrentStep();
+            
+            // Not very graceful way of handling this problem, but hey it works.
+            // Step gets popped from the stack before message delivery service ends.
+            if (currentStep == null) continue;
+
             if (currentStep.getType() == QuestStepType.ENTER_AREA) {
                 QuestStepEnterArea enterStep = (QuestStepEnterArea) currentStep;
                 Region3D stepRegion = enterStep.getRegion3D();

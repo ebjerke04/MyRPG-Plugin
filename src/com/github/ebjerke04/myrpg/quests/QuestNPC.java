@@ -5,6 +5,7 @@ import java.util.UUID;
 import org.bukkit.entity.Player;
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
+import com.github.ebjerke04.myrpg.players.MessageDeliverer;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.util.Logging;
 import com.github.ebjerke04.myrpg.world.NPC;
@@ -42,7 +43,6 @@ public class QuestNPC extends NPC {
 					QuestNPC npc = interactStep.getQuestNPC();
 					if (npc.equals(this)) {
 						// TODO: proceed with quest...Need to test this...
-						player.sendMessage(Component.text("Successfully went to next step in progress"));
 						rpgPlayer.attemptQuestProgression(questInProgress);
 						return;
 					}
@@ -53,7 +53,7 @@ public class QuestNPC extends NPC {
 		List<Quest> availableQuests = Plugin.getWorldManager().getQuestsByStartNPC(this);
 		if (!availableQuests.isEmpty()) {
 			List<String> completedQuests = activeClass.getQuestsCompleted();
-			// Sort through available quests.
+			// TODO: Sort through available quests.
 			// Check if quest has been completed, ensure only the quest with the lowest level is started.
 			Quest earliestQuest = null;
 			for (Quest quest : availableQuests) {
@@ -73,8 +73,6 @@ public class QuestNPC extends NPC {
 					}
 				}
 
-				player.sendMessage(Component.text("Quest: " + earliestQuest.getName() + " has been started!")
-					.color(TextColor.color(0xFF00FF)));
 				Plugin.getPlayerManager().assignQuestToPlayer(player, earliestQuest);
 			}
 		}
