@@ -8,10 +8,13 @@ public class EventManager {
 		new PlayerConnectEvent();
 		new PlayerDisconnectEvent();
 		new PlayerMessageEvent();
-		new EntityRightClickEvent();
+		new PlayerRightClickEntityEvent();
 		new PlayerRightClickEvent();
 		new PlayerClickItemEvent();
 		new PlayerMovingEvent();
+		new PlayerDamageEntityEvent();
+		
+		new EntityDeathEvent();
 		
 		new TestWeapon();
 	}

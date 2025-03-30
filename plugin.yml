@@ -13,6 +13,9 @@ commands:
   class:
     description: Open the class selection menu!
     usage: /class
+  testcmd:
+    description: Test command!
+    usage: /testcmd
 
 permissions:
   rpg.admin:

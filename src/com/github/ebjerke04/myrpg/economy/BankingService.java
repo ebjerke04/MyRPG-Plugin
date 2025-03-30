@@ -47,7 +47,8 @@ public class BankingService {
 
             // TODO: Has some weird issues I dont really understand in terms of
             // why the wrong amount of ingots get added to player's inventory.
-            inventory.addItem(type.getTo());
+            ItemStack toAdd = type.getTo().clone();
+            inventory.addItem(toAdd);
             return true;
         } else {
             player.sendMessage(Component.text("You do not have enough of the required items for this transaction")

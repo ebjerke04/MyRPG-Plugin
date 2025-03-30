@@ -17,7 +17,6 @@ import com.github.ebjerke04.myrpg.data.PlayerDataManager;
 import com.github.ebjerke04.myrpg.economy.CurrencyConversionType;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.quests.Quest;
-import com.github.ebjerke04.myrpg.quests.QuestInProgress;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
@@ -86,7 +85,7 @@ public class PlayerClickItemEvent extends BaseEvent {
 			String questName = PlainTextComponentSerializer.plainText().serialize(clickedItem.effectiveName());
 			Quest clickedQuest = Plugin.getWorldManager().getQuestByName(questName);
 			if (clickedQuest == null) return; // TODO: maybe handle better
-
+			
 			if (rpgPlayer.getActiveClass().getQuestsCompleted().contains(questName)) {
 				player.sendMessage(Component.text("This quest has already been completed"));
 				return;

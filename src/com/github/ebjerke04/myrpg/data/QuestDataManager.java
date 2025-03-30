@@ -15,6 +15,7 @@ import com.github.ebjerke04.myrpg.quests.QuestDataHolder;
 import com.github.ebjerke04.myrpg.quests.QuestNPC;
 import com.github.ebjerke04.myrpg.quests.QuestStep;
 import com.github.ebjerke04.myrpg.quests.QuestStepEnterArea;
+import com.github.ebjerke04.myrpg.quests.QuestStepKillBoss;
 import com.github.ebjerke04.myrpg.quests.QuestStepNpcInteract;
 import com.github.ebjerke04.myrpg.quests.QuestStepType;
 import com.github.ebjerke04.myrpg.util.Logging;
@@ -145,7 +146,10 @@ public class QuestDataManager {
 				questSteps.put(Integer.parseInt(stepString), 
 					new QuestStepEnterArea(region3D, description, dialogue));
 				break;
-			case KILL_ENTITY:
+			case KILL_BOSS:
+				String bossName = getQuestData().getString(stepPath + "boss-name");
+				questSteps.put(Integer.parseInt(stepString),
+					new QuestStepKillBoss(bossName, description, dialogue));
 				break;
 			case null:
 				Logging.sendConsole(Component.text("Quest step type registered as null for quest step, " + stepString

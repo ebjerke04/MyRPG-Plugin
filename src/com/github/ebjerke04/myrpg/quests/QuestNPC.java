@@ -5,7 +5,6 @@ import java.util.UUID;
 import org.bukkit.entity.Player;
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
-import com.github.ebjerke04.myrpg.players.MessageDeliverer;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.util.Logging;
 import com.github.ebjerke04.myrpg.world.NPC;

@@ -10,6 +10,7 @@ D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\commands\BaseCommand.j
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\commands\ClassCommand.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\commands\CommandManager.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\commands\TestCommand.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\data\ConfigManager.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java
@@ -20,14 +21,17 @@ D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\data\WorldDataManager.
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\economy\BankerNPC.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\economy\BankingService.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\economy\CurrencyConversionType.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\entities\CustomBoss.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\BaseEvent.java
-D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\EntityRightClickEvent.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\EntityDeathEvent.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\EventManager.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\PlayerConnectEvent.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\PlayerDamageEntityEvent.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\PlayerMovingEvent.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\PlayerRightClickEntityEvent.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\interfaces\PlayerScoreboard.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\players\MessageDeliverer.java
@@ -42,6 +46,7 @@ D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestInProgress
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestNPC.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestStep.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestStepEnterArea.java
+D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestStepKillBoss.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestStepNpcInteract.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\QuestStepType.java
 D:\Development\MyRPG\MyRPG\src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java

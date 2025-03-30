@@ -3,14 +3,14 @@ package com.github.ebjerke04.myrpg.quests;
 public enum QuestStepType {
 
     NPC_INTERACT,
-    KILL_ENTITY,
+    KILL_BOSS,
     ENTER_AREA;
 
     public static QuestStepType fromString(String classType) {
         if (classType.equals("npc_interact")) {
             return NPC_INTERACT;
-        } else if (classType.equals("kill_entity")) {
-            return KILL_ENTITY;
+        } else if (classType.equals("kill_boss")) {
+            return KILL_BOSS;
         } else if (classType.equals("enter_area")) {
             return ENTER_AREA;
         }

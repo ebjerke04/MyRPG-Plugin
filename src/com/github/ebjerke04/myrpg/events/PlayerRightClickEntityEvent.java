@@ -8,9 +8,9 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.world.NPC;
 
-public class EntityRightClickEvent extends BaseEvent {
+public class PlayerRightClickEntityEvent extends BaseEvent {
 
-	public EntityRightClickEvent() {
+	public PlayerRightClickEntityEvent() {
 		super();
 	}
 	

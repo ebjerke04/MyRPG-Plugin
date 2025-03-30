@@ -41,6 +41,8 @@ public class RpgPlayer {
 		questsInProgress.add(quest);	
 	}
 
+	// TODO: when updating the tracking scoreboard:
+	// maybe break the description message down into a couple lines. (takes up a lot of space)
 	public void attemptQuestProgression(QuestInProgress quest) {
 		QuestStep currentStep = quest.getCurrentStep();
 		if (quest.attemptProgression() && !currentStep.isDialoguing()) {
@@ -95,7 +97,8 @@ public class RpgPlayer {
 				
 				Component title = Component.text("Tracking - " + questInProgress.getName());
 				List<Component> items = List.of(
-					Component.text("Task: " + currentStep.getDescription())
+					Component.text("Task: " + currentStep.getDescription()),
+					Component.text("Go to: [x,y,z]")
 				);
 				PlayerScoreboard scoreboard = new PlayerScoreboard(title, items);
 				scoreboard.sendToPlayer(player);
@@ -110,7 +113,8 @@ public class RpgPlayer {
 
 				Component title = Component.text("Tracking - " + quest.getName());
 				List<Component> items = List.of(
-					Component.text("Task: " + firstStep.getDescription())
+					Component.text("Task: " + firstStep.getDescription()),
+					Component.text("Go to: [x,y,z]")
 				);
 				PlayerScoreboard scoreboard = new PlayerScoreboard(title, items);
 				scoreboard.sendToPlayer(player);

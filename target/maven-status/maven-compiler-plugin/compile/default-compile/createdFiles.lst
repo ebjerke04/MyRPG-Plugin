@@ -5,8 +5,10 @@ com\github\ebjerke04\myrpg\interfaces\PlayerScoreboard.class
 com\github\ebjerke04\myrpg\players\MessageDeliverer$1.class
 com\github\ebjerke04\myrpg\quests\QuestStepType.class
 com\github\ebjerke04\myrpg\quests\QuestStepNpcInteract.class
+com\github\ebjerke04\myrpg\quests\QuestStepKillBoss.class
 com\github\ebjerke04\myrpg\quests\QuestStepEnterArea.class
 com\github\ebjerke04\myrpg\commands\CommandManager.class
+com\github\ebjerke04\myrpg\commands\TestCommand.class
 com\github\ebjerke04\myrpg\data\WorldDataManager.class
 com\github\ebjerke04\myrpg\events\PlayerMovingEvent.class
 com\github\ebjerke04\myrpg\players\PlayerManager.class
@@ -15,7 +17,6 @@ com\github\ebjerke04\myrpg\Plugin.class
 com\github\ebjerke04\myrpg\events\PlayerConnectEvent.class
 com\github\ebjerke04\myrpg\data\QuestDataManager.class
 com\github\ebjerke04\myrpg\world\Region3D.class
-com\github\ebjerke04\myrpg\events\EntityRightClickEvent.class
 com\github\ebjerke04\myrpg\classes\types\ArcherClass.class
 com\github\ebjerke04\myrpg\data\leveling\LevelingManager.class
 com\github\ebjerke04\myrpg\events\BaseEvent.class
@@ -25,9 +26,11 @@ com\github\ebjerke04\myrpg\economy\BankingService.class
 com\github\ebjerke04\myrpg\classes\types\AssassinClass.class
 com\github\ebjerke04\myrpg\quests\QuestStep.class
 com\github\ebjerke04\myrpg\classes\RpgClass.class
+com\github\ebjerke04\myrpg\events\PlayerRightClickEntityEvent.class
 com\github\ebjerke04\myrpg\quests\Quest.class
 com\github\ebjerke04\myrpg\util\Logging.class
 com\github\ebjerke04\myrpg\economy\BankerNPC$1.class
+com\github\ebjerke04\myrpg\events\PlayerDamageEntityEvent.class
 com\github\ebjerke04\myrpg\economy\BankerNPC.class
 com\github\ebjerke04\myrpg\commands\RpgAdminCommand.class
 com\github\ebjerke04\myrpg\classes\types\WarriorClass.class
@@ -39,6 +42,7 @@ com\github\ebjerke04\myrpg\quests\QuestDataHolder.class
 com\github\ebjerke04\myrpg\classes\types\MageClass.class
 com\github\ebjerke04\myrpg\players\PlayerManager$1.class
 com\github\ebjerke04\myrpg\economy\CurrencyConversionType$1.class
+com\github\ebjerke04\myrpg\entities\CustomBoss.class
 com\github\ebjerke04\myrpg\events\PlayerMessageEvent$1.class
 com\github\ebjerke04\myrpg\classes\ClassSelectionMenu.class
 com\github\ebjerke04\myrpg\quests\QuestNPC.class
@@ -48,6 +52,7 @@ com\github\ebjerke04\myrpg\quests\NPCDataHolder.class
 com\github\ebjerke04\myrpg\players\MessageDeliverer.class
 com\github\ebjerke04\myrpg\world\WorldManager.class
 com\github\ebjerke04\myrpg\classes\ClassType.class
+com\github\ebjerke04\myrpg\events\EntityDeathEvent.class
 com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.class
 com\github\ebjerke04\myrpg\world\NPC.class
 com\github\ebjerke04\myrpg\weapons\TestWeapon.class
