@@ -60,3 +60,4 @@ com\github\ebjerke04\myrpg\events\PlayerMessageEvent.class
 com\github\ebjerke04\myrpg\quests\RpgCreationStep.class
 com\github\ebjerke04\myrpg\data\ConfigManager.class
 com\github\ebjerke04\myrpg\data\PlayerDataManager.class
+com\github\ebjerke04\myrpg\util\AdventureToSpigot.class

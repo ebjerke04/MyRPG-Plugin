@@ -4,6 +4,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
+import com.github.ebjerke04.myrpg.Plugin;
+
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 
@@ -51,7 +53,7 @@ public class BankingService {
             inventory.addItem(toAdd);
             return true;
         } else {
-            player.sendMessage(Component.text("You do not have enough of the required items for this transaction")
+            Plugin.getAdventure().player(player).sendMessage(Component.text("You do not have enough of the required items for this transaction")
                 .color(TextColor.color(0xFF0000)));
             return false;
         }

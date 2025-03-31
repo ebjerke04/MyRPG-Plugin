@@ -9,6 +9,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
+import net.md_5.bungee.api.ChatColor;
 
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
@@ -21,7 +22,6 @@ import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
-import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 public class PlayerClickItemEvent extends BaseEvent {
 
@@ -31,10 +31,9 @@ public class PlayerClickItemEvent extends BaseEvent {
 	
 	@EventHandler(priority = EventPriority.HIGH)
 	public void onPlayerClickItem(InventoryClickEvent event) {
-		Component inventoryTitle = event.getView().title();
-		String titleString = PlainTextComponentSerializer.plainText().serialize(inventoryTitle);
-
-		if (titleString.equals("Class Selection")) {
+		String inventoryTitle = ChatColor.stripColor(event.getView().getTitle());
+		
+		if (inventoryTitle.equals("Class Selection")) {
 			event.setCancelled(true);
 			if (event.getCurrentItem() == null) return;
 			
@@ -60,7 +59,7 @@ public class PlayerClickItemEvent extends BaseEvent {
 				
 				Plugin.getPlayerManager().handleClassSelection(player, clickedClassData);
 			}
-		} else if (titleString.equals("Currency Exchange")) {
+		} else if (inventoryTitle.equals("Currency Exchange")) {
 			event.setCancelled(true);
 			if (event.getCurrentItem() == null) return;
 
@@ -73,7 +72,7 @@ public class PlayerClickItemEvent extends BaseEvent {
 			
 			boolean success = Plugin.getWorldManager().getBankingService().handleCurrencyConversion(player, type);
 			if (!success) player.closeInventory();
-		} else if (titleString.equals("Quest Book")) {
+		} else if (inventoryTitle.equals("Quest Book")) {
 			event.setCancelled(true);
 			if (event.getCurrentItem() == null) return;
 
@@ -82,12 +81,12 @@ public class PlayerClickItemEvent extends BaseEvent {
 			UUID playerId = player.getUniqueId();
 			RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
 
-			String questName = PlainTextComponentSerializer.plainText().serialize(clickedItem.effectiveName());
-			Quest clickedQuest = Plugin.getWorldManager().getQuestByName(questName);
+			String questName = clickedItem.getItemMeta().getDisplayName();
+			Quest clickedQuest = Plugin.getWorldManager().getQuestByName(ChatColor.stripColor(questName));
 			if (clickedQuest == null) return; // TODO: maybe handle better
 			
 			if (rpgPlayer.getActiveClass().getQuestsCompleted().contains(questName)) {
-				player.sendMessage(Component.text("This quest has already been completed"));
+				Plugin.getAdventure().player(player).sendMessage(Component.text("This quest has already been completed"));
 				return;
 			}
 

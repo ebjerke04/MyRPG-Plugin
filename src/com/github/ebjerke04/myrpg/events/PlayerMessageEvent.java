@@ -2,12 +2,10 @@ package com.github.ebjerke04.myrpg.events;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import com.github.ebjerke04.myrpg.creation.RpgCreationManager;
 import com.github.ebjerke04.myrpg.quests.RpgCreationStep;
-
-import io.papermc.paper.event.player.AsyncChatEvent;
-import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 public class PlayerMessageEvent extends BaseEvent {
 
@@ -16,14 +14,14 @@ public class PlayerMessageEvent extends BaseEvent {
 	}
 	
 	@EventHandler
-	public void onPlayerChat(AsyncChatEvent event) {
+	public void onPlayerChat(AsyncPlayerChatEvent event) {
 		Player player = event.getPlayer();
 		RpgCreationStep step = RpgCreationManager.get().getCreationStatus(player);
 		
 		switch (step) {
 		case ENTER_QUEST_NAME:
 			event.setCancelled(true);
-			String message = PlainTextComponentSerializer.plainText().serialize(event.message());
+			String message = event.getMessage();
 			RpgCreationManager.get().submitQuestName(player, message);
 			break;
 		case CONFIRM_QUEST_NAME:

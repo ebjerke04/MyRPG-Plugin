@@ -9,9 +9,6 @@ import org.bukkit.inventory.ItemStack;
 
 import com.github.ebjerke04.myrpg.quests.items.QuestBook;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
-
 public class PlayerRightClickEvent extends BaseEvent {
 
 	public PlayerRightClickEvent() {
@@ -25,10 +22,9 @@ public class PlayerRightClickEvent extends BaseEvent {
 			ItemStack item = player.getInventory().getItemInMainHand();
 			
 			if (item != null && item.hasItemMeta()) {
-				Component itemName = item.getItemMeta().displayName();
-				String itemNameString = PlainTextComponentSerializer.plainText().serialize(itemName);
+				String itemName = item.getItemMeta().getDisplayName();
 				
-				if (item.getType() == Material.WRITTEN_BOOK && itemNameString.equals("Quest Book")) {
+				if (item.getType() == Material.WRITTEN_BOOK && itemName.equals("Quest Book")) {
 					QuestBook.open(player);
 					
 					event.setCancelled(true);

@@ -63,7 +63,7 @@ public class RpgPlayer {
 					for (int i = 0; i < questsInProgress.size(); i++) {
 						if (questsInProgress.get(i).equals(quest)) {
 							activeClass.setQuestCompleted(quest.getName());
-							player.sendMessage(Component.text("Quest has been completed!")
+							Plugin.getAdventure().player(player).sendMessage(Component.text("Quest has been completed!")
 								.color(TextColor.color(0x00FF00)));
 							questsInProgress.remove(i);
 
@@ -73,7 +73,7 @@ public class RpgPlayer {
 						}
 					}
 				} else {
-					player.sendMessage(Component.text("Quest book updated for quest: " + quest.getName())
+					Plugin.getAdventure().player(player).sendMessage(Component.text("Quest book updated for quest: " + quest.getName())
 					.color(TextColor.color(0x00FF00)));
 
 					if (trackedQuestId == null) return;

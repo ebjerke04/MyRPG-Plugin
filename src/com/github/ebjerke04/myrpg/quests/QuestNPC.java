@@ -66,7 +66,7 @@ public class QuestNPC extends NPC {
 			if (earliestQuest != null) {
 				for (QuestInProgress questInProgress : questsInProgress) {
 					if (earliestQuest.getUniqueId().equals(questInProgress.getRespectiveId())) {
-						player.sendMessage(Component.text("You have already started the quest for this NPC")
+						Plugin.getAdventure().player(player).sendMessage(Component.text("You have already started the quest for this NPC")
 							.color(TextColor.color(0xFF00FF)));
 						return;
 					}
