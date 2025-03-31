@@ -6,7 +6,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.github.ebjerke04.myrpg.Plugin;
-import com.github.ebjerke04.myrpg.util.AdventureToSpigot;
 
 import net.kyori.adventure.text.Component;
 
@@ -35,7 +34,7 @@ public class MessageDeliverer {
                     return;
                 }
 
-                Plugin.getAdventure().player(player).sendMessage(messages.get(index));
+                player.sendMessage(messages.get(index));
                 index++;
             }
         }.runTaskTimer(Plugin.get(), 0L, 20L);

@@ -15,7 +15,6 @@ import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
-import com.github.ebjerke04.myrpg.util.AdventureToSpigot;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -26,20 +25,17 @@ public class QuestBook {
 		ItemStack book = new ItemStack(Material.WRITTEN_BOOK);
 		ItemMeta meta = book.getItemMeta();
 		
-		Component dispName = Component.text("Quest Book");
-		meta.setDisplayName(AdventureToSpigot.compToString(dispName));
-		List<String> lore = List.of(
-			AdventureToSpigot.compToString(Component.text("Right-click to view quests!"))
-		);
-		meta.setLore(lore);
+		meta.displayName(Component.text("Quest Book"));
+		List<Component> lore = new ArrayList<>();
+		lore.add(Component.text("Right-click to view quests!"));
+		meta.lore(lore);
 		book.setItemMeta(meta);
 		
 		player.getInventory().setItem(8, book);
 	}
 	
 	public static void open(Player player) {
-		Component title = Component.text("Quest Book");
-		Inventory inventory = Bukkit.createInventory(null, 9 * 6, AdventureToSpigot.compToString(title));
+		Inventory inventory = Bukkit.createInventory(null, 9 * 6, Component.text("Quest Book"));
 		
 		UUID playerId = player.getUniqueId();
 		RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
@@ -51,11 +47,11 @@ public class QuestBook {
 
 			ItemStack questIcon = new ItemStack(Material.LIME_WOOL, 1);
 			ItemMeta iconMeta = questIcon.getItemMeta();
-			iconMeta.setDisplayName(AdventureToSpigot.compToString(Component.text(questName).color(TextColor.color(0x00FF00))));
-			iconMeta.setLore(List.of(
-				AdventureToSpigot.compToString(Component.text(stepDescription).color(TextColor.color(0xFF0000))),
-				AdventureToSpigot.compToString(Component.text("Started").color(TextColor.color(0x0000FF))),
-				AdventureToSpigot.compToString(Component.text("Left-click to track").color(TextColor.color(0xFFFF00)))
+			iconMeta.displayName(Component.text(questName).color(TextColor.color(0x00FF00)));
+			iconMeta.lore(List.of(
+				Component.text(stepDescription).color(TextColor.color(0xFF0000)),
+				Component.text("Started").color(TextColor.color(0x0000FF)),
+				Component.text("Left-click to track").color(TextColor.color(0xFFFF00))
 			));
 			questIcon.setItemMeta(iconMeta);
 
@@ -76,11 +72,11 @@ public class QuestBook {
 				
 				ItemStack questIcon = new ItemStack(iconColor, 1);
 				ItemMeta iconMeta = questIcon.getItemMeta();
-				iconMeta.setDisplayName(AdventureToSpigot.compToString(Component.text(questName).color(TextColor.color(0x00FF00))));
-				iconMeta.setLore(List.of(
-					AdventureToSpigot.compToString(Component.text(stepDescription).color(TextColor.color(0xFF0000))),
-					AdventureToSpigot.compToString(Component.text("Min: " + minLevel + "lvl").color(TextColor.color(0x0000FF))),
-					AdventureToSpigot.compToString(Component.text("Left-click to track").color(TextColor.color(0xFFFF00)))
+				iconMeta.displayName(Component.text(questName).color(TextColor.color(0x00FF00)));
+				iconMeta.lore(List.of(
+					Component.text(stepDescription).color(TextColor.color(0xFF0000)),
+					Component.text("Min: " + minLevel + "lvl").color(TextColor.color(0x0000FF)),
+					Component.text("Left-click to track").color(TextColor.color(0xFFFF00))
 				));
 				questIcon.setItemMeta(iconMeta);
 

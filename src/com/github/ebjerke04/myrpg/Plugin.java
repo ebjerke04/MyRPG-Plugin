@@ -15,24 +15,20 @@ import com.github.ebjerke04.myrpg.players.PlayerManager;
 import com.github.ebjerke04.myrpg.util.Logging;
 import com.github.ebjerke04.myrpg.world.WorldManager;
 
-import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
+import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 public class Plugin extends JavaPlugin {
 	
 	private static Plugin instance;
 	
-	private BukkitAudiences adventure;
-
 	private WorldManager worldManager;
 	private PlayerManager playerManager;
 	
 	@Override
 	public void onEnable() {
 		instance = this;
-
-		adventure = BukkitAudiences.create(this);
 		
 		ConfigManager.init();
 		WorldDataManager.init();
@@ -55,7 +51,7 @@ public class Plugin extends JavaPlugin {
 		// Good temporary fix to aid in making testing of new features quick and simple.
 		for (Player player : Bukkit.getOnlinePlayers()) {
 			playerManager.handlePlayerConnect(player);
-			String playerName = player.getDisplayName();
+			String playerName = PlainTextComponentSerializer.plainText().serialize(player.displayName());
 			Logging.sendConsole(Component.text(playerName + " has been registered with MyRPG")
 				.color(TextColor.color(0xFF00FF)));
 		}
@@ -79,10 +75,6 @@ public class Plugin extends JavaPlugin {
 		return instance.playerManager;
 	}
 	
-	public static BukkitAudiences getAdventure() {
-		return instance.adventure;
-	}
-
 	public static Plugin get() {
 		return instance;
 	}

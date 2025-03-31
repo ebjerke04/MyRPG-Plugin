@@ -7,8 +7,6 @@ import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 
-import com.github.ebjerke04.myrpg.util.AdventureToSpigot;
-
 import net.kyori.adventure.text.Component;
 
 public class CustomBoss {
@@ -24,8 +22,7 @@ public class CustomBoss {
     }
 
     private void setupEntity() {
-        Component entityName = Component.text("Test entity");
-        entity.setCustomName(AdventureToSpigot.compToString(entityName));
+        entity.customName(Component.text("Test entity"));
         entity.setCustomNameVisible(true);
 
         entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(100.0);

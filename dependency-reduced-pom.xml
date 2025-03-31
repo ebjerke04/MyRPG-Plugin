@@ -32,7 +32,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.6.0</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -43,7 +43,7 @@
               <relocations>
                 <relocation>
                   <pattern>net.kyori</pattern>
-                  <shadedPattern>com.github.ebjerke04.myrpg.libs.kyori</shadedPattern>
+                  <shadedPattern>com.github.ebjerke04.myrpg.shaded.net.kyori</shadedPattern>
                 </relocation>
               </relocations>
             </configuration>
@@ -58,25 +58,15 @@
       <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
     <repository>
-      <id>spigot-repo</id>
-      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-    </repository>
-    <repository>
-      <id>dmulloy2-repo</id>
-      <url>https://repo.dmulloy2.net/repository/public/</url>
+      <id>papermc</id>
+      <url>https://repo.papermc.io/repository/maven-public/</url>
     </repository>
   </repositories>
   <dependencies>
     <dependency>
-      <groupId>org.spigotmc</groupId>
-      <artifactId>spigot-api</artifactId>
+      <groupId>io.papermc.paper</groupId>
+      <artifactId>paper-api</artifactId>
       <version>1.21.4-R0.1-SNAPSHOT</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.comphenix.protocol</groupId>
-      <artifactId>ProtocolLib</artifactId>
-      <version>5.3.0</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

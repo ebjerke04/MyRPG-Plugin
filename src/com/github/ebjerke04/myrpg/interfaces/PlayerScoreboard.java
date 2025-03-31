@@ -11,8 +11,6 @@ import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.ScoreboardManager;
 import org.bukkit.scoreboard.Team;
 
-import com.github.ebjerke04.myrpg.util.AdventureToSpigot;
-
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 
@@ -34,14 +32,14 @@ public class PlayerScoreboard {
         ScoreboardManager manager = Bukkit.getScoreboardManager();
         scoreboard = manager.getNewScoreboard();
 
-        objective = scoreboard.registerNewObjective("side_board", Criteria.DUMMY, AdventureToSpigot.compToString(title));
+        objective = scoreboard.registerNewObjective("side_board", Criteria.DUMMY, title);
         objective.setDisplaySlot(DisplaySlot.SIDEBAR);
 
         for (int i = 0; i < content.size(); i++) {
             int lineNumber = i + 1;
             
             Team newLine = scoreboard.registerNewTeam("line" + Integer.toString(lineNumber));
-            newLine.setPrefix(AdventureToSpigot.compToString(content.get(i)));
+            newLine.prefix(content.get(i));
             
             String entry = "";
             for (int j = 0; j < lineNumber; j++) {

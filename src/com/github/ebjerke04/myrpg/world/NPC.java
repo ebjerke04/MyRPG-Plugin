@@ -9,12 +9,10 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Villager;
 
-import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.quests.NPCDataHolder;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
-import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
 public abstract class NPC {
 
@@ -35,10 +33,7 @@ public abstract class NPC {
 		
 		villager.setRemoveWhenFarAway(false);
 		villager.setAI(false);
-		
-		Component nameComponent = Component.text(data.name).color(TextColor.color(0x00FF00));
-		String legacyName = LegacyComponentSerializer.legacySection().serialize(nameComponent);
-		villager.setCustomName(legacyName);
+		villager.customName(Component.text(data.name).color(TextColor.color(0x00FF00)));
 		villager.setCustomNameVisible(true);
 		
 		id = villager.getUniqueId();
