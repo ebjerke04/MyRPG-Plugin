@@ -4,7 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.github.ebjerke04.myrpg.entities.CustomBoss;
+import com.github.ebjerke04.myrpg.Plugin;
 
 public class TestCommand extends BaseCommand {
 
@@ -18,7 +18,7 @@ public class TestCommand extends BaseCommand {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
                 
-                new CustomBoss(player.getLocation());
+                Plugin.getWorldManager().test(player);
             }
         }
 

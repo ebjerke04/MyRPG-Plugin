@@ -1,12 +1,20 @@
 package com.github.ebjerke04.myrpg.world;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
+
+import org.bukkit.entity.Player;
 
 import com.github.ebjerke04.myrpg.data.QuestDataManager;
 import com.github.ebjerke04.myrpg.data.WorldDataManager;
 import com.github.ebjerke04.myrpg.economy.BankingService;
+import com.github.ebjerke04.myrpg.entities.CustomMob;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestNPC;
 
@@ -14,10 +22,11 @@ public class WorldManager {
 
 	private BankingService bankingService;
 	
-	List<NPC> npcs = new ArrayList<>();
+	private List<NPC> npcs = new ArrayList<>();
+	private List<Quest> quests = new ArrayList<Quest>();
 	
-	List<Quest> quests = new ArrayList<Quest>();
-	
+	private Map<UUID, CustomMob> spawnedMobs = new ConcurrentHashMap<>();
+
 	public WorldManager() {
 		
 	}
@@ -29,6 +38,11 @@ public class WorldManager {
 		spawnNPCs();
 
 		bankingService = new BankingService();
+	}
+
+	public void test(Player player) {
+		CustomMob cMob = new CustomMob(player.getLocation());
+		spawnedMobs.put(cMob.getUniqueId(), cMob);
 	}
 
 	private void spawnNPCs() {
@@ -98,6 +112,14 @@ public class WorldManager {
 		}
 
 		return null;
+	}
+
+	public CustomMob getCustomMob(UUID mobId) {
+		return spawnedMobs.get(mobId);
+	}
+
+	public Collection<CustomMob> getCustomMobs() {
+		return spawnedMobs.values();
 	}
 	
 	public BankingService getBankingService() {

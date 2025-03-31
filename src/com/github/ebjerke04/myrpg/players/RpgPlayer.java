@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
+import com.github.ebjerke04.myrpg.entities.CustomMob;
 import com.github.ebjerke04.myrpg.interfaces.PlayerScoreboard;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
@@ -23,6 +24,8 @@ public class RpgPlayer {
 	private UUID trackedQuestId = null;
 
 	private List<QuestInProgress> questsInProgress = new ArrayList<>();
+
+	private List<CustomMob> mobsInCombat = new ArrayList<>();
 
 	public RpgPlayer(Player player) {
 		this.player = player;

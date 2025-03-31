@@ -1,20 +1,25 @@
 package com.github.ebjerke04.myrpg.entities;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import org.bukkit.Location;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Player;
 
 import net.kyori.adventure.text.Component;
 
-public class CustomBoss {
+public class CustomMob {
 
     private final LivingEntity entity;
     private UUID id;
 
-    public CustomBoss(Location spawnLocation) {
+    private List<Player> damagers = new ArrayList<>();
+
+    public CustomMob(Location spawnLocation) {
         entity = (LivingEntity) spawnLocation.getWorld().spawnEntity(spawnLocation, EntityType.ZOMBIE);
         
         setupEntity();
@@ -27,6 +32,18 @@ public class CustomBoss {
 
         entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(100.0);
         entity.setHealth(100.0);
+    }
+
+    public void addDamager(Player player) {
+        for (Player damager : damagers) {
+            if (damager.getUniqueId().equals(player.getUniqueId())) return;
+        }
+        
+        damagers.add(player);
+    }
+
+    public List<Player> getDamagers() {
+        return damagers;
     }
     
     public UUID getUniqueId() {

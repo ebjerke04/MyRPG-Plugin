@@ -13,6 +13,7 @@ public class EventManager {
 		new PlayerClickItemEvent();
 		new PlayerMovingEvent();
 		new PlayerDamageEntityEvent();
+		new PlayerDeathEvent();
 		
 		new EntityDeathEvent();
 		
