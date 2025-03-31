@@ -8,6 +8,7 @@ import org.bukkit.event.EventHandler;
 
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.entities.CustomMob;
+import com.github.ebjerke04.myrpg.players.RpgPlayer;
 
 public class EntityDeathEvent extends BaseEvent {
 
@@ -20,12 +21,10 @@ public class EntityDeathEvent extends BaseEvent {
         LivingEntity killed = event.getEntity();
         UUID killedId = killed.getUniqueId();
 
-        CustomMob cMob = Plugin.getWorldManager().getCustomMob(killedId);
-        if (cMob == null) return;
+        CustomMob customMob = Plugin.getWorldManager().getCustomMob(killedId);
+        if (customMob == null) return;
 
-        for (Player player : cMob.getDamagers()) {
-            player.sendMessage("You were involved in killing an entity");
-        }
+        Plugin.getWorldManager().handleCustomMobDeath(customMob);
     }
     
 }

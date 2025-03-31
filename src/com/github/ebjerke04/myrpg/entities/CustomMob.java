@@ -42,6 +42,16 @@ public class CustomMob {
         damagers.add(player);
     }
 
+    public void removeDamager(Player player) {
+        for (int i = 0; i < damagers.size(); i++) {
+            if (damagers.get(i).getUniqueId().equals(player.getUniqueId()))
+            {
+                damagers.remove(i);
+                return;
+            }
+        }
+    }
+
     public List<Player> getDamagers() {
         return damagers;
     }

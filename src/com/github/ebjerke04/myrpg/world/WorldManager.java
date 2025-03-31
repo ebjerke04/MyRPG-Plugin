@@ -1,20 +1,19 @@
 package com.github.ebjerke04.myrpg.world;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.bukkit.entity.Player;
 
+import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.data.QuestDataManager;
 import com.github.ebjerke04.myrpg.data.WorldDataManager;
 import com.github.ebjerke04.myrpg.economy.BankingService;
 import com.github.ebjerke04.myrpg.entities.CustomMob;
+import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestNPC;
 
@@ -114,12 +113,22 @@ public class WorldManager {
 		return null;
 	}
 
-	public CustomMob getCustomMob(UUID mobId) {
-		return spawnedMobs.get(mobId);
+	public void handleCustomMobDeath(CustomMob customMob) {
+		for (Player player : customMob.getDamagers()) {
+            player.sendMessage("You were involved in killing an entity");
+			
+            UUID playerId = player.getUniqueId();
+            RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
+
+			rpgPlayer.removeMobInCombat(customMob);
+        }
+
+		UUID customMobId = customMob.getUniqueId();
+		spawnedMobs.remove(customMobId);
 	}
 
-	public Collection<CustomMob> getCustomMobs() {
-		return spawnedMobs.values();
+	public CustomMob getCustomMob(UUID mobId) {
+		return spawnedMobs.get(mobId);
 	}
 	
 	public BankingService getBankingService() {

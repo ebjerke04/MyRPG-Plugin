@@ -26,7 +26,7 @@ public class RpgPlayer {
 	private List<QuestInProgress> questsInProgress = new ArrayList<>();
 
 	private List<CustomMob> mobsInCombat = new ArrayList<>();
-
+	
 	public RpgPlayer(Player player) {
 		this.player = player;
 	}
@@ -37,6 +37,34 @@ public class RpgPlayer {
 		// TODO: Player active class set. Figure out what is next.
 		// Send player to last location they left off at.
 		// Load their saved inventory.
+	}
+
+	public void setMobInCombat(CustomMob customMob) {
+		customMob.addDamager(player);
+
+		for (CustomMob mobInCombat : mobsInCombat) {
+			if (mobInCombat.getUniqueId().equals(customMob.getUniqueId())) return;
+		}
+		mobsInCombat.add(customMob);
+	}
+
+	public void removeMobInCombat(CustomMob customMob) {
+		customMob.removeDamager(player);
+
+		for (int i = 0; i < mobsInCombat.size(); i++) {
+			if (mobsInCombat.get(i).getUniqueId().equals(customMob.getUniqueId())) {
+				mobsInCombat.remove(i);
+				return;
+			}
+		}
+	}
+
+	public void handlePlayerDeath() {
+		for (CustomMob customMob : mobsInCombat) {
+			customMob.removeDamager(player);
+		}
+
+		mobsInCombat.clear();
 	}
 
 	public void assignQuest(QuestInProgress quest) {
