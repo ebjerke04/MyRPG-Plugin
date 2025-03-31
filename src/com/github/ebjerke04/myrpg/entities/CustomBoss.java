@@ -28,7 +28,7 @@ public class CustomBoss {
         entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(100.0);
         entity.setHealth(100.0);
     }
-
+    
     public UUID getUniqueId() {
         return id;
     }
