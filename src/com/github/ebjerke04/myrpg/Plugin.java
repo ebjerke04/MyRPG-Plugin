@@ -38,7 +38,6 @@ public class Plugin extends JavaPlugin {
 		QuestDataManager.init();
 		
 		worldManager = new WorldManager();
-		worldManager.init();
 
 		playerManager = new PlayerManager();
 		

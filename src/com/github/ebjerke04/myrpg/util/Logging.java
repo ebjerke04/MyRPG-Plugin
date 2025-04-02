@@ -15,6 +15,7 @@ public class Logging {
 
     public static void sendConsole(Level level, String message) {
         TextColor textColor = TextColor.color(0xFFFFFF);
+        
         if (level == Level.INFO) {
             textColor = TextColor.color(0x00FF00);
         } else if (level == Level.WARNING) {
@@ -22,6 +23,7 @@ public class Logging {
         } else if (level == Level.SEVERE) {
             textColor = TextColor.color(0xFF0000);
         }
+
         Bukkit.getConsoleSender().sendMessage(tag.append(
             Component.text(message).color(textColor)));
     }
