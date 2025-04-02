@@ -24,9 +24,6 @@ import com.github.ebjerke04.myrpg.util.Logging;
 import com.github.ebjerke04.myrpg.world.NPC;
 import com.github.ebjerke04.myrpg.world.Region3D;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextColor;
-
 public class QuestDataManager {
 	
 	private static QuestDataManager instance;

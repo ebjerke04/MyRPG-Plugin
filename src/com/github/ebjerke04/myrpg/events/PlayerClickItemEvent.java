@@ -21,7 +21,6 @@ import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 public class PlayerClickItemEvent extends BaseEvent {

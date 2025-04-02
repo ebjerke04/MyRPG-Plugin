@@ -7,9 +7,6 @@ import org.bukkit.inventory.ItemStack;
 
 import com.github.ebjerke04.myrpg.util.Logging;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextColor;
-
 public enum CurrencyConversionType {
     
     COPPER_TO_IRON(new ItemStack(Material.IRON_INGOT, 1), new ItemStack(Material.COPPER_INGOT, 64)),
