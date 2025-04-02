@@ -29,6 +29,7 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\EventMan
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\PlayerConnectEvent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\PlayerDamageEntityEvent.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\PlayerDeathEvent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\PlayerMessageEvent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\PlayerMovingEvent.java

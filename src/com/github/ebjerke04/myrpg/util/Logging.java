@@ -1,5 +1,7 @@
 package com.github.ebjerke04.myrpg.util;
 
+import java.util.logging.Level;
+
 import org.bukkit.Bukkit;
 
 import net.kyori.adventure.text.Component;
@@ -11,8 +13,17 @@ public class Logging {
         .append(Component.text("MyRPG").color(TextColor.color(0xFFD700)))
         .append(Component.text("] ").color(TextColor.color(0x00FFFF)));
 
-    public static void sendConsole(Component message) {
-        Bukkit.getConsoleSender().sendMessage(tag.append(message));
+    public static void sendConsole(Level level, String message) {
+        TextColor textColor = TextColor.color(0xFFFFFF);
+        if (level == Level.INFO) {
+            textColor = TextColor.color(0x00FF00);
+        } else if (level == Level.WARNING) {
+            textColor = TextColor.color(0xFFFF00);
+        } else if (level == Level.SEVERE) {
+            textColor = TextColor.color(0xFF0000);
+        }
+        Bukkit.getConsoleSender().sendMessage(tag.append(
+            Component.text(message).color(textColor)));
     }
     
 }

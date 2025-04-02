@@ -2,6 +2,8 @@ package com.github.ebjerke04.myrpg.quests;
 
 import java.util.List;
 import java.util.UUID;
+import java.util.logging.Level;
+
 import org.bukkit.entity.Player;
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
@@ -20,16 +22,14 @@ public class QuestNPC extends NPC {
 	
 	@Override
 	public void rightClicked(Player player) {
-		Logging.sendConsole(Component.text("Clicked NPC: " + getName())
-			.color(TextColor.color(0xFF00FF)));
+		Logging.sendConsole(Level.INFO, "Clicked NPC: " + getName());
 		
 		UUID playerId = player.getUniqueId();
 		RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
 		RpgClass activeClass = rpgPlayer.getActiveClass();
 
 		if (activeClass == null) {
-			Logging.sendConsole(Component.text("Tried to click NPC without class selected")
-				.color(TextColor.color(0xFF00FF)));
+			Logging.sendConsole(Level.INFO, "Tried to click NPC without class selected");
 			return;
 		}
 

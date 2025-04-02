@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.UUID;
 
 import org.bukkit.entity.Player;
-
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
 import com.github.ebjerke04.myrpg.entities.CustomMob;
@@ -13,7 +12,6 @@ import com.github.ebjerke04.myrpg.interfaces.PlayerScoreboard;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
 import com.github.ebjerke04.myrpg.quests.QuestStep;
-
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 
@@ -49,8 +47,6 @@ public class RpgPlayer {
 	}
 
 	public void removeMobInCombat(CustomMob customMob) {
-		customMob.removeDamager(player);
-
 		for (int i = 0; i < mobsInCombat.size(); i++) {
 			if (mobsInCombat.get(i).getUniqueId().equals(customMob.getUniqueId())) {
 				mobsInCombat.remove(i);

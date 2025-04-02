@@ -1,13 +1,14 @@
 package com.github.ebjerke04.myrpg.world;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
-
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.data.QuestDataManager;
 import com.github.ebjerke04.myrpg.data.WorldDataManager;
@@ -23,11 +24,11 @@ public class WorldManager {
 	
 	private List<NPC> npcs = new ArrayList<>();
 	private List<Quest> quests = new ArrayList<Quest>();
-	
+
+	private Map<String, CustomMob> mobTemplates = new HashMap<>();
 	private Map<UUID, CustomMob> spawnedMobs = new ConcurrentHashMap<>();
 
 	public WorldManager() {
-		
 	}
 
 	public void init() {
@@ -39,9 +40,18 @@ public class WorldManager {
 		bankingService = new BankingService();
 	}
 
-	public void test(Player player) {
-		CustomMob cMob = new CustomMob(player.getLocation());
-		spawnedMobs.put(cMob.getUniqueId(), cMob);
+	public void testCustomMob(Player player) {
+		mobTemplates.put("ZomKnight", new CustomMob(
+			"ZomKnight",
+			EntityType.ZOMBIE,
+			100.0,
+			"Zombie Knight"
+		));
+		
+		CustomMob templateMob = mobTemplates.get("ZomKnight");
+		
+		CustomMob spawnedMob = templateMob.spawnFromTemplate(player.getLocation());
+		spawnedMobs.put(spawnedMob.getUniqueId(), spawnedMob);
 	}
 
 	private void spawnNPCs() {
@@ -125,6 +135,8 @@ public class WorldManager {
 
 		UUID customMobId = customMob.getUniqueId();
 		spawnedMobs.remove(customMobId);
+
+		customMob.cleanup();
 	}
 
 	public CustomMob getCustomMob(UUID mobId) {

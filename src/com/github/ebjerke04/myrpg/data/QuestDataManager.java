@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
+import java.util.logging.Level;
+
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 
@@ -72,8 +74,7 @@ public class QuestDataManager {
 			questNames = new ArrayList<String>(getQuestData().getConfigurationSection("quests").getKeys(false));
 		}
 		
-		if (questNames.isEmpty()) Logging.sendConsole(Component.text("No quests have been created yet")
-			.color(TextColor.color(0xFF0000)));
+		if (questNames.isEmpty()) Logging.sendConsole(Level.INFO, "No quests have been created yet");
 		return questNames;
 	}
 	
@@ -117,8 +118,7 @@ public class QuestDataManager {
 		if (startNPC instanceof QuestNPC) {
 			data.startNPC = (QuestNPC) startNPC;
 		} else {
-			Logging.sendConsole(Component.text("Start NPC for quest, " + questName + ", not a QuestNPC")
-				.color(TextColor.color(0xFF0000)));
+			Logging.sendConsole(Level.SEVERE, "Start NPC for quest, " + questName + ", not a QuestNPC");
 			throw new IllegalStateException();
 		}
 		
@@ -152,12 +152,11 @@ public class QuestDataManager {
 					new QuestStepKillBoss(bossName, description, dialogue));
 				break;
 			case null:
-				Logging.sendConsole(Component.text("Quest step type registered as null for quest step, " + stepString
-					+ ", for quest: " + questName).color(TextColor.color(0xFF0000)));
+				Logging.sendConsole(Level.SEVERE, "Quest step type registered as null for quest step, " + stepString
+					+ ", for quest: ");
 				break;
 			default:
-				Logging.sendConsole(Component.text("Yeahhh this should not happen...")
-					.color(TextColor.color(0xFF0000)));
+				Logging.sendConsole(Level.SEVERE, "Yeahhh this should not happen...");
 				break;
 			}
 		}

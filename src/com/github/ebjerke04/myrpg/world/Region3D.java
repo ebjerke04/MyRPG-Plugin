@@ -1,12 +1,11 @@
 package com.github.ebjerke04.myrpg.world;
 
+import java.util.logging.Level;
+
 import org.bukkit.Location;
 import org.bukkit.World;
 
 import com.github.ebjerke04.myrpg.util.Logging;
-
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextColor;
 
 public class Region3D {
 
@@ -16,8 +15,7 @@ public class Region3D {
     public Region3D(Location corner1, Location corner2) {
         if (!corner1.getWorld().equals(corner2.getWorld()))
         {
-            Logging.sendConsole(Component.text("Region3D cannot have two locations from different worlds.")
-                .color(TextColor.color(0xFF0000)));
+            Logging.sendConsole(Level.SEVERE, "Region3D cannot have two locations from different worlds.");
             throw new IllegalStateException();
         }
         this.world = corner1.getWorld();

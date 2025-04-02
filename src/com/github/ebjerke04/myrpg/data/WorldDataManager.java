@@ -3,6 +3,7 @@ package com.github.ebjerke04.myrpg.data;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
 
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -34,8 +35,7 @@ public class WorldDataManager {
 				bankingNpcs.add(new BankerNPC(bankerLocation));
 			} 
 		} catch (NullPointerException e) {
-			Logging.sendConsole(Component.text("No BankingNPCs created yet")
-				.color(TextColor.color(0xFF0000)));
+			Logging.sendConsole(Level.INFO, "No BankingNPCs created yet");
 		}
 
 		return bankingNpcs;

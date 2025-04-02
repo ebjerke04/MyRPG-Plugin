@@ -18,7 +18,7 @@ public class TestCommand extends BaseCommand {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
                 
-                Plugin.getWorldManager().test(player);
+                Plugin.getWorldManager().testCustomMob(player);
             }
         }
 

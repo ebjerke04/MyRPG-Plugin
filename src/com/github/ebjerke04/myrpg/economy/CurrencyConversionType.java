@@ -1,5 +1,7 @@
 package com.github.ebjerke04.myrpg.economy;
 
+import java.util.logging.Level;
+
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
@@ -61,8 +63,7 @@ public enum CurrencyConversionType {
         case GOLD_INGOT:
             if (itemCount == 1) return IRON_TO_GOLD;
         default:
-            Logging.sendConsole(Component.text("Should not have reached here")
-                .color(TextColor.color(0xFF0000)));
+            Logging.sendConsole(Level.SEVERE, "Should not have reached here");
         }
         
         return null;

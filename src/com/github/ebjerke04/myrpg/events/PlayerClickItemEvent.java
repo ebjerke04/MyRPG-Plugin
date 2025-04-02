@@ -2,6 +2,7 @@ package com.github.ebjerke04.myrpg.events;
 
 import java.util.List;
 import java.util.UUID;
+import java.util.logging.Level;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -45,8 +46,7 @@ public class PlayerClickItemEvent extends BaseEvent {
 				// Handle create new class button click
 				player.closeInventory();
 				// TODO: Open class creation menu
-				Logging.sendConsole(Component.text("Class creation button clicked")
-					.color(TextColor.color(0xFF0000)));
+				Logging.sendConsole(Level.INFO, "Class creation button clicked");
 			} else if (clickedItem.getType() == Material.BOOK) {
 				// Handle existing class selection
 				//String className = clickedItem.getItemMeta().displayName().toString();

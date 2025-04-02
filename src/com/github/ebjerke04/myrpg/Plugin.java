@@ -1,5 +1,7 @@
 package com.github.ebjerke04.myrpg;
 
+import java.util.logging.Level;
+
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -52,8 +54,7 @@ public class Plugin extends JavaPlugin {
 		for (Player player : Bukkit.getOnlinePlayers()) {
 			playerManager.handlePlayerConnect(player);
 			String playerName = PlainTextComponentSerializer.plainText().serialize(player.displayName());
-			Logging.sendConsole(Component.text(playerName + " has been registered with MyRPG")
-				.color(TextColor.color(0xFF00FF)));
+			Logging.sendConsole(Level.INFO, playerName + " has been registered with MyRPG");
 		}
 	}
 	
