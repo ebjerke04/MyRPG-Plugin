@@ -41,7 +41,7 @@ public class CustomMob {
         this.entityType = entityType;
         this.maxHealth = maxHealth;
         this.displayName = displayName;
-
+        
         spawn(location);
     }
 
@@ -61,11 +61,11 @@ public class CustomMob {
     }
 
     private void setupEntity() {
-        entity.customName(Component.text("Test entity"));
+        entity.customName(Component.text(displayName));
         entity.setCustomNameVisible(true);
 
-        entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(100.0);
-        entity.setHealth(100.0);
+        entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(maxHealth);
+        entity.setHealth(maxHealth);
     }
 
     public void addDamager(Player player) {

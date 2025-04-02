@@ -17,8 +17,6 @@ import com.github.ebjerke04.myrpg.players.PlayerManager;
 import com.github.ebjerke04.myrpg.util.Logging;
 import com.github.ebjerke04.myrpg.world.WorldManager;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 public class Plugin extends JavaPlugin {
@@ -38,6 +36,7 @@ public class Plugin extends JavaPlugin {
 		QuestDataManager.init();
 		
 		worldManager = new WorldManager();
+		worldManager.init();
 
 		playerManager = new PlayerManager();
 		

@@ -25,6 +25,7 @@ com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.class
 com\github\ebjerke04\myrpg\quests\QuestInProgress.class
 com\github\ebjerke04\myrpg\economy\BankingService.class
 com\github\ebjerke04\myrpg\classes\types\AssassinClass.class
+com\github\ebjerke04\myrpg\entities\EntityDataHolder.class
 com\github\ebjerke04\myrpg\quests\QuestStep.class
 com\github\ebjerke04\myrpg\classes\RpgClass.class
 com\github\ebjerke04\myrpg\events\PlayerRightClickEntityEvent.class

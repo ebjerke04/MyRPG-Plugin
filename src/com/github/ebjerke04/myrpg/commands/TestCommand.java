@@ -16,9 +16,10 @@ public class TestCommand extends BaseCommand {
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equals(commandName)) {
             if (sender instanceof Player) {
+                if (args.length != 1) return false;
+
                 Player player = (Player) sender;
-                
-                Plugin.getWorldManager().testCustomMob(player);
+                Plugin.getWorldManager().testCustomMob(player, args[0]);
             }
         }
 

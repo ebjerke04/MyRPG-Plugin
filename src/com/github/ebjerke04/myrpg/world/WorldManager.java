@@ -20,7 +20,7 @@ import com.github.ebjerke04.myrpg.quests.QuestNPC;
 
 public class WorldManager {
 
-	private final BankingService bankingService;
+	private BankingService bankingService;
 	
 	private final List<NPC> npcs = new ArrayList<>();
 	private final List<Quest> quests = new ArrayList<Quest>();
@@ -29,18 +29,22 @@ public class WorldManager {
 	private final Map<UUID, CustomMob> spawnedMobs = new ConcurrentHashMap<>();
 
 	public WorldManager() {
+
+	}
+
+	public void init() {
 		loadNPCsFromConfig();
 		loadQuestsFromConfig();
 		loadMobTemplates();
 
 		spawnNPCs();
 		
-		this.bankingService = new BankingService();
+		bankingService = new BankingService();
 	}
 
 	// TODO test spawning of custommob by loading it from config
-	public void testCustomMob(Player player) {
-		CustomMob templateMob = mobTemplates.get("ZomKnight");
+	public void testCustomMob(Player player, String mobName) {
+		CustomMob templateMob = mobTemplates.get(mobName);
 		
 		CustomMob spawnedMob = templateMob.spawnFromTemplate(player.getLocation());
 		spawnedMobs.put(spawnedMob.getUniqueId(), spawnedMob);
