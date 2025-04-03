@@ -19,6 +19,7 @@ com\github\ebjerke04\myrpg\events\PlayerConnectEvent.class
 com\github\ebjerke04\myrpg\data\QuestDataManager.class
 com\github\ebjerke04\myrpg\world\Region3D.class
 com\github\ebjerke04\myrpg\classes\types\ArcherClass.class
+com\github\ebjerke04\myrpg\entities\FunctionContainer.class
 com\github\ebjerke04\myrpg\data\leveling\LevelingManager.class
 com\github\ebjerke04\myrpg\events\BaseEvent.class
 com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.class
@@ -59,6 +60,7 @@ com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.class
 com\github\ebjerke04\myrpg\world\NPC.class
 com\github\ebjerke04\myrpg\weapons\TestWeapon.class
 com\github\ebjerke04\myrpg\entities\CustomMob.class
+com\github\ebjerke04\myrpg\entities\ScriptComponent.class
 com\github\ebjerke04\myrpg\events\PlayerMessageEvent.class
 com\github\ebjerke04\myrpg\quests\RpgCreationStep.class
 com\github\ebjerke04\myrpg\data\ConfigManager.class

@@ -12,6 +12,7 @@ import com.github.ebjerke04.myrpg.data.ConfigManager;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
 import com.github.ebjerke04.myrpg.data.QuestDataManager;
 import com.github.ebjerke04.myrpg.data.WorldDataManager;
+import com.github.ebjerke04.myrpg.entities.ScriptComponent;
 import com.github.ebjerke04.myrpg.events.EventManager;
 import com.github.ebjerke04.myrpg.players.PlayerManager;
 import com.github.ebjerke04.myrpg.util.Logging;
@@ -53,6 +54,15 @@ public class Plugin extends JavaPlugin {
 			playerManager.handlePlayerConnect(player);
 			String playerName = PlainTextComponentSerializer.plainText().serialize(player.displayName());
 			Logging.sendConsole(Level.INFO, playerName + " has been registered with MyRPG");
+		}
+		
+		// TODO: Temporary testing of ScriptComponent
+		ScriptComponent scriptTest = new ScriptComponent("test_script.js");
+		try {
+			Object o = scriptTest.invokeFunction("testExecute", "TestQuest");
+			Logging.sendConsole(Level.WARNING, "Test output: " + o.toString());
+		} catch (Exception e) {
+			Logging.sendConsole(Level.WARNING, "Unable to invoke function...");
 		}
 	}
 	

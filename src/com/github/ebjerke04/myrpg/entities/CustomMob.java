@@ -41,7 +41,7 @@ public class CustomMob {
         this.entityType = entityType;
         this.maxHealth = maxHealth;
         this.displayName = displayName;
-        
+
         spawn(location);
     }
 

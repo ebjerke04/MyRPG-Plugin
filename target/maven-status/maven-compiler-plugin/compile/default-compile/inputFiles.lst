@@ -23,6 +23,8 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\Banking
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\CurrencyConversionType.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMob.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\EntityDataHolder.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\FunctionContainer.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ScriptComponent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\BaseEvent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\Entity.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\EntityDeathEvent.java
