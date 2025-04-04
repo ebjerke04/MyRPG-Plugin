@@ -44,9 +44,7 @@ public class BankingService {
                     inventory.clear(slotNumber);
                 }
             }
-
-            // TODO: Has some weird issues I dont really understand in terms of
-            // why the wrong amount of ingots get added to player's inventory.
+            
             ItemStack toAdd = type.getTo().clone();
             inventory.addItem(toAdd);
             return true;

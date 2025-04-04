@@ -42,7 +42,6 @@ public class WorldManager {
 		bankingService = new BankingService();
 	}
 
-	// TODO test spawning of custommob by loading it from config
 	public void testCustomMob(Player player, String mobName) {
 		CustomMob templateMob = mobTemplates.get(mobName);
 		

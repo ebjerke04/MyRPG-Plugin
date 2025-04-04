@@ -41,7 +41,6 @@ public class QuestNPC extends NPC {
 					QuestStepNpcInteract interactStep = (QuestStepNpcInteract) currentStep;
 					QuestNPC npc = interactStep.getQuestNPC();
 					if (npc.equals(this)) {
-						// TODO: proceed with quest...Need to test this...
 						rpgPlayer.attemptQuestProgression(questInProgress);
 						return;
 					}
@@ -52,8 +51,6 @@ public class QuestNPC extends NPC {
 		List<Quest> availableQuests = Plugin.getWorldManager().getQuestsByStartNPC(this);
 		if (!availableQuests.isEmpty()) {
 			List<String> completedQuests = activeClass.getQuestsCompleted();
-			// TODO: Sort through available quests.
-			// Check if quest has been completed, ensure only the quest with the lowest level is started.
 			Quest earliestQuest = null;
 			for (Quest quest : availableQuests) {
 				if (completedQuests.contains(quest.getName())) continue;

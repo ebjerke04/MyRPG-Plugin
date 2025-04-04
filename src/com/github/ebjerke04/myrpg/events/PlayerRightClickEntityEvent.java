@@ -19,8 +19,6 @@ public class PlayerRightClickEntityEvent extends BaseEvent {
 		if (event.getRightClicked() instanceof Villager) {
 			Player player = event.getPlayer();
 			Villager villager = (Villager) event.getRightClicked();
-			
-			// TODO: Detect NPCs by UUID
 
 			NPC npc = Plugin.getWorldManager().getNPCbyId(villager.getUniqueId());
 			if (npc != null) {

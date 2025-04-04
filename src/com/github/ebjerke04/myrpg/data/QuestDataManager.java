@@ -108,9 +108,13 @@ public class QuestDataManager {
 		
 		data.minLevel = getQuestData().getInt(path + ".min-level");
 
-		// TODO: Add null check
 		String startNPCName = getQuestData().getString(path + ".steps.1.npc-name");
 		NPC startNPC = Plugin.getWorldManager().getNPCbyName(startNPCName);
+
+		if (startNPC == null) {
+			Logging.sendConsole(Level.SEVERE, "Quest: " + questName + ", has no associated start NPC selected in config.");
+			throw new IllegalStateException();
+		}
 		
 		if (startNPC instanceof QuestNPC) {
 			data.startNPC = (QuestNPC) startNPC;
@@ -131,8 +135,14 @@ public class QuestDataManager {
 			switch (stepType) {
 			case NPC_INTERACT:
 				String npcName = getQuestData().getString(stepPath + "npc-name");
-				// TODO: make sure actually QuestNPC
-				QuestNPC questNPC = (QuestNPC) Plugin.getWorldManager().getNPCbyName(npcName);
+				NPC npc = Plugin.getWorldManager().getNPCbyName(npcName);
+				
+				if (!(npc instanceof QuestNPC)) {
+					Logging.sendConsole(Level.SEVERE, "NPC " + npcName + ", loaded for " + questName + " is not a QuestNPC");
+					throw new IllegalStateException();
+				}
+
+				QuestNPC questNPC = (QuestNPC) npc;
 				questSteps.put(Integer.parseInt(stepString), 
 					new QuestStepNpcInteract(questNPC, description, dialogue));
 				break;
