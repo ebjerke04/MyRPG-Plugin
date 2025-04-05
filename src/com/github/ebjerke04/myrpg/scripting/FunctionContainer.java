@@ -27,11 +27,14 @@ public class FunctionContainer {
     }
 
     public void effectPlayer(PlayerScriptObject scriptPlayer, int effectId, int durationSeconds, int effectLevel) {
+        if (durationSeconds <= 0 || effectLevel < 0) return;
+        
         Player player = scriptPlayerToBukkitPlayer(scriptPlayer);
-
         if (player == null) return;
 
         PotionEffectType effectType = PotionEffectType.getById(effectId);
+        if (effectType == null) return;
+
         int durationTicks = durationSeconds * 20;
         player.addPotionEffect(new PotionEffect(
             effectType,

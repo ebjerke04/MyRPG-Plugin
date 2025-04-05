@@ -14,7 +14,6 @@ import com.github.ebjerke04.myrpg.data.QuestDataManager;
 import com.github.ebjerke04.myrpg.data.WorldDataManager;
 import com.github.ebjerke04.myrpg.events.EventManager;
 import com.github.ebjerke04.myrpg.players.PlayerManager;
-import com.github.ebjerke04.myrpg.scripting.ScriptComponent;
 import com.github.ebjerke04.myrpg.util.Logging;
 import com.github.ebjerke04.myrpg.world.WorldManager;
 
