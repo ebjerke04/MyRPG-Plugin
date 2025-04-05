@@ -54,8 +54,8 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestSte
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepType.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\FunctionContainer.java
-D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\objects\ScriptLocation.java
-D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\objects\ScriptPlayer.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\objects\PlayerScriptObject.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\objects\PositionScriptObject.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\ScriptComponent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\util\Logging.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java

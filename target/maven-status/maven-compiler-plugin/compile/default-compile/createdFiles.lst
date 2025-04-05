@@ -13,6 +13,7 @@ com\github\ebjerke04\myrpg\quests\QuestStepEnterArea.class
 com\github\ebjerke04\myrpg\commands\CommandManager.class
 com\github\ebjerke04\myrpg\commands\TestCommand.class
 com\github\ebjerke04\myrpg\data\WorldDataManager.class
+com\github\ebjerke04\myrpg\scripting\objects\PositionScriptObject.class
 com\github\ebjerke04\myrpg\events\PlayerMovingEvent.class
 com\github\ebjerke04\myrpg\players\PlayerManager.class
 com\github\ebjerke04\myrpg\events\PlayerRightClickEvent.class
@@ -24,6 +25,7 @@ com\github\ebjerke04\myrpg\entities\CustomMob$1.class
 com\github\ebjerke04\myrpg\classes\types\ArcherClass.class
 com\github\ebjerke04\myrpg\data\leveling\LevelingManager.class
 com\github\ebjerke04\myrpg\events\BaseEvent.class
+com\github\ebjerke04\myrpg\scripting\objects\PlayerScriptObject.class
 com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.class
 com\github\ebjerke04\myrpg\quests\QuestInProgress.class
 com\github\ebjerke04\myrpg\economy\BankingService.class
@@ -38,7 +40,6 @@ com\github\ebjerke04\myrpg\economy\BankerNPC$1.class
 com\github\ebjerke04\myrpg\events\PlayerDamageEntityEvent.class
 com\github\ebjerke04\myrpg\economy\BankerNPC.class
 com\github\ebjerke04\myrpg\players\RpgPlayer$1.class
-com\github\ebjerke04\myrpg\scripting\objects\ScriptPlayer.class
 com\github\ebjerke04\myrpg\commands\RpgAdminCommand.class
 com\github\ebjerke04\myrpg\classes\types\WarriorClass.class
 com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.class
@@ -66,6 +67,5 @@ com\github\ebjerke04\myrpg\weapons\TestWeapon.class
 com\github\ebjerke04\myrpg\entities\CustomMob.class
 com\github\ebjerke04\myrpg\events\PlayerMessageEvent.class
 com\github\ebjerke04\myrpg\quests\RpgCreationStep.class
-com\github\ebjerke04\myrpg\scripting\objects\ScriptLocation.class
 com\github\ebjerke04\myrpg\data\ConfigManager.class
 com\github\ebjerke04\myrpg\data\PlayerDataManager.class

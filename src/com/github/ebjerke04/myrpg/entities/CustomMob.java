@@ -19,8 +19,8 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.scripting.ScriptComponent;
-import com.github.ebjerke04.myrpg.scripting.objects.ScriptPosition;
-import com.github.ebjerke04.myrpg.scripting.objects.ScriptPlayer;
+import com.github.ebjerke04.myrpg.scripting.objects.PositionScriptObject;
+import com.github.ebjerke04.myrpg.scripting.objects.PlayerScriptObject;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 import net.kyori.adventure.text.Component;
@@ -70,15 +70,15 @@ public class CustomMob {
 
                     if (scriptComponent != null) {
                         // THIS WORKS!
-                        Player player = Bukkit.getPlayer("Test Name");
-                        ScriptPlayer playerObject = new ScriptPlayer();
-                        ScriptPosition playerLoc = new ScriptPosition();
+                        Player player = Bukkit.getPlayer("NoHaxJustTopG");
+                        PlayerScriptObject playerObject = new PlayerScriptObject();
+                        PositionScriptObject playerLoc = new PositionScriptObject();
                         playerLoc.x = player.getLocation().getX();
                         playerLoc.y = player.getLocation().getY();
                         playerLoc.z = player.getLocation().getZ();
-                        playerObject.playerName = player.getName();
+                        playerObject.name = player.getName();
                         playerObject.position = playerLoc;
-
+                        
                         scriptComponent.invokeFunction("testFunction", playerObject);
                     }
                 }
