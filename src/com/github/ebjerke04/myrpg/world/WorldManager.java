@@ -44,6 +44,7 @@ public class WorldManager {
 
 	public void testCustomMob(Player player, String mobName) {
 		CustomMob templateMob = mobTemplates.get(mobName);
+		templateMob.makeScripted("test_script.js");
 		
 		CustomMob spawnedMob = templateMob.spawnFromTemplate(player.getLocation());
 		spawnedMobs.put(spawnedMob.getUniqueId(), spawnedMob);
@@ -74,7 +75,7 @@ public class WorldManager {
 			quests.add(QuestDataManager.get().createQuest(questName));
 		}
 	}
-
+	
 	private void loadMobTemplates() {
 		List<EntityDataHolder> templateData = WorldDataManager.get().loadCustomMobTemplates();
 

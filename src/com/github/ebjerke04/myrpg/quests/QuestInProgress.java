@@ -24,7 +24,7 @@ public class QuestInProgress {
 
         if (steps.isEmpty()) isComplete = true;
     }
-
+    
     /**
      * @return true if attempt at quest progression is successful
      */

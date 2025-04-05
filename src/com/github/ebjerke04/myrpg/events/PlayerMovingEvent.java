@@ -1,13 +1,16 @@
 package com.github.ebjerke04.myrpg.events;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerMoveEvent;
 
 import com.github.ebjerke04.myrpg.Plugin;
+import com.github.ebjerke04.myrpg.entities.CustomMob;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
 import com.github.ebjerke04.myrpg.quests.QuestStep;
@@ -27,6 +30,16 @@ public class PlayerMovingEvent extends BaseEvent {
         
         UUID playerId = player.getUniqueId();
         RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
+
+        List<CustomMob> mobsInCombat = new ArrayList<>();
+        mobsInCombat.addAll(rpgPlayer.getMobsInCombat());
+        for (CustomMob mobInCombat : mobsInCombat) {
+            Location mobLocation = mobInCombat.getLocation();
+            if (mobLocation == null) continue;
+            
+            double distanceFromPlayer = player.getLocation().distance(mobLocation);
+            if (distanceFromPlayer >= 60) rpgPlayer.removeMobInCombat(mobInCombat);    
+        }
 
         List<QuestInProgress> questsInProgress = rpgPlayer.getQuestsInProgress();
         if (questsInProgress.isEmpty()) return;

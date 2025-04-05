@@ -23,8 +23,6 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\Banking
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\CurrencyConversionType.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMob.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\EntityDataHolder.java
-D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\FunctionContainer.java
-D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ScriptComponent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\BaseEvent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\Entity.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\EntityDeathEvent.java
@@ -55,6 +53,10 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestSte
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepNpcInteract.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepType.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\FunctionContainer.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\objects\ScriptLocation.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\objects\ScriptPlayer.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\scripting\ScriptComponent.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\util\Logging.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\weapons\TestWeapon.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\world\NPC.java

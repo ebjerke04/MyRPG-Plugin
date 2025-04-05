@@ -1,4 +1,4 @@
-package com.github.ebjerke04.myrpg.entities;
+package com.github.ebjerke04.myrpg.scripting;
 
 import java.io.File;
 import java.io.FileReader;
@@ -81,7 +81,6 @@ public class ScriptComponent {
             
             Function f = (Function) fObj;
             Object result = f.call(context, scope, scope, parameters);
-            Logging.sendConsole(Level.INFO, "Function executed successfully: " + result);
             return Context.toString(result); // Convert result to string
         } catch (Exception e) {
             Logging.sendConsole(Level.SEVERE, "Error executing script function: " + e.getMessage());
