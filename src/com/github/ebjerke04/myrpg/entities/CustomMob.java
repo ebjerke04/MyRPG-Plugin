@@ -8,6 +8,7 @@ import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.EntityType;
@@ -18,6 +19,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.github.ebjerke04.myrpg.Plugin;
+import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.scripting.ScriptComponent;
 import com.github.ebjerke04.myrpg.scripting.objects.PositionScriptObject;
 import com.github.ebjerke04.myrpg.scripting.objects.PlayerScriptObject;
@@ -33,9 +35,12 @@ public class CustomMob {
 
     private String mobName;
     private EntityType entityType;
-    private double maxHealth;
+    private Player target = null; 
     private String displayName;
 
+    private CustomMobAttributes attributes;
+
+    private CustomMobAI aiController = null;
     private ScriptComponent scriptComponent = null;
 
     /**
@@ -45,23 +50,25 @@ public class CustomMob {
      * @param maxHealth max health
      * @param displayName display name
      */
-    public CustomMob(String mobName, EntityType entityType, double maxHealth, String displayName) {
+    public CustomMob(String mobName, EntityType entityType, String displayName, CustomMobAttributes attributes) {
         this.mobName = mobName;
         this.entityType = entityType;
-        this.maxHealth = maxHealth;
         this.displayName = displayName;
+        this.attributes = attributes;
     }
 
-    private CustomMob(String mobName, EntityType entityType, double maxHealth, String displayName, Location location, ScriptComponent scriptComponent) {
+    private CustomMob(String mobName, EntityType entityType, String displayName, CustomMobAttributes attributes, Location location, ScriptComponent scriptComponent) {
         this.mobName = mobName;
         this.entityType = entityType;
-        this.maxHealth = maxHealth;
         this.displayName = displayName;
+        this.attributes = attributes;
         this.scriptComponent = scriptComponent;
 
         spawn(location);
 
-        boolean debug = true;
+        aiController = new CustomMobAI(this);
+
+        boolean debug = false;
 		if (debug) {
             new BukkitRunnable() {
                 @Override
@@ -95,7 +102,7 @@ public class CustomMob {
             throw new IllegalStateException("Cannot spawn from non-template mob");
         }
 
-        return new CustomMob(mobName, entityType, maxHealth, displayName, location, scriptComponent);
+        return new CustomMob(mobName, entityType, displayName, attributes, location, scriptComponent);
     }
 
     private void spawn(Location location) {
@@ -109,9 +116,10 @@ public class CustomMob {
         entity.customName(Component.text(displayName));
         entity.setCustomNameVisible(true);
 
-        entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(maxHealth);
-        entity.setHealth(maxHealth);
+        entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(attributes.maxHealth);
+        entity.setHealth(attributes.maxHealth);
 
+        // TEMP SETUP
         EntityEquipment equipment = entity.getEquipment();
         if (equipment != null) {
             equipment.setHelmetDropChance(0.0f);
@@ -132,6 +140,7 @@ public class CustomMob {
         }
     }
 
+    // TEMP SETUP
     private ItemStack createEnchantedItem(Material material) {
         ItemStack item = new ItemStack(material, 1);
         item.addEnchantment(Enchantment.PROTECTION, 1);
@@ -139,10 +148,35 @@ public class CustomMob {
     }
 
     // ADD CODE HERE
+    public void receiveDamage(Player player) {
+        addDamager(player);
+        UUID playerId = player.getUniqueId();
+        RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
+        rpgPlayer.setMobInCombat(this);
 
+        // TODO: need a way to fetch a specific damage amount.
+        // create custom weapons /& a formula to calculate damage.
+        entity.damage(20.0);
+    }
+
+    public void setTarget(Player player) {
+        this.target = player;
+    }
+
+    public Player getTarget() {
+        return target;
+    }
+
+    public LivingEntity getEntity() {
+        return entity;
+    }
+
+    public void teleport(Location location) {
+        entity.teleport(location);
+    }
     // -------------
 
-    public void addDamager(Player player) {
+    private void addDamager(Player player) {
         for (Player damager : damagers) {
             if (damager.getUniqueId().equals(player.getUniqueId())) return;
         }
@@ -171,6 +205,14 @@ public class CustomMob {
 
         return null;
     }
+
+    public boolean isDead() {
+        return entity.isDead();
+    }
+
+    private boolean isScripted() {
+        return (scriptComponent == null);
+    }
     
     public UUID getUniqueId() {
         return id;
@@ -180,6 +222,11 @@ public class CustomMob {
     public synchronized void cleanup() {
         if (isCleanedUp) return;
 
+        if (aiController != null) {
+            aiController.cleanup();
+            aiController = null;
+        }
+        
         if (entity != null) {
             entity.remove();
             entity = null;

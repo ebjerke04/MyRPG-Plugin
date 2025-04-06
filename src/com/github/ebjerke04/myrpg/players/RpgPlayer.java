@@ -53,8 +53,6 @@ public class RpgPlayer {
 	}
 
 	public void setMobInCombat(CustomMob customMob) {
-		customMob.addDamager(player);
-
 		for (CustomMob mobInCombat : mobsInCombat) {
 			if (mobInCombat.getUniqueId().equals(customMob.getUniqueId())) return;
 		}

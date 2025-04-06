@@ -13,6 +13,7 @@ import com.github.ebjerke04.myrpg.data.QuestDataManager;
 import com.github.ebjerke04.myrpg.data.WorldDataManager;
 import com.github.ebjerke04.myrpg.economy.BankingService;
 import com.github.ebjerke04.myrpg.entities.CustomMob;
+import com.github.ebjerke04.myrpg.entities.CustomMobAttributes;
 import com.github.ebjerke04.myrpg.entities.EntityDataHolder;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.quests.Quest;
@@ -44,7 +45,7 @@ public class WorldManager {
 
 	public void testCustomMob(Player player, String mobName) {
 		CustomMob templateMob = mobTemplates.get(mobName);
-		templateMob.makeScripted("test_script.js");
+		//templateMob.makeScripted("test_script.js");
 		
 		CustomMob spawnedMob = templateMob.spawnFromTemplate(player.getLocation());
 		spawnedMobs.put(spawnedMob.getUniqueId(), spawnedMob);
@@ -80,11 +81,13 @@ public class WorldManager {
 		List<EntityDataHolder> templateData = WorldDataManager.get().loadCustomMobTemplates();
 
 		for (EntityDataHolder entityData : templateData) {
+			CustomMobAttributes attributes = new CustomMobAttributes();
+			attributes.maxHealth = entityData.maxHealth;
 			mobTemplates.put(entityData.mobName, new CustomMob(
 				entityData.mobName,
 				entityData.entityType,
-				entityData.maxHealth,
-				entityData.displayName
+				entityData.displayName,
+				attributes
 			));
 		}
 	}

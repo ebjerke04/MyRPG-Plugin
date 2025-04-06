@@ -4,6 +4,7 @@ import java.util.UUID;
 
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.entities.CustomMob;
@@ -14,7 +15,7 @@ public class EntityDeathEvent extends BaseEvent {
         super();
     }
     
-    @EventHandler
+    @EventHandler(priority = EventPriority.MONITOR)
     public void onEntityDeath(org.bukkit.event.entity.EntityDeathEvent event) {
         LivingEntity killed = event.getEntity();
         UUID killedId = killed.getUniqueId();
