@@ -8,6 +8,7 @@ com\github\ebjerke04\myrpg\quests\QuestStepNpcInteract.class
 com\github\ebjerke04\myrpg\scripting\FunctionContainer.class
 com\github\ebjerke04\myrpg\events\Entity.class
 com\github\ebjerke04\myrpg\quests\QuestStepKillBoss.class
+com\github\ebjerke04\myrpg\entities\CustomMobAI$MoveToLocationGoal.class
 com\github\ebjerke04\myrpg\scripting\ScriptComponent.class
 com\github\ebjerke04\myrpg\quests\QuestStepEnterArea.class
 com\github\ebjerke04\myrpg\commands\CommandManager.class

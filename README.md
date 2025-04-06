@@ -50,6 +50,11 @@ The project is structured as a Maven project with the following details:
 - ArtifactId: MyRPG
 - Version: 1.0
 
+## Resources
+
+Special thanks to this website: https://nms.screamingsandals.org/comparison/mojang-to-spigot.html
+ - Provided naming conversions between Mojang and Spigot mappings for NMS.
+
 ## Author
 
 - Ethan Bjerke

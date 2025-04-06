@@ -3,38 +3,74 @@ package com.github.ebjerke04.myrpg.entities;
 import java.util.List;
 import java.util.logging.Level;
 
-import org.bukkit.Location;
 import org.bukkit.craftbukkit.v1_21_R3.entity.CraftEntity;
-import org.bukkit.craftbukkit.v1_21_R3.entity.CraftPlayer;
-import org.bukkit.entity.Player;
-import org.bukkit.event.entity.EntityTargetEvent.TargetReason;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.util.Vector;
+import org.bukkit.entity.Player;
+import org.bukkit.metadata.FixedMetadataValue;
 
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.util.Logging;
 
-import net.minecraft.world.entity.EntityCreature;
-import net.minecraft.world.entity.ai.goal.PathfinderGoalMoveTowardsTarget;
-import net.minecraft.world.entity.player.EntityHuman;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.ai.goal.Goal;
+import net.minecraft.world.entity.ai.goal.MoveToBlockGoal;
+import net.minecraft.world.entity.monster.Zombie;
 
 public class CustomMobAI extends BukkitRunnable {
+
+    private class MoveToLocationGoal extends Goal {
+        private final Zombie mob;
+        private final double speed;
+        private BlockPos targetPos;
+        
+        public MoveToLocationGoal(Zombie mob, double speed) {
+            this.mob = mob;
+            this.speed = speed;
+        }
+
+        public void setTargetLocation(int x, int y, int z) {
+            this.targetPos = new BlockPos(x, y, z);
+        }
+
+        @Override
+        public boolean canUse() {
+            return targetPos != null;
+        }
+
+        @Override
+        public void tick() {
+            if (targetPos != null) {
+                mob.getNavigation().moveTo(targetPos.getX(), targetPos.getY(), targetPos.getZ(), speed);
+            }
+        }
+
+        @Override
+        public boolean canContinueToUse() {
+            return canUse() && !mob.getNavigation().isDone();
+        }
+    }
+    private final MoveToLocationGoal moveGoal;
+
+
     private final double MAX_DISTANCE_DETECT = 30.0;
     private final double MIN_ATTACK_RANGE = 2.0;
 
     private CustomMob customMob;
 
     // NMS test
-    private final EntityCreature nmsEntity;
+    private final Zombie nmsEntity;
 
     public CustomMobAI(CustomMob customMob) {
         this.customMob = customMob;
 
         CraftEntity craftEntity = (CraftEntity) customMob.getEntity();
-        if (!(craftEntity.getHandle() instanceof EntityCreature)) {
+        if (!(craftEntity.getHandle() instanceof Zombie)) {
+            Logging.sendConsole(Level.SEVERE, "Shouldn't have hit this branch...");
             throw new IllegalStateException();
         }
-        this.nmsEntity = (EntityCreature) craftEntity.getHandle();
+        nmsEntity = (Zombie) craftEntity.getHandle();
+
+        this.moveGoal = new MoveToLocationGoal(nmsEntity, 1.0D);
 
         setupAIGoals();
         //
@@ -44,8 +80,10 @@ public class CustomMobAI extends BukkitRunnable {
     }
 
     private void setupAIGoals() {
-        nmsEntity.bS.a();
-        nmsEntity.bS.a(0, new PathfinderGoalMoveTowardsTarget(nmsEntity, 1.0D, (float)MAX_DISTANCE_DETECT));
+        //nmsEntity.goalSelector.removeAllGoals(null);
+        nmsEntity.goalSelector.addGoal(1, moveGoal);
+
+        moveGoal.setTargetLocation((int)customMob.getLocation().getX(), (int)customMob.getLocation().getY(), (int)customMob.getLocation().getZ() + 50);
     }
 
     @Override
@@ -117,8 +155,8 @@ public class CustomMobAI extends BukkitRunnable {
                 customMob.setTarget(lowestHealthTarget);
 
                 // NMS
-                EntityHuman nmsPlayer = ((CraftPlayer)lowestHealthTarget).getHandle();
-                nmsEntity.setTarget(nmsPlayer, TargetReason.CUSTOM, true);
+                //EntityHuman nmsPlayer = ((CraftPlayer)lowestHealthTarget).getHandle();
+                //nmsEntity.setTarget(nmsPlayer, TargetReason.CUSTOM, true);
                 //
                 
                 return;
@@ -142,8 +180,8 @@ public class CustomMobAI extends BukkitRunnable {
         }
 
         // NMS
-        EntityHuman nmsPlayer = ((CraftPlayer)nearestPlayer).getHandle();
-        nmsEntity.setTarget(nmsPlayer, TargetReason.CUSTOM, true);
+        //EntityHuman nmsPlayer = ((CraftPlayer)nearestPlayer).getHandle();
+        //nmsEntity.setTarget(nmsPlayer, TargetReason.CUSTOM, true);
         //
         
         customMob.setTarget(nearestPlayer);
