@@ -8,7 +8,6 @@ import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Particle;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.EntityType;
@@ -19,6 +18,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.github.ebjerke04.myrpg.Plugin;
+import com.github.ebjerke04.myrpg.entities.ai.CustomMobAI;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.scripting.ScriptComponent;
 import com.github.ebjerke04.myrpg.scripting.objects.PositionScriptObject;
@@ -147,7 +147,6 @@ public class CustomMob {
         return item;
     }
 
-    // ADD CODE HERE
     public void receiveDamage(Player player) {
         addDamager(player);
         UUID playerId = player.getUniqueId();
@@ -174,7 +173,6 @@ public class CustomMob {
     public void teleport(Location location) {
         entity.teleport(location);
     }
-    // -------------
 
     private void addDamager(Player player) {
         for (Player damager : damagers) {

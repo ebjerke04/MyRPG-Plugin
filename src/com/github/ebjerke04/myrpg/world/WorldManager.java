@@ -129,7 +129,7 @@ public class WorldManager {
 
 	public NPC getNPCbyName(String name) {
 		for (NPC npc : npcs) {
-			if (npc.getName().equals(name)) return npc;
+			if (npc.getConfigName().equals(name)) return npc;
 		}
 
 		return null;

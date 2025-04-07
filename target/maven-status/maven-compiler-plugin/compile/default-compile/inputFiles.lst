@@ -21,8 +21,10 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\data\WorldDataM
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\BankerNPC.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\BankingService.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\CurrencyConversionType.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\CustomMobAI.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\CustomNPCAI.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\MoveToLocationGoal.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMob.java
-D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMobAI.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMobAttributes.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\EntityDataHolder.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\events\BaseEvent.java

@@ -22,7 +22,7 @@ public class QuestNPC extends NPC {
 	
 	@Override
 	public void rightClicked(Player player) {
-		Logging.sendConsole(Level.INFO, "Clicked NPC: " + getName());
+		Logging.sendConsole(Level.INFO, "Clicked NPC: " + getConfigName());
 		
 		UUID playerId = player.getUniqueId();
 		RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
