@@ -28,7 +28,7 @@ public abstract class NPC extends Villager {
 	private LivingEntity villager;
 
 	public NPC(NPCDataHolder data) {
-		super(EntityType.VILLAGER, ((CraftWorld)data.location.getWorld()).getHandle());
+		super(EntityType.VILLAGER, ((CraftWorld) data.location.getWorld()).getHandle());
 		this.data = data;
 	}
 
