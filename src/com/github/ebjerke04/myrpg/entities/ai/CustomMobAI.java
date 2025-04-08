@@ -1,8 +1,10 @@
 package com.github.ebjerke04.myrpg.entities.ai;
 
 import java.util.List;
+import java.util.Stack;
 import java.util.logging.Level;
 
+import org.bukkit.Location;
 import org.bukkit.craftbukkit.v1_21_R3.entity.CraftEntity;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.entity.Player;
@@ -21,7 +23,7 @@ public class CustomMobAI extends BukkitRunnable {
 
     // NMS test
     private final PathfinderMob nmsEntity;
-    private final MoveToLocationGoal moveGoal;
+    private final MoveAlongPathGoal pathGoal;
 
     public CustomMobAI(CustomMob customMob) {
         this.customMob = customMob;
@@ -34,7 +36,15 @@ public class CustomMobAI extends BukkitRunnable {
         }
         nmsEntity = (PathfinderMob) craftEntity.getHandle();
 
-        this.moveGoal = new MoveToLocationGoal(nmsEntity, 1.0D);
+        Location first = customMob.getLocation().subtract(10.0f, 0.0f, 5.0f);
+        Location second = customMob.getLocation().add(3.0f, 0.0, -5.0f);
+        Location third = customMob.getLocation().add(-3.0f, 0.0f, 5.0f);
+        Stack<Location> path = new Stack<>();
+        path.insertElementAt(first, 0);
+        path.insertElementAt(second, 0);
+        path.insertElementAt(third, 0);
+
+        this.pathGoal = new MoveAlongPathGoal(nmsEntity, path, 1.0D);
 
         setupAIGoals();
 
@@ -44,9 +54,9 @@ public class CustomMobAI extends BukkitRunnable {
 
     private void setupAIGoals() {
         //nmsEntity.goalSelector.removeAllGoals(null);
-        nmsEntity.goalSelector.addGoal(1, moveGoal);
+        nmsEntity.goalSelector.addGoal(1, pathGoal);
 
-        moveGoal.setTargetLocation((int)customMob.getLocation().getX(), (int)customMob.getLocation().getY(), (int)customMob.getLocation().getZ() + 50);
+        //moveGoal.setTargetLocation((int)customMob.getLocation().getX(), (int)customMob.getLocation().getY(), (int)customMob.getLocation().getZ() + 50);
     }
 
     @Override

@@ -23,6 +23,7 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\Banking
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\CurrencyConversionType.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\CustomMobAI.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\CustomNPCAI.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\MoveAlongPathGoal.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\MoveToLocationGoal.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMob.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMobAttributes.java
