@@ -3,11 +3,7 @@ package com.github.ebjerke04.myrpg.players;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-import java.util.logging.Level;
-
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
-
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
 import com.github.ebjerke04.myrpg.entities.CustomMob;
@@ -15,8 +11,6 @@ import com.github.ebjerke04.myrpg.interfaces.PlayerScoreboard;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
 import com.github.ebjerke04.myrpg.quests.QuestStep;
-import com.github.ebjerke04.myrpg.util.Logging;
-
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 
@@ -32,16 +26,6 @@ public class RpgPlayer {
 	
 	public RpgPlayer(Player player) {
 		this.player = player;
-		
-		boolean debug = false;
-		if (debug) {
-			new BukkitRunnable() {
-				@Override
-				public void run() {
-					Logging.sendConsole(Level.INFO, player.getName() + ": " + mobsInCombat.size());
-				}
-			}.runTaskTimer(Plugin.get(), 60L, 60L);
-		}
 	}
 
 	public void setActiveClass(RpgClass activeClass) {

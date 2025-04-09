@@ -7,7 +7,6 @@ com\github\ebjerke04\myrpg\quests\QuestStepType.class
 com\github\ebjerke04\myrpg\quests\QuestStepNpcInteract.class
 com\github\ebjerke04\myrpg\scripting\FunctionContainer.class
 com\github\ebjerke04\myrpg\events\Entity.class
-com\github\ebjerke04\myrpg\quests\QuestStepKillBoss.class
 com\github\ebjerke04\myrpg\scripting\ScriptComponent.class
 com\github\ebjerke04\myrpg\quests\QuestStepEnterArea.class
 com\github\ebjerke04\myrpg\commands\CommandManager.class
@@ -28,6 +27,7 @@ com\github\ebjerke04\myrpg\entities\ai\MoveToLocationGoal.class
 com\github\ebjerke04\myrpg\data\leveling\LevelingManager.class
 com\github\ebjerke04\myrpg\events\BaseEvent.class
 com\github\ebjerke04\myrpg\scripting\objects\PlayerScriptObject.class
+com\github\ebjerke04\myrpg\quests\QuestStepKillMob.class
 com\github\ebjerke04\myrpg\data\leveling\PlayerLevel.class
 com\github\ebjerke04\myrpg\quests\QuestInProgress.class
 com\github\ebjerke04\myrpg\economy\BankingService.class
@@ -63,6 +63,7 @@ com\github\ebjerke04\myrpg\quests\NPCDataHolder.class
 com\github\ebjerke04\myrpg\players\MessageDeliverer.class
 com\github\ebjerke04\myrpg\world\WorldManager.class
 com\github\ebjerke04\myrpg\classes\ClassType.class
+com\github\ebjerke04\myrpg\entities\ai\MovePath.class
 com\github\ebjerke04\myrpg\events\PlayerDeathEvent.class
 com\github\ebjerke04\myrpg\events\EntityDeathEvent.class
 com\github\ebjerke04\myrpg\events\PlayerDisconnectEvent.class

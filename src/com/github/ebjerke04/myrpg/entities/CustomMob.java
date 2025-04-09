@@ -3,9 +3,6 @@ package com.github.ebjerke04.myrpg.entities;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.logging.Level;
-
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
@@ -15,16 +12,10 @@ import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.EntityEquipment;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.scheduler.BukkitRunnable;
-
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.entities.ai.CustomMobAI;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.scripting.ScriptComponent;
-import com.github.ebjerke04.myrpg.scripting.objects.PositionScriptObject;
-import com.github.ebjerke04.myrpg.scripting.objects.PlayerScriptObject;
-import com.github.ebjerke04.myrpg.util.Logging;
-
 import net.kyori.adventure.text.Component;
 
 public class CustomMob {
@@ -67,30 +58,6 @@ public class CustomMob {
         spawn(location);
 
         aiController = new CustomMobAI(this);
-
-        boolean debug = false;
-		if (debug) {
-            new BukkitRunnable() {
-                @Override
-                public void run() {
-                    Logging.sendConsole(Level.INFO, mobName + ": " + damagers.size());
-
-                    if (scriptComponent != null) {
-                        // THIS WORKS!
-                        Player player = Bukkit.getPlayer("NoHaxJustTopG");
-                        PlayerScriptObject playerObject = new PlayerScriptObject();
-                        PositionScriptObject playerLoc = new PositionScriptObject();
-                        playerLoc.x = player.getLocation().getX();
-                        playerLoc.y = player.getLocation().getY();
-                        playerLoc.z = player.getLocation().getZ();
-                        playerObject.name = player.getName();
-                        playerObject.position = playerLoc;
-                        
-                        scriptComponent.invokeFunction("testFunction", playerObject);
-                    }
-                }
-            }.runTaskTimer(Plugin.get(), 60L, 60L);
-        }
     }
 
     public void makeScripted(String scriptName) {
@@ -209,11 +176,15 @@ public class CustomMob {
     }
 
     private boolean isScripted() {
-        return (scriptComponent == null);
+        return (scriptComponent != null);
     }
     
     public UUID getUniqueId() {
         return id;
+    }
+
+    public String getName() {
+        return mobName;
     }
 
     private boolean isCleanedUp = false;
@@ -233,6 +204,11 @@ public class CustomMob {
         if (damagers != null) {
             damagers.clear();
             damagers = null;
+        }
+
+        if (isScripted()) {
+            scriptComponent.cleanup();
+            scriptComponent = null;
         }
 
         id = null;

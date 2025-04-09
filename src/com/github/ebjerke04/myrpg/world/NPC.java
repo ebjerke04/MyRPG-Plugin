@@ -49,7 +49,7 @@ public abstract class NPC extends Villager {
 
 		id = villager.getUniqueId();
 
-		CustomNPCAI aiController = new CustomNPCAI(this);
+		new CustomNPCAI(this);
 	}
 
 	@Override

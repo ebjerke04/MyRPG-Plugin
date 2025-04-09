@@ -1,6 +1,7 @@
 package com.github.ebjerke04.myrpg.entities.ai;
 
-import net.minecraft.core.BlockPos;
+import org.bukkit.Location;
+
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.goal.Goal;
 
@@ -8,15 +9,15 @@ public class MoveToLocationGoal extends Goal {
 
     private final PathfinderMob entity;
     private final double speed;
-    private BlockPos targetPos;
+    private Location targetPos;
         
     public MoveToLocationGoal(PathfinderMob entity, double speed) {
         this.entity = entity;
         this.speed = speed;
     }
 
-    public void setTargetLocation(int x, int y, int z) {
-        this.targetPos = new BlockPos(x, y, z);
+    public void setTargetLocation(Location targetLocation) {
+        this.targetPos = targetLocation;
     }
 
     @Override

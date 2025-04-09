@@ -24,6 +24,7 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\economy\Currenc
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\CustomMobAI.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\CustomNPCAI.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\MoveAlongPathGoal.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\MovePath.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\ai\MoveToLocationGoal.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMob.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\entities\CustomMobAttributes.java
@@ -54,7 +55,7 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestInP
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestNPC.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStep.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepEnterArea.java
-D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepKillBoss.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepKillMob.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepNpcInteract.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\QuestStepType.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\quests\RpgCreationStep.java

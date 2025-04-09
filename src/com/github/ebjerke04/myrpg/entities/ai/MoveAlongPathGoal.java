@@ -4,7 +4,6 @@ import java.util.Stack;
 import org.bukkit.Location;
 import org.bukkit.util.Vector;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.goal.Goal;
 
@@ -12,22 +11,34 @@ public class MoveAlongPathGoal extends Goal {
 
     private final PathfinderMob entity;
     private final double speed;
-    private BlockPos targetPos;
+    private Location targetPos;
 
     private Stack<Location> pathNodes;
     private boolean pathComplete;
 
-    private static final double ARRIVAL_THRESHOLD = 2.0; // Distance in blocks to consider "arrived"
-        
-    public MoveAlongPathGoal(PathfinderMob entity, Stack<Location> pathNodes, double speed) {
+    private static final double ARRIVAL_THRESHOLD = 2.2; // Distance in blocks to consider "arrived"
+
+    private boolean executePath = false;
+    
+    public MoveAlongPathGoal(PathfinderMob entity, MovePath path, double speed) {
         this.entity = entity;
-        this.pathNodes = pathNodes;
         this.speed = speed;
 
-        this.pathComplete = false;
+        if (path == null) {
+            this.pathComplete = true;
+            return;
+        }
         
+        this.pathNodes = path.getNodes();
+        this.pathComplete = false;
         Location firstTarget = pathNodes.peek();
-        this.targetPos = new BlockPos((int) firstTarget.getX(), (int) firstTarget.getY(), (int) firstTarget.getZ());
+        this.targetPos = firstTarget;
+    }
+
+    public void setPath(MovePath path) {
+        this.pathNodes = path.getNodes();
+        this.targetPos = pathNodes.peek();
+        this.pathComplete = false;
     }
 
     private void setNewTarget() {
@@ -41,11 +52,19 @@ public class MoveAlongPathGoal extends Goal {
 
         if (!pathNodes.isEmpty()) {
             Location newTarget = pathNodes.peek();
-            this.targetPos = new BlockPos((int) newTarget.getX(), (int) newTarget.getY(), (int) newTarget.getZ());
+            this.targetPos = newTarget;
         } else {
             pathComplete = true;
             targetPos = null;
         }
+    }
+
+    public void executePath() {
+        this.executePath = true;
+    }
+
+    public void abortPath() {
+        this.executePath = false;
     }
 
     @Override
@@ -55,6 +74,8 @@ public class MoveAlongPathGoal extends Goal {
 
     @Override
     public void tick() {
+        if (!executePath) return;
+
         if (targetPos != null) {
             entity.getNavigation().moveTo(targetPos.getX(), targetPos.getY(), targetPos.getZ(), speed);
             

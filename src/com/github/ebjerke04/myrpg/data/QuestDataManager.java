@@ -17,7 +17,7 @@ import com.github.ebjerke04.myrpg.quests.QuestDataHolder;
 import com.github.ebjerke04.myrpg.quests.QuestNPC;
 import com.github.ebjerke04.myrpg.quests.QuestStep;
 import com.github.ebjerke04.myrpg.quests.QuestStepEnterArea;
-import com.github.ebjerke04.myrpg.quests.QuestStepKillBoss;
+import com.github.ebjerke04.myrpg.quests.QuestStepKillMob;
 import com.github.ebjerke04.myrpg.quests.QuestStepNpcInteract;
 import com.github.ebjerke04.myrpg.quests.QuestStepType;
 import com.github.ebjerke04.myrpg.util.Logging;
@@ -153,10 +153,10 @@ public class QuestDataManager {
 				questSteps.put(Integer.parseInt(stepString), 
 					new QuestStepEnterArea(region3D, description, dialogue));
 				break;
-			case KILL_BOSS:
+			case KILL_MOB:
 				String bossName = getQuestData().getString(stepPath + "boss-name");
 				questSteps.put(Integer.parseInt(stepString),
-					new QuestStepKillBoss(bossName, description, dialogue));
+					new QuestStepKillMob(bossName, description, dialogue));
 				break;
 			case null:
 				Logging.sendConsole(Level.SEVERE, "Quest step type registered as null for quest step, " + stepString
@@ -167,7 +167,7 @@ public class QuestDataManager {
 				break;
 			}
 		}
-
+		
 		Stack<QuestStep> questStepStack = new Stack<>();
 		for (int i = 0; i < questSteps.size(); i++) {
 			int stepNumber = i + 1;
