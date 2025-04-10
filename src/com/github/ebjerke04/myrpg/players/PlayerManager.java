@@ -3,11 +3,12 @@ package com.github.ebjerke04.myrpg.players;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-
 import org.bukkit.entity.Player;
 
 import com.github.ebjerke04.myrpg.classes.ClassDataHolder;
 import com.github.ebjerke04.myrpg.data.PlayerDataManager;
+import com.github.ebjerke04.myrpg.data.leveling.LevelingManager;
+import com.github.ebjerke04.myrpg.entities.CustomMob;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
@@ -21,7 +22,7 @@ public class PlayerManager {
 	private Map<UUID, RpgPlayer> players = new HashMap<>();
 	
 	public PlayerManager() {
-		// Constructor remains empty as we'll handle player data on join/quit
+		new LevelingManager(); // Initializing LevelingManager and loads all level data.
 	}
 	
 	public void handlePlayerConnect(Player player) {
@@ -72,6 +73,15 @@ public class PlayerManager {
 	
 	public RpgPlayer getRpgPlayer(UUID playerId) {
 		return players.get(playerId);
+	}
+
+	public void playerKillsMob(RpgPlayer rpgPlayer, CustomMob killed) {
+		int playerLevel = rpgPlayer.getLevel();
+		int mobLevel = killed.getLevel();
+		int mobExpReward = killed.getBaseExperienceReward();
+
+		int experienceReward = LevelingManager.calculateExperienceReward(playerLevel, mobLevel, mobExpReward);
+		rpgPlayer.rewardExperience(experienceReward);
 	}
 	
 }

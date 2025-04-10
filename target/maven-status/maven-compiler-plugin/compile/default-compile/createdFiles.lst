@@ -20,7 +20,6 @@ com\github\ebjerke04\myrpg\Plugin.class
 com\github\ebjerke04\myrpg\events\PlayerConnectEvent.class
 com\github\ebjerke04\myrpg\data\QuestDataManager.class
 com\github\ebjerke04\myrpg\world\Region3D.class
-com\github\ebjerke04\myrpg\entities\CustomMob$1.class
 com\github\ebjerke04\myrpg\classes\types\ArcherClass.class
 com\github\ebjerke04\myrpg\entities\ai\MoveAlongPathGoal.class
 com\github\ebjerke04\myrpg\entities\ai\MoveToLocationGoal.class
@@ -42,7 +41,6 @@ com\github\ebjerke04\myrpg\economy\BankerNPC$1.class
 com\github\ebjerke04\myrpg\events\PlayerDamageEntityEvent.class
 com\github\ebjerke04\myrpg\economy\BankerNPC.class
 com\github\ebjerke04\myrpg\entities\CustomMobAttributes.class
-com\github\ebjerke04\myrpg\players\RpgPlayer$1.class
 com\github\ebjerke04\myrpg\commands\RpgAdminCommand.class
 com\github\ebjerke04\myrpg\classes\types\WarriorClass.class
 com\github\ebjerke04\myrpg\events\PlayerClickItemEvent.class

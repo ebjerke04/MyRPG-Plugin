@@ -6,14 +6,20 @@ public class EntityDataHolder {
 
     public String mobName;
     public EntityType entityType;
-    public double maxHealth;
     public String displayName;
+    
+    public int level;
+    public int baseExperienceReward;
+    public double maxHealth;
 
     public EntityDataHolder() {
         this.mobName = "";
         this.entityType = null;
-        this.maxHealth = 20.0;
         this.displayName = "";
+        
+        this.level = 1;
+        this.baseExperienceReward = 10; 
+        this.maxHealth = 20.0;
     }
     
 }

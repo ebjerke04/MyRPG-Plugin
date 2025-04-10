@@ -54,14 +54,18 @@ public class WorldDataManager {
 				String entityTypeString = getWorldData().getString(subPath + "entity-type");
 				
 				EntityType entityType = EntityType.fromName(entityTypeString);
-				double maxHealth = getWorldData().getDouble(subPath + "max-health");
 				String displayName = getWorldData().getString(subPath + "display-name");
+				int level = getWorldData().getInt(subPath + "level");
+				int baseExperienceReward = getWorldData().getInt(subPath + "base-xp-reward");
+				double maxHealth = getWorldData().getDouble(subPath + "max-health");
 
 				EntityDataHolder templateData = new EntityDataHolder();
 				templateData.mobName = nameInConfig;
 				templateData.entityType = entityType;
-				templateData.maxHealth = maxHealth;
 				templateData.displayName = displayName;
+				templateData.level = level;
+				templateData.baseExperienceReward = baseExperienceReward;
+				templateData.maxHealth = maxHealth;
 
 				entityTemplates.add(templateData);
 			}

@@ -155,8 +155,9 @@ public class QuestDataManager {
 				break;
 			case KILL_MOB:
 				String bossName = getQuestData().getString(stepPath + "boss-name");
+				int amountRequired = getQuestData().getInt(stepPath + "amount-required");
 				questSteps.put(Integer.parseInt(stepString),
-					new QuestStepKillMob(bossName, description, dialogue));
+					new QuestStepKillMob(bossName, amountRequired, description, dialogue));
 				break;
 			case null:
 				Logging.sendConsole(Level.SEVERE, "Quest step type registered as null for quest step, " + stepString

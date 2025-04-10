@@ -3,6 +3,10 @@ package com.github.ebjerke04.myrpg.quests;
 import java.util.Stack;
 import java.util.UUID;
 
+import org.bukkit.entity.Player;
+
+import net.kyori.adventure.text.Component;
+
 public class QuestInProgress {
 
     private UUID respectiveId;
@@ -28,10 +32,18 @@ public class QuestInProgress {
     /**
      * @return true if attempt at quest progression is successful
      */
-    public boolean attemptProgression() {
+    public boolean attemptProgression(Player player) {
         // TODO: handle quest progression.
         // if requirement is met, pop QuestStep from stack and expose next step.
         boolean successful = true;
+        if (getCurrentStep() instanceof QuestStepKillMob) {
+            QuestStepKillMob killStep = (QuestStepKillMob) getCurrentStep();
+            killStep.mobKilled();
+            if (killStep.getAmountRemaining() > 0) {
+                player.sendMessage(Component.text("Kill " + killStep.getAmountRemaining() + " more mobs"));
+                successful = false;
+            }
+        }
         
         return successful;
     }

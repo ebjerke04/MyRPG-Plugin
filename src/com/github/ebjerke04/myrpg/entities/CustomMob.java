@@ -80,7 +80,7 @@ public class CustomMob {
     }
 
     private void setupEntity() {
-        entity.customName(Component.text(displayName));
+        entity.customName(Component.text(displayName + " [" + getLevel() + "]"));
         entity.setCustomNameVisible(true);
 
         entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(attributes.maxHealth);
@@ -122,7 +122,7 @@ public class CustomMob {
 
         // TODO: need a way to fetch a specific damage amount.
         // create custom weapons /& a formula to calculate damage.
-        entity.damage(20.0);
+        entity.damage(200.0);
     }
 
     public void setTarget(Player player) {
@@ -185,6 +185,14 @@ public class CustomMob {
 
     public String getName() {
         return mobName;
+    }
+
+    public int getLevel() {
+        return attributes.level;
+    }
+
+    public int getBaseExperienceReward() {
+        return attributes.baseExperienceReward;
     }
 
     private boolean isCleanedUp = false;

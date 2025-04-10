@@ -6,6 +6,7 @@ import java.util.UUID;
 import org.bukkit.entity.Player;
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.classes.RpgClass;
+import com.github.ebjerke04.myrpg.data.leveling.LevelingManager;
 import com.github.ebjerke04.myrpg.entities.CustomMob;
 import com.github.ebjerke04.myrpg.interfaces.PlayerScoreboard;
 import com.github.ebjerke04.myrpg.quests.Quest;
@@ -23,9 +24,13 @@ public class RpgPlayer {
 	private List<QuestInProgress> questsInProgress = new ArrayList<>();
 
 	private List<CustomMob> mobsInCombat = new ArrayList<>();
+
+	private int level = 0;
+	private int experience = 0;
 	
 	public RpgPlayer(Player player) {
 		this.player = player;
+		this.level = 0;
 	}
 
 	public void setActiveClass(RpgClass activeClass) {
@@ -34,6 +39,10 @@ public class RpgPlayer {
 		// TODO: Player active class set. Figure out what is next.
 		// Send player to last location they left off at.
 		// Load their saved inventory.
+		level = 1;
+		experience = 0;
+		player.setLevel(1);
+		player.setExp(0.0f);
 	}
 
 	public void setMobInCombat(CustomMob customMob) {
@@ -62,6 +71,25 @@ public class RpgPlayer {
 		mobsInCombat.clear();
 	}
 
+	public void rewardExperience(int experience) {
+		int requiredExperience = LevelingManager.getExperienceToNext(level);
+
+		if (this.experience + experience >= requiredExperience) {
+			level++;
+			this.experience = this.experience + experience - requiredExperience;
+			
+			requiredExperience = LevelingManager.getExperienceToNext(level);
+			float nextLevelProgress = (float) this.experience / (float) requiredExperience;
+			player.setLevel(level);
+			player.setExp(nextLevelProgress);
+			return;
+		} else {
+			this.experience += experience;
+			float nextLevelProgress = (float) this.experience / (float) requiredExperience;
+			player.setExp(nextLevelProgress);
+		}
+	}
+
 	public void assignQuest(QuestInProgress quest) {
 		attemptQuestProgression(quest);
 		questsInProgress.add(quest);	
@@ -71,7 +99,7 @@ public class RpgPlayer {
 	// maybe break the description message down into a couple lines. (takes up a lot of space)
 	public void attemptQuestProgression(QuestInProgress quest) {
 		QuestStep currentStep = quest.getCurrentStep();
-		if (quest.attemptProgression() && !currentStep.isDialoguing()) {
+		if (quest.attemptProgression(player) && !currentStep.isDialoguing()) {
 			// progression successful, do stuff here
 			List<String> dialogueStrings = currentStep.getDialogue();
 			currentStep.setDialoguing(true);
@@ -148,6 +176,10 @@ public class RpgPlayer {
 				return;
 			}
 		}
+	}
+
+	public int getLevel() {
+		return level;
 	}
 
 	public List<CustomMob> getMobsInCombat() {

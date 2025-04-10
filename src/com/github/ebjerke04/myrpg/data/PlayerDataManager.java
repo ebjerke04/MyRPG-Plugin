@@ -16,13 +16,9 @@ public class PlayerDataManager {
 	
 	private static PlayerDataManager instance;
 	
-	//private LevelingManager levelingManager;
-	
 	private PlayerDataManager() {
 		ConfigManager.get().createConfig("player_data");
 		ConfigManager.get().reloadConfig("player_data");
-		
-		//levelingManager = new LevelingManager();
 	}
 	
 	public static void init() {

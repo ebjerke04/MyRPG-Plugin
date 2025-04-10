@@ -40,7 +40,6 @@ public class TestWeapon extends BaseEvent {
 				Vector entityVector = entity.getLocation().toVector().subtract(player.getEyeLocation().toVector()).normalize();
 				if (direction.dot(entityVector) > 0.98) {
 					target.damage(500.0, player);
-					player.sendMessage("You hit " + target.getName() + " with wand!");
 				}
 			}
 		}

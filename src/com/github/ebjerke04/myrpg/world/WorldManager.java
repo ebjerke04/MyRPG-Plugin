@@ -86,6 +86,8 @@ public class WorldManager {
 
 		for (EntityDataHolder entityData : templateData) {
 			CustomMobAttributes attributes = new CustomMobAttributes();
+			attributes.level = entityData.level;
+			attributes.baseExperienceReward = entityData.baseExperienceReward;
 			attributes.maxHealth = entityData.maxHealth;
 			mobTemplates.put(entityData.mobName, new CustomMob(
 				entityData.mobName,
@@ -146,6 +148,9 @@ public class WorldManager {
             UUID playerId = player.getUniqueId();
             RpgPlayer rpgPlayer = Plugin.getPlayerManager().getRpgPlayer(playerId);
 
+			Plugin.getPlayerManager().playerKillsMob(rpgPlayer, customMob);
+			rpgPlayer.removeMobInCombat(customMob);
+
 			List<QuestInProgress> questsInProgress = rpgPlayer.getQuestsInProgress();
 			if (questsInProgress.isEmpty()) return;
 	
@@ -166,8 +171,6 @@ public class WorldManager {
 					}
 				}
 			}
-
-			rpgPlayer.removeMobInCombat(customMob);
         }
 
 		UUID customMobId = customMob.getUniqueId();
