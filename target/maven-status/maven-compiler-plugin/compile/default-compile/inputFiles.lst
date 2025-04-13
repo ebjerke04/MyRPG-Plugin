@@ -9,8 +9,9 @@ D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\classes\types\W
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\BaseCommand.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\ClassCommand.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\CommandManager.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\RpgAddExperienceCommand.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\RpgAdminCommand.java
-D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\TestCommand.java
+D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\commands\RpgSpawnCommand.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\creation\RpgCreationManager.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\data\ConfigManager.java
 D:\Development\MyRPG\MyRPG-Plugin\src\com\github\ebjerke04\myrpg\data\leveling\LevelingManager.java

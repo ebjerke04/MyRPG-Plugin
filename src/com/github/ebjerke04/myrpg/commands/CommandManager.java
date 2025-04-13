@@ -6,7 +6,8 @@ public class CommandManager {
 		synchronized (CommandManager.class) {
 			new RpgAdminCommand();
 			new ClassCommand();
-			new TestCommand();
+			new RpgSpawnCommand();
+			new RpgAddExperienceCommand();
 		}
 	}
 	

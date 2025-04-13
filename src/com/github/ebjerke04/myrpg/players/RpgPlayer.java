@@ -76,11 +76,23 @@ public class RpgPlayer {
 
 		if (this.experience + experience >= requiredExperience) {
 			level++;
-			this.experience = this.experience + experience - requiredExperience;
+			player.setLevel(level);
+			onLevelIncrease();
+
+			int surplusExperience = this.experience + experience - requiredExperience;
 			
 			requiredExperience = LevelingManager.getExperienceToNext(level);
-			float nextLevelProgress = (float) this.experience / (float) requiredExperience;
-			player.setLevel(level);
+			float nextLevelProgress = (float) surplusExperience / (float) requiredExperience;
+
+			if (nextLevelProgress >= 1) {
+				this.experience = 0;
+
+				// Recursive call for the case that enough experience is receive to trigger more than 1 level-up
+				rewardExperience(surplusExperience);
+				return;
+			}
+			
+			this.experience = surplusExperience;
 			player.setExp(nextLevelProgress);
 			return;
 		} else {
@@ -88,6 +100,16 @@ public class RpgPlayer {
 			float nextLevelProgress = (float) this.experience / (float) requiredExperience;
 			player.setExp(nextLevelProgress);
 		}
+	}
+
+	private void onLevelIncrease() {
+		player.sendMessage(
+			Component.text("Congratulations ").color(TextColor.color(0x00FFFF))
+			.append(Component.text(player.getName()).color(TextColor.color(0xFFD700)))
+			.append(Component.text("! You have reached level ")).color(TextColor.color(0x00FFFF))
+			.append(Component.text(level).color(TextColor.color(0xFFD700)))
+			.append(Component.text("!").color(TextColor.color(0x00FFFF)))
+		);
 	}
 
 	public void assignQuest(QuestInProgress quest) {
@@ -116,13 +138,9 @@ public class RpgPlayer {
 				if (completed) {
 					for (int i = 0; i < questsInProgress.size(); i++) {
 						if (questsInProgress.get(i).equals(quest)) {
-							activeClass.setQuestCompleted(quest.getName());
-							player.sendMessage(Component.text("Quest has been completed!")
-								.color(TextColor.color(0x00FF00)));
+							onQuestComplete(quest.getName());
 							questsInProgress.remove(i);
 
-							PlayerScoreboard.defaultScoreboard.sendToPlayer(player);
-							setTrackedQuest(null);
 							break;
 						}
 					}
@@ -137,6 +155,21 @@ public class RpgPlayer {
 			});
 			
 		}
+	}
+
+	// TODO: HERE, NEED TO DO STUFF ON QUEST COMPLETION ACTUALLY
+	// Maybe give experience points, better messaging, rise to item rewards...
+	private void onQuestComplete(String questName) {
+		activeClass.setQuestCompleted(questName);
+		player.sendMessage(Component.text("Quest has been completed!")
+			.color(TextColor.color(0x00FF00)));
+
+		Quest completedQuest = Plugin.getWorldManager().getQuestByName(questName);
+		int completionExperience = completedQuest.getCompletionExperience();
+		rewardExperience(completionExperience);
+
+		PlayerScoreboard.defaultScoreboard.sendToPlayer(player);
+		setTrackedQuest(null);
 	}
 
 	public void setTrackedQuest(UUID questId) {

@@ -1,4 +1,4 @@
-package com.github.ebjerke04.myrpg.quests.items;
+package com.github.ebjerke04.myrpg.quests.ui;
 
 import java.util.ArrayList;
 import java.util.List;

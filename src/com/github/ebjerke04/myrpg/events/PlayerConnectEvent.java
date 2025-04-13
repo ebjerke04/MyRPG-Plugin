@@ -6,7 +6,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import com.github.ebjerke04.myrpg.Plugin;
 import com.github.ebjerke04.myrpg.interfaces.PlayerScoreboard;
-import com.github.ebjerke04.myrpg.quests.items.QuestBook;
+import com.github.ebjerke04.myrpg.quests.ui.QuestBook;
 
 public class PlayerConnectEvent extends BaseEvent {
 	

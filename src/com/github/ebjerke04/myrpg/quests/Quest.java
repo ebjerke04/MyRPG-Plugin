@@ -11,6 +11,8 @@ public class Quest {
 
 	private QuestNPC startNPC;
 	private Stack<QuestStep> steps;
+
+	private int completionExperience;
 	
 	public Quest(QuestDataHolder data) {
 		this.NAME = data.name;
@@ -18,6 +20,8 @@ public class Quest {
 
 		this.startNPC = data.startNPC;
 		this.steps = data.steps;
+
+		this.completionExperience = data.completionExperience;
 
 		questId = UUID.randomUUID();
 	}
@@ -40,6 +44,10 @@ public class Quest {
 
 	public Stack<QuestStep> getSteps() {
 		return steps;
+	}
+
+	public int getCompletionExperience() {
+		return completionExperience;
 	}
 
 }

@@ -13,9 +13,12 @@ commands:
   class:
     description: Open the class selection menu!
     usage: /class
-  testcmd:
+  rpgspawn:
     description: Test command!
     usage: /testcmd
+  rpgexp:
+    description: Add exp to player command!
+    usage: /rpgexp
 
 permissions:
   rpg.admin:

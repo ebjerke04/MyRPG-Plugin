@@ -6,10 +6,10 @@ import org.bukkit.entity.Player;
 
 import com.github.ebjerke04.myrpg.Plugin;
 
-public class TestCommand extends BaseCommand {
+public class RpgSpawnCommand extends BaseCommand {
 
-    public TestCommand() {
-		super("testcmd");
+    public RpgSpawnCommand() {
+		super("rpgspawn");
 	}
 
 	@Override

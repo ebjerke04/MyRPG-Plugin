@@ -10,7 +10,6 @@ com\github\ebjerke04\myrpg\events\Entity.class
 com\github\ebjerke04\myrpg\scripting\ScriptComponent.class
 com\github\ebjerke04\myrpg\quests\QuestStepEnterArea.class
 com\github\ebjerke04\myrpg\commands\CommandManager.class
-com\github\ebjerke04\myrpg\commands\TestCommand.class
 com\github\ebjerke04\myrpg\data\WorldDataManager.class
 com\github\ebjerke04\myrpg\scripting\objects\PositionScriptObject.class
 com\github\ebjerke04\myrpg\events\PlayerMovingEvent.class
@@ -34,6 +33,7 @@ com\github\ebjerke04\myrpg\classes\types\AssassinClass.class
 com\github\ebjerke04\myrpg\entities\EntityDataHolder.class
 com\github\ebjerke04\myrpg\quests\QuestStep.class
 com\github\ebjerke04\myrpg\classes\RpgClass.class
+com\github\ebjerke04\myrpg\commands\RpgSpawnCommand.class
 com\github\ebjerke04\myrpg\events\PlayerRightClickEntityEvent.class
 com\github\ebjerke04\myrpg\quests\Quest.class
 com\github\ebjerke04\myrpg\util\Logging.class
@@ -50,6 +50,7 @@ com\github\ebjerke04\myrpg\commands\ClassCommand.class
 com\github\ebjerke04\myrpg\quests\QuestDataHolder.class
 com\github\ebjerke04\myrpg\classes\types\MageClass.class
 com\github\ebjerke04\myrpg\players\PlayerManager$1.class
+com\github\ebjerke04\myrpg\commands\RpgAddExperienceCommand.class
 com\github\ebjerke04\myrpg\economy\CurrencyConversionType$1.class
 com\github\ebjerke04\myrpg\events\PlayerMessageEvent$1.class
 com\github\ebjerke04\myrpg\classes\ClassSelectionMenu.class

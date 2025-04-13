@@ -122,6 +122,8 @@ public class QuestDataManager {
 			Logging.sendConsole(Level.SEVERE, "Start NPC for quest, " + questName + ", not a QuestNPC");
 			throw new IllegalStateException();
 		}
+
+		data.completionExperience = getQuestData().getInt(path + ".completion-experience");
 		
 		List<String> stepConfigKeys = new ArrayList<String>(getQuestData().getConfigurationSection(path + ".steps").getKeys(false));
 		Map<Integer, QuestStep> questSteps = new HashMap<>();

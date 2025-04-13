@@ -10,4 +10,6 @@ public class QuestDataHolder {
 	public QuestNPC startNPC;
 	public Stack<QuestStep> steps;
 
+	public int completionExperience;
+
 }
