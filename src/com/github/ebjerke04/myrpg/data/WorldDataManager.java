@@ -6,11 +6,14 @@ import java.util.Set;
 import java.util.logging.Level;
 
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.EntityType;
 
 import com.github.ebjerke04.myrpg.economy.BankerNPC;
 import com.github.ebjerke04.myrpg.entities.EntityDataHolder;
+import com.github.ebjerke04.myrpg.items.RpgItemDataHolder;
+import com.github.ebjerke04.myrpg.items.RpgItemType;
 import com.github.ebjerke04.myrpg.util.Logging;
 
 public class WorldDataManager {
@@ -41,9 +44,8 @@ public class WorldDataManager {
     }
 
 	public List<EntityDataHolder> loadCustomMobTemplates() {
-		String path = "custom-mobs";
-
 		List<EntityDataHolder> entityTemplates = new ArrayList<>();
+		String path = "custom-mobs";
 
 		try {
 			Set<String> templateLocationPaths = getWorldData().getConfigurationSection(path).getKeys(false);
@@ -52,7 +54,6 @@ public class WorldDataManager {
 				String subPath = path + "." + nameInConfig + ".";
 				
 				String entityTypeString = getWorldData().getString(subPath + "entity-type");
-				
 				EntityType entityType = EntityType.fromName(entityTypeString);
 				String displayName = getWorldData().getString(subPath + "display-name");
 				int level = getWorldData().getInt(subPath + "level");
@@ -74,6 +75,40 @@ public class WorldDataManager {
 		}
 
 		return entityTemplates;
+	}
+
+	public List<RpgItemDataHolder> loadRpgItemData() {
+		List<RpgItemDataHolder> itemDataList = new ArrayList<>();
+		String path = "rpg-items";
+
+		try {
+			Set<String> itemDataLocationPaths = getWorldData().getConfigurationSection(path).getKeys(false);
+
+			for (String nameInConfig : itemDataLocationPaths) {
+				String subPath = path + "." + nameInConfig + ".";
+				
+				String itemTypeString = getWorldData().getString(subPath + "item-type");
+				RpgItemType itemType = RpgItemType.fromString(itemTypeString);
+				int minimumLevel = getWorldData().getInt(subPath + "min-level");
+				String materialName = getWorldData().getString(subPath + "material-name");
+				Material itemMaterial = Material.getMaterial(materialName);
+				String displayName = getWorldData().getString(subPath + "display-name");
+				List<String> lore = getWorldData().getStringList(subPath + "lore");
+
+				RpgItemDataHolder itemData = new RpgItemDataHolder();
+				itemData.type = itemType;
+				itemData.minimumLevel = minimumLevel;
+				itemData.itemMaterial = itemMaterial;
+				itemData.displayName = displayName;
+				itemData.lore = lore;
+
+				itemDataList.add(itemData);
+			}
+		} catch (NullPointerException e) {
+			Logging.sendConsole(Level.INFO, "No RpgItems have been created yet.");
+		}
+
+		return itemDataList;
 	}
 	
 	public static void init() {

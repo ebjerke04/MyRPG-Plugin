@@ -15,6 +15,8 @@ import com.github.ebjerke04.myrpg.economy.BankingService;
 import com.github.ebjerke04.myrpg.entities.CustomMob;
 import com.github.ebjerke04.myrpg.entities.CustomMobAttributes;
 import com.github.ebjerke04.myrpg.entities.EntityDataHolder;
+import com.github.ebjerke04.myrpg.items.RpgItem;
+import com.github.ebjerke04.myrpg.items.RpgItemDataHolder;
 import com.github.ebjerke04.myrpg.players.RpgPlayer;
 import com.github.ebjerke04.myrpg.quests.Quest;
 import com.github.ebjerke04.myrpg.quests.QuestInProgress;
@@ -33,6 +35,8 @@ public class WorldManager {
 	private final Map<String, CustomMob> mobTemplates = new HashMap<>();
 	private final Map<UUID, CustomMob> spawnedMobs = new ConcurrentHashMap<>();
 
+	private final List<RpgItem> items = new ArrayList<>();
+
 	public WorldManager() {
 
 	}
@@ -41,6 +45,7 @@ public class WorldManager {
 		loadNPCsFromConfig();
 		loadQuestsFromConfig();
 		loadMobTemplates();
+		loadRpgItems();
 
 		spawnNPCs();
 		
@@ -95,6 +100,14 @@ public class WorldManager {
 				entityData.displayName,
 				attributes
 			));
+		}
+	}
+
+	private void loadRpgItems() {
+		List<RpgItemDataHolder> itemDataList = WorldDataManager.get().loadRpgItemData();
+
+		for (RpgItemDataHolder itemData : itemDataList) {
+			items.add(new RpgItem(itemData));
 		}
 	}
 

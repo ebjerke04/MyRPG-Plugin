@@ -1,0 +1,26 @@
+main: com.github.ebjerke04.myrpg.Plugin
+name: MyRPG
+version: 1.0
+description: Make your ownw RPG game, including quests, custom mobs, etc!
+author: ebjerke04
+api-version: 1.13
+#depend: [ProtocolLib]
+
+commands:
+  rpgadmin:
+    description: Main rpg admin command!
+    usage: /rpgadmin
+  class:
+    description: Open the class selection menu!
+    usage: /class
+  rpgspawn:
+    description: Test command!
+    usage: /testcmd
+  rpgexp:
+    description: Add exp to player command!
+    usage: /rpgexp
+
+permissions:
+  rpg.admin:
+    description: Access to RPG administration commands.
+    default: op	
